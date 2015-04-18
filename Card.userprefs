@@ -1,0 +1,17 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="E:\trunk\client\Lucifer\Assets\_Project\Scripts\Global\GlobalData\Lottery\GD_Lottery.cs">
+    <Files>
+      <File FileName="E:\trunk\client\Lucifer\Assets\_Project\Scripts\Global\GlobalData\Lottery\GD_Lottery.cs" Line="294" Column="3" />
+      <File FileName="E:\trunk\client\Lucifer\Assets\_Project\Scripts\UI\GameMainUI\Lottery\GemLottery.cs" Line="374" Column="10" />
+      <File FileName="E:\trunk\client\Lucifer\Assets\_Project\Scripts\Net\NetService\NS_Lottery.cs" Line="7" Column="1" />
+      <File FileName="E:\trunk\client\Lucifer\Assets\_Project\Scripts\UI\GameMainUI\Lottery\MW_RewardOne.cs" Line="98" Column="64" />
+      <File FileName="E:\trunk\client\Lucifer\Assets\_Project\Scripts\UI\GameMainUI\Lottery\LoveLottery.cs" Line="24" Column="25" />
+      <File FileName="E:\trunk\client\Lucifer\Assets\_Project\Scripts\Global\GlobalData\ChatUI\GD_Chat.cs" Line="323" Column="30" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
