@@ -175,10 +175,10 @@
      <None Include="Assets\Library\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
      <None Include="Assets\Library\NGUI\Examples\Resources\Localization.txt" />
  <Reference Include="HOTween">
- <HintPath>E:/Card/Assets/Library/HOTween/HOTween.dll</HintPath>
+ <HintPath>E:/GitHub/Card/Assets/Library/HOTween/HOTween.dll</HintPath>
  </Reference>
  <Reference Include="HOTweenV1_Editor">
- <HintPath>E:/Card/Assets/Library/HOTween/Editor/HOTweenV1_Editor.dll</HintPath>
+ <HintPath>E:/GitHub/Card/Assets/Library/HOTween/Editor/HOTweenV1_Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>D:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>

@@ -348,7 +348,7 @@
      <None Include="Assets\Library\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
      <None Include="Assets\Library\NGUI\Examples\Resources\Localization.txt" />
  <Reference Include="HOTween">
- <HintPath>E:/Card/Assets/Library/HOTween/HOTween.dll</HintPath>
+ <HintPath>E:/GitHub/Card/Assets/Library/HOTween/HOTween.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
