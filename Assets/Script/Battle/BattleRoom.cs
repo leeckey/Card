@@ -68,10 +68,10 @@ public class BattleRoom
 			fighter1.RoundEnd();
 		}
 
-		foreach (BaseAction action in actions)
-		{
-			Debug.Log(action.ToString());
-		}
+//		foreach (BaseAction action in actions)
+//		{
+//			Debug.Log(action.ToString());
+//		}
 
 		if (result == 1)
 			Debug.Log(string.Format("{0}死亡,{1}胜利", fighter1.ID, fighter0.ID));
