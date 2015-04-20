@@ -52,6 +52,8 @@ public class BaseHandler : MonoBehaviour
 			handleList.RemoveAt(0);
 			delay = handle(action);
 
+			if (delay > 0f)
+			Debug.Log(string.Format("执行方法{1}，等待时间{0}秒", delay, handle.ToString()));
 			yield return new WaitForSeconds(delay);
 		}
 

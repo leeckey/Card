@@ -1,17 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Holoville.HOTween;
 
 /// <summary>
 /// 玩家显示区域
 /// </summary>
 public class PlayerGround : MonoBehaviour
 {
+	public int ID;
+
 	public UILabel nameLabel;
 	
 	public UITexture icon;
 	
 	public UISprite hpBar;
+	public UISprite hpBarBack;
+	public UILabel hpLabel;
+
+	int hp;
+	int maxHp;
 
 	// 初始区域
 	public CardInitArea cardInitArea;
@@ -37,9 +45,30 @@ public class PlayerGround : MonoBehaviour
 	}
 
 	// 初始化数据
-	public void InitPlayerInfo()
+	public void InitPlayerInfo(PlayerFighter fighter)
 	{
+		this.ID = fighter.ID;
+		this.maxHp = fighter.maxHp;
+		this.hp = fighter.maxHp;
 
+		allCards = new List<CardFighter>();
+		foreach (CardFighter card in fighter.allCard)
+		{
+			allCards.Add(card);
+		}
+		allCards.ForEach(card => cardInitArea.AddCard(card));
+	}
+
+	public void ShowDamage(int damage)
+	{
+		hp -= damage;
+		if (hp > maxHp)
+			hp = maxHp;
+
+		hpLabel.text = string.Format("HP:{0}", hp.ToString());
+
+		HOTween.To(hpBar, 0.2f, new TweenParms().Prop("fillAmount", (float)hp / maxHp));
+		HOTween.To(hpBarBack, 0.8f, new TweenParms().Prop("fillAmount", (float)hp / maxHp).Delay(0.2f));
 	}
 
 	/// <summary>
@@ -49,7 +78,7 @@ public class PlayerGround : MonoBehaviour
 	{
 		CardBackAction cardBackAction = action as CardBackAction;
 
-		CardFighter card = GetCardByID(cardBackAction.sourceID);
+		CardFighter card = GetCardByID(cardBackAction.targetID);
 
 		// 等待中的卡牌回到牌堆
 		if (cardWaitArea.ContainsCard(card))
@@ -74,7 +103,7 @@ public class PlayerGround : MonoBehaviour
 	{
 		CardDeadAction cardDeadAction = action as CardDeadAction;
 
-		CardFighter card = GetCardByID(cardDeadAction.sourceID);
+		CardFighter card = GetCardByID(cardDeadAction.targetID);
 
 		// 等待中的卡牌进入墓地
 		if (cardWaitArea.ContainsCard(card))
@@ -95,7 +124,7 @@ public class PlayerGround : MonoBehaviour
 	{
 		CardFightAction cardFightAction = action as CardFightAction;
 
-		CardFighter card = GetCardByID(cardFightAction.sourceID);
+		CardFighter card = GetCardByID(cardFightAction.targetID);
 
 		// 等待中的卡牌进入战斗
 		if (cardWaitArea.ContainsCard(card))
@@ -122,7 +151,7 @@ public class PlayerGround : MonoBehaviour
 	{
 		CardWaitAction cardWaitAction = action as CardWaitAction;
 
-		CardFighter card = GetCardByID(cardWaitAction.sourceID);
+		CardFighter card = GetCardByID(cardWaitAction.targetID);
 
 		// 牌堆的卡牌进入等待区
 		if (cardInitArea.ContainsCard(card))

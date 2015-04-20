@@ -515,9 +515,9 @@ MonoBehaviour:
   skillDataList:
   - id: 1
     templateID: 100
-    name: e694bbe587bb
-    effectPath: 6173736574732f656666656374732f7075746f6e67676f6e676a692e66616d
-    discription: e699aee9809ae694bbe587bb
+    name: "\u653B\u51FB"
+    effectPath: assets/effects/putonggongji.fam
+    discription: "\u666E\u901A\u653B\u51FB"
     skillType: 0
     magicType: 0
     priority: 0
@@ -528,9 +528,9 @@ MonoBehaviour:
     buffID: 0
   - id: 2
     templateID: 102
-    name: e781abe79083
-    effectPath: 6173736574732f656666656374732f68756f7169752e66616d
-    discription: e4bdbfe6958ce696b931e5bca0e58da1e7898ce58f97e588b07b307d2d7b317de782b9e4bca4e5aeb3
+    name: "\u706B\u7403"
+    effectPath: assets/effects/huoqiu.fam
+    discription: "\u4F7F\u654C\u65B91\u5F20\u5361\u724C\u53D7\u5230{0}-{1}\u70B9\u4F24\u5BB3"
     skillType: 1
     magicType: 1
     priority: 0
@@ -541,9 +541,9 @@ MonoBehaviour:
     buffID: 0
   - id: 3
     templateID: 102
-    name: e781abe5a299
-    effectPath: 6173736574732f656666656374732f68756f7169752e66616d
-    discription: e4bdbfe6958ce696b933e5bca0e58da1e7898ce58f97e588b07b307d2d7b317de782b9e4bca4e5aeb3
+    name: "\u706B\u5899"
+    effectPath: assets/effects/huoqiu.fam
+    discription: "\u4F7F\u654C\u65B93\u5F20\u5361\u724C\u53D7\u5230{0}-{1}\u70B9\u4F24\u5BB3"
     skillType: 1
     magicType: 1
     priority: 0
@@ -554,9 +554,9 @@ MonoBehaviour:
     buffID: 0
   - id: 4
     templateID: 102
-    name: e78388e784b0e9a38ee69ab4
-    effectPath: 6173736574732f656666656374732f68756f7169752e66616d
-    discription: e4bdbfe6958ce696b9e68980e69c89e58da1e7898ce58f97e588b07b307d2d7b317de782b9e4bca4e5aeb3
+    name: "\u70C8\u7130\u98CE\u66B4"
+    effectPath: assets/effects/huoqiu.fam
+    discription: "\u4F7F\u654C\u65B9\u6240\u6709\u5361\u724C\u53D7\u5230{0}-{1}\u70B9\u4F24\u5BB3"
     skillType: 1
     magicType: 1
     priority: 0
@@ -567,9 +567,9 @@ MonoBehaviour:
     buffID: 0
   - id: 5
     templateID: 101
-    name: e890bde99bb7
-    effectPath: 6173736574732f656666656374732f7368616e6469616e2e66616d
-    discription: e4bdbfe6958ce696b931e5bca0e58da1e7898ce58f97e588b07b307de782b9e4bca4e5aeb3efbc8c7b317d25e6a682e78e87e697a0e6b395e789a9e79086e694bbe587bb
+    name: "\u843D\u96F7"
+    effectPath: assets/effects/shandian.fam
+    discription: "\u4F7F\u654C\u65B91\u5F20\u5361\u724C\u53D7\u5230{0}\u70B9\u4F24\u5BB3\uFF0C{1}%\u6982\u7387\u65E0\u6CD5\u7269\u7406\u653B\u51FB"
     skillType: 1
     magicType: 1
     priority: 0
@@ -580,9 +580,9 @@ MonoBehaviour:
     buffID: 0
   - id: 6
     templateID: 101
-    name: e8bf9ee78eafe997aae794b5
-    effectPath: 6173736574732f656666656374732f7368616e6469616e2e66616d
-    discription: e4bdbfe6958ce696b933e5bca0e58da1e7898ce58f97e588b07b307de782b9e4bca4e5aeb3efbc8c7b317d25e6a682e78e87e697a0e6b395e789a9e79086e694bbe587bb
+    name: "\u8FDE\u73AF\u95EA\u7535"
+    effectPath: assets/effects/shandian.fam
+    discription: "\u4F7F\u654C\u65B93\u5F20\u5361\u724C\u53D7\u5230{0}\u70B9\u4F24\u5BB3\uFF0C{1}%\u6982\u7387\u65E0\u6CD5\u7269\u7406\u653B\u51FB"
     skillType: 1
     magicType: 1
     priority: 0
@@ -593,9 +593,9 @@ MonoBehaviour:
     buffID: 0
   - id: 7
     templateID: 101
-    name: e99bb7e69ab4
-    effectPath: 6173736574732f656666656374732f7368616e6469616e2e66616d
-    discription: e4bdbfe6958ce696b9e68980e69c89e58da1e7898ce58f97e588b07b307de782b9e4bca4e5aeb3efbc8c7b317d25e6a682e78e87e697a0e6b395e789a9e79086e694bbe587bb
+    name: "\u96F7\u66B4"
+    effectPath: assets/effects/shandian.fam
+    discription: "\u4F7F\u654C\u65B9\u6240\u6709\u5361\u724C\u53D7\u5230{0}\u70B9\u4F24\u5BB3\uFF0C{1}%\u6982\u7387\u65E0\u6CD5\u7269\u7406\u653B\u51FB"
     skillType: 1
     magicType: 1
     priority: 0
@@ -606,9 +606,9 @@ MonoBehaviour:
     buffID: 0
   - id: 8
     templateID: 101
-    name: e586b0e5bcb9
-    effectPath: 6173736574732f656666656374732f62696e676a69616e2e66616d
-    discription: e4bdbfe6958ce696b931e5bca0e58da1e7898ce58f97e588b07b307de782b9e4bca4e5aeb3efbc8ce5b9b6e69c897b317d25e6a682e78e87e4b8a7e5a4b1e4b88be4b880e59b9ee59088e8a18ce58aa8
+    name: "\u51B0\u5F39"
+    effectPath: assets/effects/bingjian.fam
+    discription: "\u4F7F\u654C\u65B91\u5F20\u5361\u724C\u53D7\u5230{0}\u70B9\u4F24\u5BB3\uFF0C\u5E76\u6709{1}%\u6982\u7387\u4E27\u5931\u4E0B\u4E00\u56DE\u5408\u884C\u52A8"
     skillType: 1
     magicType: 1
     priority: 0
@@ -619,9 +619,9 @@ MonoBehaviour:
     buffID: 0
   - id: 9
     templateID: 101
-    name: e99c9ce586bbe696b0e6989f
-    effectPath: 6173736574732f656666656374732f62696e676a69616e2e66616d
-    discription: e4bdbfe6958ce696b933e5bca0e58da1e7898ce58f97e588b07b307de782b9e4bca4e5aeb3efbc8ce5b9b6e69c897b317d25e6a682e78e87e4b8a7e5a4b1e4b88be4b880e59b9ee59088e8a18ce58aa8
+    name: "\u971C\u51BB\u65B0\u661F"
+    effectPath: assets/effects/bingjian.fam
+    discription: "\u4F7F\u654C\u65B93\u5F20\u5361\u724C\u53D7\u5230{0}\u70B9\u4F24\u5BB3\uFF0C\u5E76\u6709{1}%\u6982\u7387\u4E27\u5931\u4E0B\u4E00\u56DE\u5408\u884C\u52A8"
     skillType: 1
     magicType: 1
     priority: 0
@@ -632,9 +632,9 @@ MonoBehaviour:
     buffID: 0
   - id: 10
     templateID: 101
-    name: e69ab4e9a38ee99baa
-    effectPath: 6173736574732f656666656374732f62696e676a69616e2e66616d
-    discription: e4bdbfe6958ce696b9e68980e69c89e58da1e7898ce58f97e588b07b307de782b9e4bca4e5aeb3efbc8ce5b9b6e69c897b317d25e6a682e78e87e4b8a7e5a4b1e4b88be4b880e59b9ee59088e8a18ce58aa8
+    name: "\u66B4\u98CE\u96EA"
+    effectPath: assets/effects/bingjian.fam
+    discription: "\u4F7F\u654C\u65B9\u6240\u6709\u5361\u724C\u53D7\u5230{0}\u70B9\u4F24\u5BB3\uFF0C\u5E76\u6709{1}%\u6982\u7387\u4E27\u5931\u4E0B\u4E00\u56DE\u5408\u884C\u52A8"
     skillType: 1
     magicType: 1
     priority: 0
@@ -645,9 +645,9 @@ MonoBehaviour:
     buffID: 0
   - id: 11
     templateID: 101
-    name: e6af92e6b6b2
-    effectPath: 6173736574732f656666656374732f647577752e66616d
-    discription: e4bdbfe6958ce696b931e5bca0e58da1e7898ce58f97e588b07b307de782b9e4bca4e5aeb3efbc8ce5b9b6e59ca8e585b6e8a18ce58aa8e7bb93e69d9fe5908ee58f97e588b07b307de782b9e4bca4e5aeb3
+    name: "\u6BD2\u6DB2"
+    effectPath: assets/effects/duwu.fam
+    discription: "\u4F7F\u654C\u65B91\u5F20\u5361\u724C\u53D7\u5230{0}\u70B9\u4F24\u5BB3\uFF0C\u5E76\u5728\u5176\u884C\u52A8\u7ED3\u675F\u540E\u53D7\u5230{0}\u70B9\u4F24\u5BB3"
     skillType: 1
     magicType: 0
     priority: 0
@@ -658,9 +658,9 @@ MonoBehaviour:
     buffID: 0
   - id: 12
     templateID: 101
-    name: e6af92e99bbe
-    effectPath: 6173736574732f656666656374732f647577752e66616d
-    discription: e4bdbfe6958ce696b933e5bca0e58da1e7898ce58f97e588b07b307de782b9e4bca4e5aeb3efbc8ce5b9b6e59ca8e585b6e8a18ce58aa8e7bb93e69d9fe5908ee58f97e588b07b307de782b9e4bca4e5aeb3
+    name: "\u6BD2\u96FE"
+    effectPath: assets/effects/duwu.fam
+    discription: "\u4F7F\u654C\u65B93\u5F20\u5361\u724C\u53D7\u5230{0}\u70B9\u4F24\u5BB3\uFF0C\u5E76\u5728\u5176\u884C\u52A8\u7ED3\u675F\u540E\u53D7\u5230{0}\u70B9\u4F24\u5BB3"
     skillType: 1
     magicType: 0
     priority: 0
@@ -671,9 +671,9 @@ MonoBehaviour:
     buffID: 0
   - id: 13
     templateID: 103
-    name: e8a180e782bc
-    effectPath: 6173736574732f656666656374732f7875656c69616e2e66616d
-    discription: e4bdbfe6958ce696b931e5bca0e58da1e7898ce58f97e588b07b307de782b9e4bca4e5aeb3efbc8ce5b9b6e4b894e4bdbfe887aae8baabe681a2e5a48de79bb8e5908ce79a84e7949fe591bde580bc
+    name: "\u8840\u70BC"
+    effectPath: assets/effects/xuelian.fam
+    discription: "\u4F7F\u654C\u65B91\u5F20\u5361\u724C\u53D7\u5230{0}\u70B9\u4F24\u5BB3\uFF0C\u5E76\u4E14\u4F7F\u81EA\u8EAB\u6062\u590D\u76F8\u540C\u7684\u751F\u547D\u503C"
     skillType: 1
     magicType: 1
     priority: 0
@@ -684,9 +684,9 @@ MonoBehaviour:
     buffID: 0
   - id: 14
     templateID: 101
-    name: e999b7e998b1
-    effectPath: 6173736574732f656666656374732f7869616e6a696e2e66616d
-    discription: e4bdbfe6958ce696b931e5bca0e58da1e7898c7b317d25e6a682e78e87e4b8a7e5a4b1e4b88be4b880e4b8aae8a18ce58aa8e59b9ee59088
+    name: "\u9677\u9631"
+    effectPath: assets/effects/xianjin.fam
+    discription: "\u4F7F\u654C\u65B91\u5F20\u5361\u724C{1}%\u6982\u7387\u4E27\u5931\u4E0B\u4E00\u4E2A\u884C\u52A8\u56DE\u5408"
     skillType: 1
     magicType: 0
     priority: 0
@@ -697,9 +697,9 @@ MonoBehaviour:
     buffID: 0
   - id: 15
     templateID: 101
-    name: e999b7e998b1
-    effectPath: 6173736574732f656666656374732f7869616e6a696e2e66616d
-    discription: e4bdbfe6958ce696b932e5bca0e58da1e7898c7b317d25e6a682e78e87e4b8a7e5a4b1e4b88be4b880e4b8aae8a18ce58aa8e59b9ee59088
+    name: "\u9677\u9631"
+    effectPath: assets/effects/xianjin.fam
+    discription: "\u4F7F\u654C\u65B92\u5F20\u5361\u724C{1}%\u6982\u7387\u4E27\u5931\u4E0B\u4E00\u4E2A\u884C\u52A8\u56DE\u5408"
     skillType: 1
     magicType: 0
     priority: 0
@@ -710,9 +710,9 @@ MonoBehaviour:
     buffID: 0
   - id: 16
     templateID: 106
-    name: e8af85e59292
-    effectPath: 6173736574732f656666656374732f7075746f6e67676f6e676a692e66616d
-    discription: e9998de4bd8ee6958ce696b9e88bb1e99b847b307de782b9e7949fe591bde580bc
+    name: "\u8BC5\u5492"
+    effectPath: assets/effects/putonggongji.fam
+    discription: "\u964D\u4F4E\u654C\u65B9\u82F1\u96C4{0}\u70B9\u751F\u547D\u503C"
     skillType: 1
     magicType: 0
     priority: 0
@@ -723,9 +723,9 @@ MonoBehaviour:
     buffID: 0
   - id: 17
     templateID: 213
-    name: e5898ae5bcb1
-    effectPath: 6173736574732f656666656374732f78756572756f2e66616d
-    discription: e5bd93e5afb9e5afb9e696b9e980a0e68890e789a9e79086e4bca4e5aeb3e697b6efbc8ce5878fe5b091e5afb9e696b97b307de782b9e694bbe587bbe58a9b20
+    name: "\u524A\u5F31"
+    effectPath: assets/effects/xueruo.fam
+    discription: "\u5F53\u5BF9\u5BF9\u65B9\u9020\u6210\u7269\u7406\u4F24\u5BB3\u65F6\uFF0C\u51CF\u5C11\u5BF9\u65B9{0}\u70B9\u653B\u51FB\u529B "
     skillType: 2
     magicType: 1
     priority: 0
@@ -736,9 +736,9 @@ MonoBehaviour:
     buffID: 0
   - id: 18
     templateID: 104
-    name: e7bea4e4bd93e5898ae5bcb1
-    effectPath: 6173736574732f656666656374732f78756572756f2e66616d
-    discription: e9998de4bd8ee5afb9e696b9e68980e69c89e58da1e7898c7b307de782b9e694bbe587bbe58a9b
+    name: "\u7FA4\u4F53\u524A\u5F31"
+    effectPath: assets/effects/xueruo.fam
+    discription: "\u964D\u4F4E\u5BF9\u65B9\u6240\u6709\u5361\u724C{0}\u70B9\u653B\u51FB\u529B"
     skillType: 1
     magicType: 1
     priority: 0
@@ -749,9 +749,9 @@ MonoBehaviour:
     buffID: 0
   - id: 19
     templateID: 100
-    name: e78388e781abe7849ae7a59e
-    effectPath: 6173736574732f656666656374732f78756572756f2e66616d
-    discription: e7bb99e4ba88e6958ce696b9e59cbae4b88ae68980e69c89e58da1e7898ce78783e783a7e4bca4e5aeb3efbc8ce4bdbfe585b6e59ca8e6af8fe6aca1e8a18ce58aa8e7bb93e69d9fe5908ee4b8a2e5a4b17b307de782b9e7949fe591bde580bc
+    name: "\u70C8\u706B\u711A\u795E"
+    effectPath: assets/effects/xueruo.fam
+    discription: "\u7ED9\u4E88\u654C\u65B9\u573A\u4E0A\u6240\u6709\u5361\u724C\u71C3\u70E7\u4F24\u5BB3\uFF0C\u4F7F\u5176\u5728\u6BCF\u6B21\u884C\u52A8\u7ED3\u675F\u540E\u4E22\u5931{0}\u70B9\u751F\u547D\u503C"
     skillType: 1
     magicType: 1
     priority: 0
@@ -762,9 +762,9 @@ MonoBehaviour:
     buffID: 0
   - id: 20
     templateID: 221
-    name: e796bee79785
-    effectPath: 6173736574732f656666656374732f78756572756f2e66616d
-    discription: e5bd93e694bbe587bbe5b9b6e5afb9e79baee6a087e980a0e68890e4bca4e5aeb3e697b6efbc8ce5afb9e696b9e4b8a7e5a4b17b307de782b9e694bbe587bbe58a9be5928ce7949fe591bde580bc20
+    name: "\u75BE\u75C5"
+    effectPath: assets/effects/xueruo.fam
+    discription: "\u5F53\u653B\u51FB\u5E76\u5BF9\u76EE\u6807\u9020\u6210\u4F24\u5BB3\u65F6\uFF0C\u5BF9\u65B9\u4E27\u5931{0}\u70B9\u653B\u51FB\u529B\u548C\u751F\u547D\u503C "
     skillType: 2
     magicType: 0
     priority: 0
@@ -775,9 +775,9 @@ MonoBehaviour:
     buffID: 0
   - id: 21
     templateID: 106
-    name: e7989fe796ab
-    effectPath: 6173736574732f656666656374732f78756572756f2e66616d
-    discription: e4bdbfe5afb9e696b9e68980e69c89e58da1e7898ce4b8a7e5a4b17b307de782b9e694bbe587bbe58a9be5928ce7949fe591bde580bc20
+    name: "\u761F\u75AB"
+    effectPath: assets/effects/xueruo.fam
+    discription: "\u4F7F\u5BF9\u65B9\u6240\u6709\u5361\u724C\u4E27\u5931{0}\u70B9\u653B\u51FB\u529B\u548C\u751F\u547D\u503C "
     skillType: 1
     magicType: 0
     priority: 0
@@ -788,9 +788,9 @@ MonoBehaviour:
     buffID: 0
   - id: 22
     templateID: 101
-    name: e998bbe587bb
-    effectPath: 6173736574732f656666656374732f7a756a692e66616d
-    discription: e7bb99e4ba88e6958ce696b9e5bd93e5898de68ba5e69c89e69c80e5b091e4bd93e58a9be79a84e58da1e7898c7b307de782b9e4bca4e5aeb3
+    name: "\u963B\u51FB"
+    effectPath: assets/effects/zuji.fam
+    discription: "\u7ED9\u4E88\u654C\u65B9\u5F53\u524D\u62E5\u6709\u6700\u5C11\u4F53\u529B\u7684\u5361\u724C{0}\u70B9\u4F24\u5BB3"
     skillType: 1
     magicType: 0
     priority: 0
@@ -801,9 +801,9 @@ MonoBehaviour:
     buffID: 0
   - id: 23
     templateID: 101
-    name: e4ba8ce9878de998bbe587bb
-    effectPath: 6173736574732f656666656374732f7a756a692e66616d
-    discription: e7bb99e4ba88e6958ce696b9e5bd93e5898de68ba5e69c89e69c80e5b091e4bd93e58a9be79a8432e5bca0e58da1e7898c7b307de782b9e4bca4e5aeb3
+    name: "\u4E8C\u91CD\u963B\u51FB"
+    effectPath: assets/effects/zuji.fam
+    discription: "\u7ED9\u4E88\u654C\u65B9\u5F53\u524D\u62E5\u6709\u6700\u5C11\u4F53\u529B\u76842\u5F20\u5361\u724C{0}\u70B9\u4F24\u5BB3"
     skillType: 1
     magicType: 0
     priority: 0
@@ -814,9 +814,9 @@ MonoBehaviour:
     buffID: 0
   - id: 24
     templateID: 209
-    name: e7a9bfe588ba
-    effectPath: 6173736574732f656666656374732f636875616e63692e66616d
-    discription: e5bd93e5afb9e59cb0e696b9e58da1e7898ce980a0e68890e4bca4e5aeb3e697b6efbc8ce6958ce696b9e88bb1e99b84e5908ce697b6e58f97e588b07b307d25e79a84e4bca4e5aeb3
+    name: "\u7A7F\u523A"
+    effectPath: assets/effects/chuanci.fam
+    discription: "\u5F53\u5BF9\u5730\u65B9\u5361\u724C\u9020\u6210\u4F24\u5BB3\u65F6\uFF0C\u654C\u65B9\u82F1\u96C4\u540C\u65F6\u53D7\u5230{0}%\u7684\u4F24\u5BB3"
     skillType: 2
     magicType: 0
     priority: 0
@@ -827,9 +827,9 @@ MonoBehaviour:
     buffID: 0
   - id: 25
     templateID: 201
-    name: e69ab4e587bb
-    effectPath: 6173736574732f656666656374732f62616f6a692e66616d
-    discription: e694bbe587bbe5afb9e696b9e58da1e7898ce697b6e69c897b307d25e587a0e78e87e68f90e58d877b317d25e79a84e694bbe587bbe58a9b
+    name: "\u66B4\u51FB"
+    effectPath: assets/effects/baoji.fam
+    discription: "\u653B\u51FB\u5BF9\u65B9\u5361\u724C\u65F6\u6709{0}%\u51E0\u7387\u63D0\u5347{1}%\u7684\u653B\u51FB\u529B"
     skillType: 2
     magicType: 0
     priority: 0
@@ -840,9 +840,10 @@ MonoBehaviour:
     buffID: 0
   - id: 26
     templateID: 212
-    name: e5979ce8a180
-    effectPath: 6173736574732f656666656374732f7368697875652e66616d
-    discription: e6af8fe6aca1e694bbe587bbe5afb9e696b9e980a0e68890e4bca4e5aeb3e697b6efbc8ce68f90e58d877b307de782b9e694bbe587bbe58a9b2020
+    name: "\u55DC\u8840"
+    effectPath: assets/effects/shixue.fam
+    discription: "\u6BCF\u6B21\u653B\u51FB\u5BF9\u65B9\u9020\u6210\u4F24\u5BB3\u65F6\uFF0C\u63D0\u5347{0}\u70B9\u653B\u51FB\u529B
+      \ "
     skillType: 2
     magicType: 0
     priority: 0
@@ -853,9 +854,10 @@ MonoBehaviour:
     buffID: 0
   - id: 27
     templateID: 211
-    name: e78b82e783ad
-    effectPath: 6173736574732f656666656374732f6b75616e6772652e66616d
-    discription: e5bd93e8a2abe694bbe587bbe4b894e58f97e588b0e789a9e79086e4bca4e5aeb3e697b6e68f90e58d877b307de782b9e694bbe587bbe58a9b2020
+    name: "\u72C2\u70ED"
+    effectPath: assets/effects/kuangre.fam
+    discription: "\u5F53\u88AB\u653B\u51FB\u4E14\u53D7\u5230\u7269\u7406\u4F24\u5BB3\u65F6\u63D0\u5347{0}\u70B9\u653B\u51FB\u529B
+      \ "
     skillType: 2
     magicType: 0
     priority: 0
@@ -866,9 +868,9 @@ MonoBehaviour:
     buffID: 0
   - id: 28
     templateID: 214
-    name: e8838ce588ba
-    effectPath: 6173736574732f656666656374732f62616f6a692e66616d
-    discription: e587bae59cbae59b9ee59088efbc8ce5a29ee58aa0e9a29de5a4967b307de782b9e694bbe587bbe58a9b
+    name: "\u80CC\u523A"
+    effectPath: assets/effects/baoji.fam
+    discription: "\u51FA\u573A\u56DE\u5408\uFF0C\u589E\u52A0\u989D\u5916{0}\u70B9\u653B\u51FB\u529B"
     skillType: 2
     magicType: 0
     priority: 0
@@ -879,9 +881,9 @@ MonoBehaviour:
     buffID: 0
   - id: 29
     templateID: 222
-    name: e8a382e4bca4
-    effectPath: 6173736574732f656666656374732f62616f6a692e66616d
-    discription: e5bd93e694bbe587bbe5b9b6e5afb9e6958ce696b9e980a0e68890e789a9e79086e4bca4e5aeb3e697b6e696bde694beefbc8ce4bdbfe5afb9e696b9e697a0e6b395e59b9ee698a5e5928ce8a2abe6b2bbe79697
+    name: "\u88C2\u4F24"
+    effectPath: assets/effects/baoji.fam
+    discription: "\u5F53\u653B\u51FB\u5E76\u5BF9\u654C\u65B9\u9020\u6210\u7269\u7406\u4F24\u5BB3\u65F6\u65BD\u653E\uFF0C\u4F7F\u5BF9\u65B9\u65E0\u6CD5\u56DE\u6625\u548C\u88AB\u6CBB\u7597"
     skillType: 2
     magicType: 0
     priority: 0
@@ -892,9 +894,9 @@ MonoBehaviour:
     buffID: 0
   - id: 30
     templateID: 200
-    name: e6a8aae689ab
-    effectPath: 6173736574732f656666656374732f68656e6773616f2e66616d
-    discription: e694bbe587bbe6ada3e99da2e58da1e7898ce5b9b6e980a0e68890e4bca4e5aeb3e697b6e5908ce697b6e694bbe587bbe5b7a6e58fb332e5bca0e58da1e7898c
+    name: "\u6A2A\u626B"
+    effectPath: assets/effects/hengsao.fam
+    discription: "\u653B\u51FB\u6B63\u9762\u5361\u724C\u5E76\u9020\u6210\u4F24\u5BB3\u65F6\u540C\u65F6\u653B\u51FB\u5DE6\u53F32\u5F20\u5361\u724C"
     skillType: 0
     magicType: 0
     priority: 1
@@ -905,9 +907,9 @@ MonoBehaviour:
     buffID: 0
   - id: 31
     templateID: 208
-    name: e590b8e8a180
-    effectPath: 6173736574732f656666656374732f78697875652e66616d
-    discription: e5bd93e5afb9e6958ce696b9e980a0e68890e789a9e79086e4bca4e5aeb3e697b6efbc8ce59b9ee5a48de4bca4e5aeb3e580bc7b307d25e79a84e7949fe591bde580bc
+    name: "\u5438\u8840"
+    effectPath: assets/effects/xixue.fam
+    discription: "\u5F53\u5BF9\u654C\u65B9\u9020\u6210\u7269\u7406\u4F24\u5BB3\u65F6\uFF0C\u56DE\u590D\u4F24\u5BB3\u503C{0}%\u7684\u751F\u547D\u503C"
     skillType: 2
     magicType: 0
     priority: 0
@@ -918,9 +920,9 @@ MonoBehaviour:
     buffID: 0
   - id: 32
     templateID: 215
-    name: e887aae78886
-    effectPath: 6173736574732f656666656374732f7a6962616f2e66616d
-    discription: e8a2abe6b688e781ade697b6efbc8ce5afb9e6ada3e99da2e58f8ae585b6e6af97e982bbe79a84e6958ce696b9e58da1e7898ce980a0e688907b307de782b9e4bca4e5aeb3
+    name: "\u81EA\u7206"
+    effectPath: assets/effects/zibao.fam
+    discription: "\u88AB\u6D88\u706D\u65F6\uFF0C\u5BF9\u6B63\u9762\u53CA\u5176\u6BD7\u90BB\u7684\u654C\u65B9\u5361\u724C\u9020\u6210{0}\u70B9\u4F24\u5BB3"
     skillType: 2
     magicType: 0
     priority: 0
@@ -931,9 +933,9 @@ MonoBehaviour:
     buffID: 0
   - id: 33
     templateID: 223
-    name: e59ca3e58589
-    effectPath: 6173736574732f656666656374732f62616f6a692e66616d
-    discription: e5bd93e694bbe587bbe79baee6a087e698afe9ad8fe59bbde697b6efbc8ce694bbe587bbe58a9be58aa0e688907b307d25
+    name: "\u5723\u5149"
+    effectPath: assets/effects/baoji.fam
+    discription: "\u5F53\u653B\u51FB\u76EE\u6807\u662F\u9B4F\u56FD\u65F6\uFF0C\u653B\u51FB\u529B\u52A0\u6210{0}%"
     skillType: 2
     magicType: 0
     priority: 0
@@ -944,9 +946,9 @@ MonoBehaviour:
     buffID: 0
   - id: 34
     templateID: 223
-    name: e6b1a1e69f93
-    effectPath: 6173736574732f656666656374732f62616f6a692e66616d
-    discription: e5bd93e694bbe587bbe79baee6a087e698afe590b4e59bbde697b6efbc8ce694bbe587bbe58a9be58aa0e688907b307d25
+    name: "\u6C61\u67D3"
+    effectPath: assets/effects/baoji.fam
+    discription: "\u5F53\u653B\u51FB\u76EE\u6807\u662F\u5434\u56FD\u65F6\uFF0C\u653B\u51FB\u529B\u52A0\u6210{0}%"
     skillType: 2
     magicType: 0
     priority: 0
@@ -957,9 +959,9 @@ MonoBehaviour:
     buffID: 0
   - id: 35
     templateID: 223
-    name: e8a681e5aeb3
-    effectPath: 6173736574732f656666656374732f62616f6a692e66616d
-    discription: e5bd93e694bbe587bbe79baee6a087e698afe7bea4e8b1aae697b6efbc8ce694bbe587bbe58a9be58aa0e688907b307d25
+    name: "\u8981\u5BB3"
+    effectPath: assets/effects/baoji.fam
+    discription: "\u5F53\u653B\u51FB\u76EE\u6807\u662F\u7FA4\u8C6A\u65F6\uFF0C\u653B\u51FB\u529B\u52A0\u6210{0}%"
     skillType: 2
     magicType: 0
     priority: 0
@@ -970,9 +972,9 @@ MonoBehaviour:
     buffID: 0
   - id: 36
     templateID: 223
-    name: e69a97e69d80
-    effectPath: 6173736574732f656666656374732f62616f6a692e66616d
-    discription: e5bd93e694bbe587bbe79baee6a087e698afe89c80e59bbde697b6efbc8ce694bbe587bbe58a9be58aa0e688907b307d25
+    name: "\u6697\u6740"
+    effectPath: assets/effects/baoji.fam
+    discription: "\u5F53\u653B\u51FB\u76EE\u6807\u662F\u8700\u56FD\u65F6\uFF0C\u653B\u51FB\u529B\u52A0\u6210{0}%"
     skillType: 2
     magicType: 0
     priority: 0
@@ -983,9 +985,9 @@ MonoBehaviour:
     buffID: 0
   - id: 37
     templateID: 216
-    name: e89c80e59bbde4b98be58a9b
-    effectPath: 6173736574732f656666656374732f77616e6767756f7a68696c692e66616d
-    discription: e5a29ee58aa0e59cbae4b88ae999a4e887aae8baabe5a496e68891e696b9e585b6e4bb96e89c80e59bbde58da1e7898c7b307de782b9e694bbe587bbe58a9b
+    name: "\u8700\u56FD\u4E4B\u529B"
+    effectPath: assets/effects/wangguozhili.fam
+    discription: "\u589E\u52A0\u573A\u4E0A\u9664\u81EA\u8EAB\u5916\u6211\u65B9\u5176\u4ED6\u8700\u56FD\u5361\u724C{0}\u70B9\u653B\u51FB\u529B"
     skillType: 2
     magicType: 0
     priority: 0
@@ -996,9 +998,9 @@ MonoBehaviour:
     buffID: 0
   - id: 38
     templateID: 216
-    name: e9ad8fe59bbde4b98be58a9b
-    effectPath: 6173736574732f656666656374732f77616e6767756f7a68696c692e66616d
-    discription: e5a29ee58aa0e59cbae4b88ae999a4e887aae8baabe5a496e68891e696b9e585b6e4bb96e9ad8fe59bbde58da1e7898c7b307de782b9e694bbe587bbe58a9b
+    name: "\u9B4F\u56FD\u4E4B\u529B"
+    effectPath: assets/effects/wangguozhili.fam
+    discription: "\u589E\u52A0\u573A\u4E0A\u9664\u81EA\u8EAB\u5916\u6211\u65B9\u5176\u4ED6\u9B4F\u56FD\u5361\u724C{0}\u70B9\u653B\u51FB\u529B"
     skillType: 2
     magicType: 0
     priority: 0
@@ -1009,9 +1011,9 @@ MonoBehaviour:
     buffID: 0
   - id: 39
     templateID: 216
-    name: e590b4e59bbde4b98be58a9b
-    effectPath: 6173736574732f656666656374732f77616e6767756f7a68696c692e66616d
-    discription: e5a29ee58aa0e59cbae4b88ae999a4e887aae8baabe5a496e68891e696b9e585b6e4bb96e590b4e59bbde58da1e7898c7b307de782b9e694bbe587bbe58a9b
+    name: "\u5434\u56FD\u4E4B\u529B"
+    effectPath: assets/effects/wangguozhili.fam
+    discription: "\u589E\u52A0\u573A\u4E0A\u9664\u81EA\u8EAB\u5916\u6211\u65B9\u5176\u4ED6\u5434\u56FD\u5361\u724C{0}\u70B9\u653B\u51FB\u529B"
     skillType: 2
     magicType: 0
     priority: 0
@@ -1022,9 +1024,9 @@ MonoBehaviour:
     buffID: 0
   - id: 40
     templateID: 216
-    name: e7bea4e8b1aae4b98be58a9b
-    effectPath: 6173736574732f656666656374732f77616e6767756f7a68696c692e66616d
-    discription: e5a29ee58aa0e59cbae4b88ae999a4e887aae8baabe5a496e68891e696b9e585b6e4bb96e7bea4e8b1aae58da1e7898c7b307de782b9e694bbe587bbe58a9b
+    name: "\u7FA4\u8C6A\u4E4B\u529B"
+    effectPath: assets/effects/wangguozhili.fam
+    discription: "\u589E\u52A0\u573A\u4E0A\u9664\u81EA\u8EAB\u5916\u6211\u65B9\u5176\u4ED6\u7FA4\u8C6A\u5361\u724C{0}\u70B9\u653B\u51FB\u529B"
     skillType: 2
     magicType: 0
     priority: 0
@@ -1035,9 +1037,9 @@ MonoBehaviour:
     buffID: 0
   - id: 41
     templateID: 203
-    name: e6b395e58a9be58f8de5b084
-    effectPath: 6173736574732f656666656374732f66616e73652e66616d
-    discription: e5bd93e58f97e588b0e586b0efbc8ce781abefbc8ce99bb7efbc8ce8a180e694bbe587bbe697b6efbc8ce694bbe587bbe697a0e69588efbc8ce5b9b6e5afb9e694bbe587bbe696b9e980a0e688907b307de782b9e4bca4e5aeb3
+    name: "\u6CD5\u529B\u53CD\u5C04"
+    effectPath: assets/effects/fanse.fam
+    discription: "\u5F53\u53D7\u5230\u51B0\uFF0C\u706B\uFF0C\u96F7\uFF0C\u8840\u653B\u51FB\u65F6\uFF0C\u653B\u51FB\u65E0\u6548\uFF0C\u5E76\u5BF9\u653B\u51FB\u65B9\u9020\u6210{0}\u70B9\u4F24\u5BB3"
     skillType: 2
     magicType: 0
     priority: 0
@@ -1048,9 +1050,9 @@ MonoBehaviour:
     buffID: 0
   - id: 42
     templateID: 206
-    name: e9ad94e794b2
-    effectPath: 6173736574732f656666656374732f6d6f6a69612e66616d
-    discription: e5bd93e58f97e588b0e586b0efbc8ce781abefbc8ce99bb7efbc8ce8a180e694bbe587bbe697b6efbc8ce6af8fe6aca1e69c80e5a49ae689bfe58f977b307de782b9e68a80e883bde4bca4e5aeb3
+    name: "\u9B54\u7532"
+    effectPath: assets/effects/mojia.fam
+    discription: "\u5F53\u53D7\u5230\u51B0\uFF0C\u706B\uFF0C\u96F7\uFF0C\u8840\u653B\u51FB\u65F6\uFF0C\u6BCF\u6B21\u6700\u591A\u627F\u53D7{0}\u70B9\u6280\u80FD\u4F24\u5BB3"
     skillType: 2
     magicType: 0
     priority: 0
@@ -1061,9 +1063,9 @@ MonoBehaviour:
     buffID: 0
   - id: 43
     templateID: 205
-    name: e586b0e794b2
-    effectPath: 6173736574732f656666656374732f62696e676a69612e66616d
-    discription: e6af8fe6aca1e789a9e79086e694bbe587bbe697b6e69c80e5a49ae689bfe58f977b307de782b9e4bca4e5aeb3
+    name: "\u51B0\u7532"
+    effectPath: assets/effects/bingjia.fam
+    discription: "\u6BCF\u6B21\u7269\u7406\u653B\u51FB\u65F6\u6700\u591A\u627F\u53D7{0}\u70B9\u4F24\u5BB3"
     skillType: 2
     magicType: 0
     priority: 0
@@ -1074,9 +1076,9 @@ MonoBehaviour:
     buffID: 0
   - id: 44
     templateID: 210
-    name: e58f8de587bb
-    effectPath: 6173736574732f656666656374732f66616e6a692e66616d
-    discription: e5bd93e58f97e588b0e789a9e79086e4bca4e5aeb3e697b6efbc8ce7ab8be58db3e58f8de587bbe5b9b6e7bb99e4ba887b307de782b9e4bca4e5aeb320
+    name: "\u53CD\u51FB"
+    effectPath: assets/effects/fanji.fam
+    discription: "\u5F53\u53D7\u5230\u7269\u7406\u4F24\u5BB3\u65F6\uFF0C\u7ACB\u5373\u53CD\u51FB\u5E76\u7ED9\u4E88{0}\u70B9\u4F24\u5BB3 "
     skillType: 2
     magicType: 0
     priority: 0
@@ -1087,9 +1089,9 @@ MonoBehaviour:
     buffID: 0
   - id: 45
     templateID: 219
-    name: e79bbee588ba
-    effectPath: 6173736574732f656666656374732f66616e6a692e66616d
-    discription: e5bd93e58f97e588b0e789a9e79086e4bca4e5aeb3e697b6efbc8ce7ab8be58db3e58f8de587bbe694bbe587bbe88085e58f8ae79bb8e982bbe58da1e7898ce5b9b6e7bb99e4ba887b307de782b9e4bca4e5aeb320
+    name: "\u76FE\u523A"
+    effectPath: assets/effects/fanji.fam
+    discription: "\u5F53\u53D7\u5230\u7269\u7406\u4F24\u5BB3\u65F6\uFF0C\u7ACB\u5373\u53CD\u51FB\u653B\u51FB\u8005\u53CA\u76F8\u90BB\u5361\u724C\u5E76\u7ED9\u4E88{0}\u70B9\u4F24\u5BB3 "
     skillType: 2
     magicType: 0
     priority: 0
@@ -1100,9 +1102,9 @@ MonoBehaviour:
     buffID: 0
   - id: 46
     templateID: 220
-    name: e78783e783a7
-    effectPath: 6173736574732f656666656374732f72616e7368616f2e66616d
-    discription: e58f97e588b0e789a9e79086e694bbe587bbe697b6efbc8ce4bdbfe5afb9e696b9e78783e783a7efbc8ce59ca8e585b6e6af8fe6aca1e8a18ce58aa8e7bb93e69d9fe5908ee4b8a2e5a4b17b307de782b9e7949fe591bde580bc20
+    name: "\u71C3\u70E7"
+    effectPath: assets/effects/ranshao.fam
+    discription: "\u53D7\u5230\u7269\u7406\u653B\u51FB\u65F6\uFF0C\u4F7F\u5BF9\u65B9\u71C3\u70E7\uFF0C\u5728\u5176\u6BCF\u6B21\u884C\u52A8\u7ED3\u675F\u540E\u4E22\u5931{0}\u70B9\u751F\u547D\u503C "
     skillType: 2
     magicType: 0
     priority: 0
@@ -1113,9 +1115,9 @@ MonoBehaviour:
     buffID: 0
   - id: 47
     templateID: 204
-    name: e997aae981bf
-    effectPath: 6173736574732f656666656374732f7368616e62692e66616d
-    discription: e8a2abe789a9e79086e694bbe587bbe697b6e69c897b307d25e587a0e78e87e4b88de58f97e4bca4e5aeb3
+    name: "\u95EA\u907F"
+    effectPath: assets/effects/shanbi.fam
+    discription: "\u88AB\u7269\u7406\u653B\u51FB\u65F6\u6709{0}%\u51E0\u7387\u4E0D\u53D7\u4F24\u5BB3"
     skillType: 2
     magicType: 0
     priority: 0
@@ -1126,9 +1128,9 @@ MonoBehaviour:
     buffID: 0
   - id: 48
     templateID: 202
-    name: e6a0bce68ca1
-    effectPath: 6173736574732f656666656374732f676564616e672e66616d
-    discription: e58f97e588b0e699aee9809ae694bbe587bbe697b6efbc8ce5878fe5b0917b307de782b9e4bca4e5aeb3
+    name: "\u683C\u6321"
+    effectPath: assets/effects/gedang.fam
+    discription: "\u53D7\u5230\u666E\u901A\u653B\u51FB\u65F6\uFF0C\u51CF\u5C11{0}\u70B9\u4F24\u5BB3"
     skillType: 2
     magicType: 0
     priority: 0
@@ -1139,9 +1141,9 @@ MonoBehaviour:
     buffID: 0
   - id: 49
     templateID: 217
-    name: e89c80e59bbde5ae88e68aa4
-    effectPath: 6173736574732f656666656374732f77616e6767756f73686f7568752e66616d
-    discription: e5a29ee58aa0e59cbae4b88ae887aae8baabe5a496e68891e696b9e585b6e4bb96e89c80e59bbde58da1e7898c7b307de782b9e7949fe591bde580bc
+    name: "\u8700\u56FD\u5B88\u62A4"
+    effectPath: assets/effects/wangguoshouhu.fam
+    discription: "\u589E\u52A0\u573A\u4E0A\u81EA\u8EAB\u5916\u6211\u65B9\u5176\u4ED6\u8700\u56FD\u5361\u724C{0}\u70B9\u751F\u547D\u503C"
     skillType: 2
     magicType: 0
     priority: 0
@@ -1152,9 +1154,9 @@ MonoBehaviour:
     buffID: 0
   - id: 50
     templateID: 217
-    name: e9ad8fe59bbde5ae88e68aa4
-    effectPath: 6173736574732f656666656374732f77616e6767756f73686f7568752e66616d
-    discription: e5a29ee58aa0e59cbae4b88ae887aae8baabe5a496e68891e696b9e585b6e4bb96e9ad8fe59bbde58da1e7898c7b307de782b9e7949fe591bde580bc
+    name: "\u9B4F\u56FD\u5B88\u62A4"
+    effectPath: assets/effects/wangguoshouhu.fam
+    discription: "\u589E\u52A0\u573A\u4E0A\u81EA\u8EAB\u5916\u6211\u65B9\u5176\u4ED6\u9B4F\u56FD\u5361\u724C{0}\u70B9\u751F\u547D\u503C"
     skillType: 2
     magicType: 0
     priority: 0
@@ -1165,9 +1167,9 @@ MonoBehaviour:
     buffID: 0
   - id: 51
     templateID: 217
-    name: e590b4e59bbde5ae88e68aa4
-    effectPath: 6173736574732f656666656374732f77616e6767756f73686f7568752e66616d
-    discription: e5a29ee58aa0e59cbae4b88ae887aae8baabe5a496e68891e696b9e585b6e4bb96e590b4e59bbde58da1e7898c7b307de782b9e7949fe591bde580bc
+    name: "\u5434\u56FD\u5B88\u62A4"
+    effectPath: assets/effects/wangguoshouhu.fam
+    discription: "\u589E\u52A0\u573A\u4E0A\u81EA\u8EAB\u5916\u6211\u65B9\u5176\u4ED6\u5434\u56FD\u5361\u724C{0}\u70B9\u751F\u547D\u503C"
     skillType: 2
     magicType: 0
     priority: 0
@@ -1178,9 +1180,9 @@ MonoBehaviour:
     buffID: 0
   - id: 52
     templateID: 217
-    name: e7bea4e8b1aae5ae88e68aa4
-    effectPath: 6173736574732f656666656374732f77616e6767756f73686f7568752e66616d
-    discription: e5a29ee58aa0e59cbae4b88ae887aae8baabe5a496e68891e696b9e585b6e4bb96e7bea4e8b1aae58da1e7898c7b307de782b9e7949fe591bde580bc
+    name: "\u7FA4\u8C6A\u5B88\u62A4"
+    effectPath: assets/effects/wangguoshouhu.fam
+    discription: "\u589E\u52A0\u573A\u4E0A\u81EA\u8EAB\u5916\u6211\u65B9\u5176\u4ED6\u7FA4\u8C6A\u5361\u724C{0}\u70B9\u751F\u547D\u503C"
     skillType: 2
     magicType: 0
     priority: 0
@@ -1191,9 +1193,9 @@ MonoBehaviour:
     buffID: 0
   - id: 53
     templateID: 105
-    name: e59b9ee698a5
-    effectPath: 6173736574732f656666656374732f7a68696c69616f2e66616d
-    discription: e6af8fe59b9ee59088e681a2e5a48de887aae8baab7b307de782b9e7949fe591bde580bc
+    name: "\u56DE\u6625"
+    effectPath: assets/effects/zhiliao.fam
+    discription: "\u6BCF\u56DE\u5408\u6062\u590D\u81EA\u8EAB{0}\u70B9\u751F\u547D\u503C"
     skillType: 1
     magicType: 0
     priority: 0
@@ -1204,9 +1206,9 @@ MonoBehaviour:
     buffID: 0
   - id: 54
     templateID: 105
-    name: e6b2bbe79697
-    effectPath: 6173736574732f656666656374732f7a68696c69616f2e66616d
-    discription: e681a2e5a48de68891e696b931e5bca0e68d9fe5a4b1e7949fe591bde580bce69c80e5a49ae79a84e58da1e7898c7b307de782b9e7949fe591bd
+    name: "\u6CBB\u7597"
+    effectPath: assets/effects/zhiliao.fam
+    discription: "\u6062\u590D\u6211\u65B91\u5F20\u635F\u5931\u751F\u547D\u503C\u6700\u591A\u7684\u5361\u724C{0}\u70B9\u751F\u547D"
     skillType: 1
     magicType: 0
     priority: 0
@@ -1217,9 +1219,9 @@ MonoBehaviour:
     buffID: 0
   - id: 55
     templateID: 105
-    name: e79498e99c96
-    effectPath: 6173736574732f656666656374732f7a68696c69616f2e66616d
-    discription: e681a2e5a48de68891e696b9e68980e69c89e58da1e7898c7b307de782b9e7949fe591bde580bc
+    name: "\u7518\u9716"
+    effectPath: assets/effects/zhiliao.fam
+    discription: "\u6062\u590D\u6211\u65B9\u6240\u6709\u5361\u724C{0}\u70B9\u751F\u547D\u503C"
     skillType: 1
     magicType: 0
     priority: 0
@@ -1230,9 +1232,9 @@ MonoBehaviour:
     buffID: 0
   - id: 56
     templateID: 105
-    name: e7a588e7a5b7
-    effectPath: 6173736574732f656666656374732f7a68696c69616f2e66616d
-    discription: e681a2e5a48de68891e696b9e88bb1e99b847b307de782b9e7949fe591bde580bc
+    name: "\u7948\u7977"
+    effectPath: assets/effects/zhiliao.fam
+    discription: "\u6062\u590D\u6211\u65B9\u82F1\u96C4{0}\u70B9\u751F\u547D\u503C"
     skillType: 1
     magicType: 0
     priority: 0
@@ -1243,9 +1245,9 @@ MonoBehaviour:
     buffID: 0
   - id: 57
     templateID: 218
-    name: e8bdace7949f
-    effectPath: 6173736574732f656666656374732f7a6875616e7368656e672e66616d
-    discription: e6adbbe4baa1e697b6e69c897b307d25e79a84e6a682e78e87e8bf9be585a5e6898be7898cefbc8ce5a682e69e9ce6898be7898ce5b7b2e6bba1e58899e8bf9be585a5e7898ce5a086
+    name: "\u8F6C\u751F"
+    effectPath: assets/effects/zhuansheng.fam
+    discription: "\u6B7B\u4EA1\u65F6\u6709{0}%\u7684\u6982\u7387\u8FDB\u5165\u624B\u724C\uFF0C\u5982\u679C\u624B\u724C\u5DF2\u6EE1\u5219\u8FDB\u5165\u724C\u5806"
     skillType: 2
     magicType: 0
     priority: 0
@@ -1256,9 +1258,9 @@ MonoBehaviour:
     buffID: 0
   - id: 58
     templateID: 207
-    name: e5858de796ab
-    effectPath: 6173736574732f656666656374732f6d69616e79692e66616d
-    discription: e4b88de58f97e4bbbbe4bd95e68a80e883bde980a0e68890e79a84e4bca4e5aeb3e5928ce5bdb1e5938d
+    name: "\u514D\u75AB"
+    effectPath: assets/effects/mianyi.fam
+    discription: "\u4E0D\u53D7\u4EFB\u4F55\u6280\u80FD\u9020\u6210\u7684\u4F24\u5BB3\u548C\u5F71\u54CD"
     skillType: 2
     magicType: 0
     priority: 1
@@ -1269,9 +1271,9 @@ MonoBehaviour:
     buffID: 0
   - id: 59
     templateID: 224
-    name: e4b88de58aa8
-    effectPath: 6173736574732f656666656374732f6275646f6e672e66616d
-    discription: e4b88de58f97e691a7e6af81efbc8ce98081e8bf98efbc8ce4bca0e98081e68a80e883bde5bdb1e5938d
+    name: "\u4E0D\u52A8"
+    effectPath: assets/effects/budong.fam
+    discription: "\u4E0D\u53D7\u6467\u6BC1\uFF0C\u9001\u8FD8\uFF0C\u4F20\u9001\u6280\u80FD\u5F71\u54CD"
     skillType: 2
     magicType: 0
     priority: 0
@@ -1282,9 +1284,9 @@ MonoBehaviour:
     buffID: 0
   - id: 60
     templateID: 108
-    name: e691a7e6af81
-    effectPath: 6173736574732f656666656374732f636875696875692e66616d
-    discription: e7ab8be58db3e69d80e6adbbe6958ce696b9e4b880e5bca0e58da1e78987
+    name: "\u6467\u6BC1"
+    effectPath: assets/effects/chuihui.fam
+    discription: "\u7ACB\u5373\u6740\u6B7B\u654C\u65B9\u4E00\u5F20\u5361\u7247"
     skillType: 1
     magicType: 1
     priority: 0
@@ -1295,9 +1297,9 @@ MonoBehaviour:
     buffID: 0
   - id: 61
     templateID: 109
-    name: e98081e8bf98
-    effectPath: 6173736574732f656666656374732f636875616e736f6e672e66616d
-    discription: e5b086e6ada3e99da2e6958ce696b9e58da1e7898ce98081e59b9ee7898ce5a086
+    name: "\u9001\u8FD8"
+    effectPath: assets/effects/chuansong.fam
+    discription: "\u5C06\u6B63\u9762\u654C\u65B9\u5361\u724C\u9001\u56DE\u724C\u5806"
     skillType: 1
     magicType: 1
     priority: 0
@@ -1308,9 +1310,9 @@ MonoBehaviour:
     buffID: 0
   - id: 62
     templateID: 108
-    name: e4bca0e98081
-    effectPath: 6173736574732f656666656374732f636875616e736f6e672e66616d
-    discription: e5b086e5afb9e696b9e6898be7898ce4b8ade7ad89e5be85e697b6e997b4e69c80e995bfe79a8431e5bca0e58da1e7898ce4b8a2e887b3e5a293e59cb0
+    name: "\u4F20\u9001"
+    effectPath: assets/effects/chuansong.fam
+    discription: "\u5C06\u5BF9\u65B9\u624B\u724C\u4E2D\u7B49\u5F85\u65F6\u95F4\u6700\u957F\u76841\u5F20\u5361\u724C\u4E22\u81F3\u5893\u5730"
     skillType: 1
     magicType: 1
     priority: 0
@@ -1321,9 +1323,9 @@ MonoBehaviour:
     buffID: 0
   - id: 63
     templateID: 110
-    name: e5a48de6b4bb
-    effectPath: 6173736574732f656666656374732f636875616e736f6e672e66616d
-    discription: e5b086e68891e696b931e5bca0e697a0e5a48de6b4bbe68a80e883bde79a84e58da1e7898ce4bb8ee5a293e59cb0e58face594a4e4b88ae59cba
+    name: "\u590D\u6D3B"
+    effectPath: assets/effects/chuansong.fam
+    discription: "\u5C06\u6211\u65B91\u5F20\u65E0\u590D\u6D3B\u6280\u80FD\u7684\u5361\u724C\u4ECE\u5893\u5730\u53EC\u5524\u4E0A\u573A"
     skillType: 1
     magicType: 0
     priority: 0
@@ -1334,9 +1336,9 @@ MonoBehaviour:
     buffID: 0
   - id: 64
     templateID: 225
-    name: e9998de4b8b4
-    effectPath: 6173736574732f656666656374732f636875616e736f6e672e66616d
-    discription: e58da1e7898ce4b88ae59cbae697b6efbc8ce696bde694bee4b880e6aca17b307d287b317d29
+    name: "\u964D\u4E34"
+    effectPath: assets/effects/chuansong.fam
+    discription: "\u5361\u724C\u4E0A\u573A\u65F6\uFF0C\u65BD\u653E\u4E00\u6B21{0}({1})"
     skillType: 0
     magicType: 0
     priority: 0
@@ -1347,9 +1349,9 @@ MonoBehaviour:
     buffID: 0
   - id: 65
     templateID: 226
-    name: e6adbbe5a591
-    effectPath: 6173736574732f656666656374732f636875616e736f6e672e66616d
-    discription: e58da1e7898ce8a2abe6b688e781ade697b6efbc8ce696bde694bee4b880e6aca17b307d287b317d29
+    name: "\u6B7B\u5951"
+    effectPath: assets/effects/chuansong.fam
+    discription: "\u5361\u724C\u88AB\u6D88\u706D\u65F6\uFF0C\u65BD\u653E\u4E00\u6B21{0}({1})"
     skillType: 0
     magicType: 0
     priority: 0
@@ -1360,9 +1362,9 @@ MonoBehaviour:
     buffID: 0
   - id: 66
     templateID: 111
-    name: e59b9ee9ad82
-    effectPath: 6173736574732f656666656374732f636875616e736f6e672e66616d
-    discription: e5a293e59cb0e4b8ad31e5bca0e58da1e7898ce59b9ee588b0e7898ce5a086
+    name: "\u56DE\u9B42"
+    effectPath: assets/effects/chuansong.fam
+    discription: "\u5893\u5730\u4E2D1\u5F20\u5361\u724C\u56DE\u5230\u724C\u5806"
     skillType: 1
     magicType: 0
     priority: 0
@@ -1373,9 +1375,9 @@ MonoBehaviour:
     buffID: 0
   - id: 67
     templateID: 111
-    name: e59b9ee9ad82
-    effectPath: 6173736574732f656666656374732f636875616e736f6e672e66616d
-    discription: e5a293e59cb0e4b8ad32e5bca0e58da1e7898ce59b9ee588b0e7898ce5a086
+    name: "\u56DE\u9B42"
+    effectPath: assets/effects/chuansong.fam
+    discription: "\u5893\u5730\u4E2D2\u5F20\u5361\u724C\u56DE\u5230\u724C\u5806"
     skillType: 1
     magicType: 0
     priority: 0
@@ -1387,55 +1389,55 @@ MonoBehaviour:
   buffDataList:
   - id: 1
     templateID: 100
-    name: e586b0e586bb
-    effectPath: 6173736574732f656666656374732f62696e67646f6e672e66616d
-    discription: e697a0e6b395e8a18ce58aa8
+    name: "\u51B0\u51BB"
+    effectPath: assets/effects/bingdong.fam
+    discription: "\u65E0\u6CD5\u884C\u52A8"
     param1: 0
     round: 1
     superposition: 0
   - id: 2
     templateID: 101
-    name: e9babbe797b9
-    effectPath: 6173736574732f656666656374732f6d6162692e66616d
-    discription: e697a0e6b395e699aee9809ae694bbe587bb
+    name: "\u9EBB\u75F9"
+    effectPath: assets/effects/mabi.fam
+    discription: "\u65E0\u6CD5\u666E\u901A\u653B\u51FB"
     param1: 0
     round: 1
     superposition: 0
   - id: 3
     templateID: 102
-    name: e4b8ade6af92
-    effectPath: 6173736574732f656666656374732f7a686f6e6764752e66616d
-    discription: e8a18ce58aa8e7bb93e69d9fe5908ee58f97e588b03230e782b9e4bca4e5aeb3
+    name: "\u4E2D\u6BD2"
+    effectPath: assets/effects/zhongdu.fam
+    discription: "\u884C\u52A8\u7ED3\u675F\u540E\u53D7\u523020\u70B9\u4F24\u5BB3"
     param1: 20
     round: 1
     superposition: 0
   - id: 4
     templateID: 100
-    name: e999b7e998b1
-    effectPath: 6173736574732f656666656374732f7368756f64696e672e66616d
-    discription: e697a0e6b395e8a18ce58aa8
+    name: "\u9677\u9631"
+    effectPath: assets/effects/shuoding.fam
+    discription: "\u65E0\u6CD5\u884C\u52A8"
     param1: 0
     round: 1
     superposition: 0
   - id: 5
     templateID: 102
-    name: e78783e783a7
-    effectPath: 6173736574732f656666656374732f72616e7368616f427566662e66616d
-    discription: e8a18ce58aa8e7bb93e69d9fe5908ee58f97e588b03230e782b9e4bca4e5aeb3
+    name: "\u71C3\u70E7"
+    effectPath: assets/effects/ranshaoBuff.fam
+    discription: "\u884C\u52A8\u7ED3\u675F\u540E\u53D7\u523020\u70B9\u4F24\u5BB3"
     param1: 20
     round: 9999
     superposition: 0
   - id: 6
     templateID: 103
-    name: e8a382e4bca4
-    effectPath: 6173736574732f656666656374732f6c69657368616e672e66616d
-    discription: e697a0e6b395e59b9ee698a5e5928ce8a2abe6b2bbe79697
+    name: "\u88C2\u4F24"
+    effectPath: assets/effects/lieshang.fam
+    discription: "\u65E0\u6CD5\u56DE\u6625\u548C\u88AB\u6CBB\u7597"
     param1: 0
     round: 9999
     superposition: 0
   cardDataList:
   - templateID: 1
-    name: e5a49ce58f89e8a18c
+    name: "\u591C\u53C9\u884C"
     baseHP: 300
     growUpHP: 36
     baseACK: 85
@@ -1444,16 +1446,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 0
-    skill1Para: 30
+    skill1Para: 0
     skill2ID: 33
-    skill2Para: 32
+    skill2Para: 2
     skill3ID: 14
-    skill3Para: 31
+    skill3Para: 1
     starLv: 1
     country: 1
     cost: 0
   - templateID: 2
-    name: e995bfe69eaae585b5
+    name: "\u957F\u67AA\u5175"
     baseHP: 330
     growUpHP: 15
     baseACK: 95
@@ -1462,16 +1464,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 24
-    skill1Para: 31
+    skill1Para: 1
     skill2ID: 33
-    skill2Para: 33
+    skill2Para: 3
     skill3ID: 48
-    skill3Para: 34
+    skill3Para: 4
     starLv: 1
     country: 1
     cost: 0
   - templateID: 3
-    name: e58583e6888ee5bca9
+    name: "\u5143\u620E\u5F29"
     baseHP: 370
     growUpHP: 8
     baseACK: 110
@@ -1480,16 +1482,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 0
-    skill1Para: 30
+    skill1Para: 0
     skill2ID: 22
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 6
-    skill3Para: 32
+    skill3Para: 2
     starLv: 1
     country: 1
     cost: 0
   - templateID: 4
-    name: e9aaa0e58880e9aa91
+    name: "\u9AA0\u5200\u9A91"
     baseHP: 360
     growUpHP: 21
     baseACK: 105
@@ -1498,16 +1500,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 0
-    skill1Para: 30
+    skill1Para: 0
     skill2ID: 14
-    skill2Para: 31
+    skill2Para: 1
     skill3ID: 44
-    skill3Para: 34
+    skill3Para: 4
     starLv: 1
     country: 1
     cost: 0
   - templateID: 5
-    name: e99988e588b0
+    name: "\u9648\u5230"
     baseHP: 500
     growUpHP: 15
     baseACK: 155
@@ -1516,16 +1518,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 0
-    skill1Para: 30
+    skill1Para: 0
     skill2ID: 25
-    skill2Para: 33
+    skill2Para: 3
     skill3ID: 6
-    skill3Para: 32
+    skill3Para: 2
     starLv: 2
     country: 1
     cost: 0
   - templateID: 6
-    name: e591a8e4bb93
+    name: "\u5468\u4ED3"
     baseHP: 520
     growUpHP: 15
     baseACK: 160
@@ -1534,16 +1536,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 0
-    skill1Para: 30
+    skill1Para: 0
     skill2ID: 27
-    skill2Para: 33
+    skill2Para: 3
     skill3ID: 30
-    skill3Para: 30
+    skill3Para: 0
     starLv: 2
     country: 1
     cost: 0
   - templateID: 7
-    name: e5ad99e4b9be
+    name: "\u5B59\u4E7E"
     baseHP: 460
     growUpHP: 36
     baseACK: 125
@@ -1552,16 +1554,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 54
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 33
-    skill2Para: 36
+    skill2Para: 6
     skill3ID: 55
-    skill3Para: 35
+    skill3Para: 5
     starLv: 2
     country: 1
     cost: 0
   - templateID: 8
-    name: e7b39ce7abba
+    name: "\u7CDC\u7AFA"
     baseHP: 400
     growUpHP: 34
     baseACK: 110
@@ -1570,16 +1572,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 56
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 33
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 37
-    skill3Para: 33
+    skill3Para: 3
     starLv: 2
     country: 1
     cost: 0
   - templateID: 9
-    name: e78e8be5b9b3
+    name: "\u738B\u5E73"
     baseHP: 520
     growUpHP: 20
     baseACK: 110
@@ -1588,16 +1590,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 24
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 22
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 47
-    skill3Para: 33
+    skill3Para: 3
     starLv: 2
     country: 1
     cost: 0
   - templateID: 10
-    name: e585b3e585b4
+    name: "\u5173\u5174"
     baseHP: 620
     growUpHP: 25
     baseACK: 180
@@ -1606,16 +1608,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 25
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 41
-    skill2Para: 32
+    skill2Para: 2
     skill3ID: 45
-    skill3Para: 35
+    skill3Para: 5
     starLv: 3
     country: 1
     cost: 0
   - templateID: 11
-    name: e585b3e5b9b3
+    name: "\u5173\u5E73"
     baseHP: 780
     growUpHP: 25
     baseACK: 200
@@ -1624,16 +1626,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 64
-    skill1Para: 302c31342c31
+    skill1Para: 0,14,1
     skill2ID: 48
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 46
-    skill3Para: 37
+    skill3Para: 7
     starLv: 3
     country: 1
     cost: 0
   - templateID: 12
-    name: e9a9ace5b2b1
+    name: "\u9A6C\u5CB1"
     baseHP: 620
     growUpHP: 37
     baseACK: 140
@@ -1642,16 +1644,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 2
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 42
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 3
-    skill3Para: 35
+    skill3Para: 5
     starLv: 3
     country: 1
     cost: 0
   - templateID: 13
-    name: e8928be790ac
+    name: "\u848B\u742C"
     baseHP: 650
     growUpHP: 30
     baseACK: 185
@@ -1660,16 +1662,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 33
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 6
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 37
-    skill3Para: 34
+    skill3Para: 4
     starLv: 3
     country: 1
     cost: 0
   - templateID: 14
-    name: e8b4b9e7a58e
+    name: "\u8D39\u794E"
     baseHP: 560
     growUpHP: 21
     baseACK: 135
@@ -1678,16 +1680,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 3
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 64
-    skill2Para: 302c342c33
+    skill2Para: 0,4,3
     skill3ID: 6
-    skill3Para: 36
+    skill3Para: 6
     starLv: 3
     country: 1
     cost: 0
   - templateID: 15
-    name: e9a9ace8b0a1
+    name: "\u9A6C\u8C21"
     baseHP: 650
     growUpHP: 30
     baseACK: 195
@@ -1696,16 +1698,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 64
-    skill1Para: 302c372c32
+    skill1Para: 0,7,2
     skill2ID: 57
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 41
-    skill3Para: 33
+    skill3Para: 3
     starLv: 3
     country: 1
     cost: 0
   - templateID: 16
-    name: e5bb96e58c96
+    name: "\u5ED6\u5316"
     baseHP: 750
     growUpHP: 31
     baseACK: 175
@@ -1714,16 +1716,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 56
-    skill1Para: 35
+    skill1Para: 5
     skill2ID: 33
-    skill2Para: 37
+    skill2Para: 7
     skill3ID: 49
-    skill3Para: 34
+    skill3Para: 4
     starLv: 3
     country: 1
     cost: 0
   - templateID: 17
-    name: e6b395e6ada3
+    name: "\u6CD5\u6B63"
     baseHP: 550
     growUpHP: 40
     baseACK: 130
@@ -1732,16 +1734,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 9
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 64
-    skill2Para: 302c31302c34
+    skill2Para: 0,10,4
     skill3ID: 17
-    skill3Para: 34
+    skill3Para: 4
     starLv: 3
     country: 1
     cost: 0
   - templateID: 18
-    name: e5bca0e88b9e
+    name: "\u5F20\u82DE"
     baseHP: 600
     growUpHP: 20
     baseACK: 170
@@ -1750,16 +1752,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 17
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 41
-    skill2Para: 32
+    skill2Para: 2
     skill3ID: 33
-    skill3Para: 35
+    skill3Para: 5
     starLv: 3
     country: 1
     cost: 0
   - templateID: 19
-    name: e9ad8fe5bbb6
+    name: "\u9B4F\u5EF6"
     baseHP: 540
     growUpHP: 32
     baseACK: 170
@@ -1768,16 +1770,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 25
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 22
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 30
-    skill3Para: 30
+    skill3Para: 0
     starLv: 3
     country: 1
     cost: 0
   - templateID: 20
-    name: e9bb84e5bfa0
+    name: "\u9EC4\u5FE0"
     baseHP: 880
     growUpHP: 23
     baseACK: 235
@@ -1786,16 +1788,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 48
-    skill1Para: 37
+    skill1Para: 7
     skill2ID: 25
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 37
-    skill3Para: 35
+    skill3Para: 5
     starLv: 4
     country: 1
     cost: 0
   - templateID: 21
-    name: e9bb84e69c88e88bb1
+    name: "\u9EC4\u6708\u82F1"
     baseHP: 800
     growUpHP: 66
     baseACK: 175
@@ -1804,16 +1806,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 56
-    skill1Para: 37
+    skill1Para: 7
     skill2ID: 55
-    skill2Para: 36
+    skill2Para: 6
     skill3ID: 49
-    skill3Para: 35
+    skill3Para: 5
     starLv: 4
     country: 1
     cost: 0
   - templateID: 22
-    name: e8b5b5e4ba91
+    name: "\u8D75\u4E91"
     baseHP: 1100
     growUpHP: 30
     baseACK: 360
@@ -1822,16 +1824,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 58
-    skill1Para: 30
+    skill1Para: 0
     skill2ID: 33
-    skill2Para: 36
+    skill2Para: 6
     skill3ID: 41
-    skill3Para: 36
+    skill3Para: 6
     starLv: 4
     country: 1
     cost: 0
   - templateID: 23
-    name: e8afb8e8919be4baae
+    name: "\u8BF8\u845B\u4EAE"
     baseHP: 790
     growUpHP: 37
     baseACK: 210
@@ -1840,16 +1842,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 33
-    skill1Para: 36
+    skill1Para: 6
     skill2ID: 3
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 63
-    skill3Para: 30
+    skill3Para: 0
     starLv: 4
     country: 1
     cost: 0
   - templateID: 24
-    name: e5be90e5bab6
+    name: "\u5F90\u5EB6"
     baseHP: 990
     growUpHP: 58
     baseACK: 290
@@ -1858,16 +1860,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 27
-    skill1Para: 34
+    skill1Para: 4
     skill2ID: 41
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 53
-    skill3Para: 37
+    skill3Para: 7
     starLv: 4
     country: 1
     cost: 0
   - templateID: 25
-    name: e9a9ace8b685
+    name: "\u9A6C\u8D85"
     baseHP: 815
     growUpHP: 18
     baseACK: 260
@@ -1876,16 +1878,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 25
-    skill1Para: 34
+    skill1Para: 4
     skill2ID: 28
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 47
-    skill3Para: 38
+    skill3Para: 8
     starLv: 4
     country: 1
     cost: 0
   - templateID: 26
-    name: e5ba9ee7bb9f
+    name: "\u5E9E\u7EDF"
     baseHP: 820
     growUpHP: 50
     baseACK: 220
@@ -1894,16 +1896,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 47
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 64
-    skill2Para: 302c36312c30
+    skill2Para: 0,61,0
     skill3ID: 18
-    skill3Para: 38
+    skill3Para: 8
     starLv: 4
     country: 1
     cost: 0
   - templateID: 27
-    name: e5a79ce7bbb4
+    name: "\u59DC\u7EF4"
     baseHP: 840
     growUpHP: 20
     baseACK: 240
@@ -1912,16 +1914,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 42
-    skill1Para: 35
+    skill1Para: 5
     skill2ID: 37
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 3
-    skill3Para: 38
+    skill3Para: 8
     starLv: 4
     country: 1
     cost: 0
   - templateID: 28
-    name: e585b3e7bebd
+    name: "\u5173\u7FBD"
     baseHP: 900
     growUpHP: 35
     baseACK: 290
@@ -1930,16 +1932,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 25
-    skill1Para: 34
+    skill1Para: 4
     skill2ID: 58
-    skill2Para: 30
+    skill2Para: 0
     skill3ID: 49
-    skill3Para: 36
+    skill3Para: 6
     starLv: 4
     country: 1
     cost: 0
   - templateID: 29
-    name: e5bca0e9a39e
+    name: "\u5F20\u98DE"
     baseHP: 780
     growUpHP: 27
     baseACK: 255
@@ -1948,16 +1950,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 33
-    skill1Para: 36
+    skill1Para: 6
     skill2ID: 53
-    skill2Para: 37
+    skill2Para: 7
     skill3ID: 42
-    skill3Para: 33
+    skill3Para: 3
     starLv: 4
     country: 1
     cost: 0
   - templateID: 30
-    name: e58898e5a487
+    name: "\u5218\u5907"
     baseHP: 1450
     growUpHP: 28
     baseACK: 350
@@ -1966,16 +1968,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 47
-    skill1Para: 35
+    skill1Para: 5
     skill2ID: 30
-    skill2Para: 30
+    skill2Para: 0
     skill3ID: 58
-    skill3Para: 30
+    skill3Para: 0
     starLv: 5
     country: 1
     cost: 0
   - templateID: 31
-    name: e8998ee58dabe5869b
+    name: "\u864E\u536B\u519B"
     baseHP: 310
     growUpHP: 8
     baseACK: 105
@@ -1984,16 +1986,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 0
-    skill1Para: 30
+    skill1Para: 0
     skill2ID: 34
-    skill2Para: 33
+    skill2Para: 3
     skill3ID: 26
-    skill3Para: 34
+    skill3Para: 4
     starLv: 1
     country: 2
     cost: 0
   - templateID: 32
-    name: e8998ee8b1b9e9aa91
+    name: "\u864E\u8C79\u9A91"
     baseHP: 270
     growUpHP: 6
     baseACK: 85
@@ -2002,16 +2004,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 57
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 26
-    skill2Para: 32
+    skill2Para: 2
     skill3ID: 48
-    skill3Para: 34
+    skill3Para: 4
     starLv: 1
     country: 2
     cost: 0
   - templateID: 33
-    name: e99cb9e99bb3e8bda6
+    name: "\u9739\u96F3\u8F66"
     baseHP: 400
     growUpHP: 20
     baseACK: 100
@@ -2020,16 +2022,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 0
-    skill1Para: 30
+    skill1Para: 0
     skill2ID: 20
-    skill2Para: 31
+    skill2Para: 1
     skill3ID: 57
-    skill3Para: 34
+    skill3Para: 4
     starLv: 1
     country: 2
     cost: 0
   - templateID: 34
-    name: e99d92e5b79ee585b5
+    name: "\u9752\u5DDE\u5175"
     baseHP: 290
     growUpHP: 7
     baseACK: 90
@@ -2038,16 +2040,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 0
-    skill1Para: 30
+    skill1Para: 0
     skill2ID: 27
-    skill2Para: 32
+    skill2Para: 2
     skill3ID: 26
-    skill3Para: 36
+    skill3Para: 6
     starLv: 1
     country: 2
     cost: 0
   - templateID: 35
-    name: e9929fe4bc9a
+    name: "\u949F\u4F1A"
     baseHP: 470
     growUpHP: 11
     baseACK: 105
@@ -2056,16 +2058,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 2
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 8
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 34
-    skill3Para: 37
+    skill3Para: 7
     starLv: 2
     country: 2
     cost: 0
   - templateID: 36
-    name: e69bb9e5bdb0
+    name: "\u66F9\u5F70"
     baseHP: 400
     growUpHP: 15
     baseACK: 105
@@ -2074,16 +2076,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 5
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 16
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 57
-    skill3Para: 34
+    skill3Para: 4
     starLv: 2
     country: 2
     cost: 0
   - templateID: 37
-    name: e69d8ee585b8
+    name: "\u674E\u5178"
     baseHP: 480
     growUpHP: 16
     baseACK: 135
@@ -2092,16 +2094,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 31
-    skill1Para: 35
+    skill1Para: 5
     skill2ID: 13
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 38
-    skill3Para: 33
+    skill3Para: 3
     starLv: 2
     country: 2
     cost: 0
   - templateID: 38
-    name: e98293e889be
+    name: "\u9093\u827E"
     baseHP: 500
     growUpHP: 15
     baseACK: 160
@@ -2110,16 +2112,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 0
-    skill1Para: 30
+    skill1Para: 0
     skill2ID: 12
-    skill2Para: 33
+    skill2Para: 3
     skill3ID: 9
-    skill3Para: 35
+    skill3Para: 5
     starLv: 2
     country: 2
     cost: 0
   - templateID: 39
-    name: e4b990e8bf9b
+    name: "\u4E50\u8FDB"
     baseHP: 370
     growUpHP: 36
     baseACK: 100
@@ -2128,16 +2130,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 34
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 44
-    skill2Para: 33
+    skill2Para: 3
     skill3ID: 57
-    skill3Para: 35
+    skill3Para: 5
     starLv: 2
     country: 2
     cost: 0
   - templateID: 40
-    name: e69bb9e4b895
+    name: "\u66F9\u4E15"
     baseHP: 520
     growUpHP: 23
     baseACK: 115
@@ -2146,16 +2148,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 2
-    skill1Para: 34
+    skill1Para: 4
     skill2ID: 65
-    skill2Para: 302c342c34
+    skill2Para: 0,4,4
     skill3ID: 57
-    skill3Para: 37
+    skill3Para: 7
     starLv: 3
     country: 2
     cost: 0
   - templateID: 41
-    name: e69bb9e6b4aa
+    name: "\u66F9\u6D2A"
     baseHP: 590
     growUpHP: 8
     baseACK: 165
@@ -2164,16 +2166,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 47
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 28
-    skill2Para: 33
+    skill2Para: 3
     skill3ID: 25
-    skill3Para: 37
+    skill3Para: 7
     starLv: 3
     country: 2
     cost: 0
   - templateID: 42
-    name: e894a1e69687e5a7ac
+    name: "\u8521\u6587\u59EC"
     baseHP: 560
     growUpHP: 30
     baseACK: 130
@@ -2182,16 +2184,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 9
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 16
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 18
-    skill3Para: 34
+    skill3Para: 4
     starLv: 3
     country: 2
     cost: 0
   - templateID: 43
-    name: e5a48fe4beafe6b88a
+    name: "\u590F\u4FAF\u6E0A"
     baseHP: 760
     growUpHP: 14
     baseACK: 180
@@ -2200,16 +2202,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 28
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 41
-    skill2Para: 32
+    skill2Para: 2
     skill3ID: 53
-    skill3Para: 35
+    skill3Para: 5
     starLv: 3
     country: 2
     cost: 0
   - templateID: 44
-    name: e4ba8ee7a681
+    name: "\u4E8E\u7981"
     baseHP: 700
     growUpHP: 14
     baseACK: 170
@@ -2218,16 +2220,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 44
-    skill1Para: 34
+    skill1Para: 4
     skill2ID: 31
-    skill2Para: 37
+    skill2Para: 7
     skill3ID: 38
-    skill3Para: 34
+    skill3Para: 4
     starLv: 3
     country: 2
     cost: 0
   - templateID: 45
-    name: e69da8e4bfae
+    name: "\u6768\u4FEE"
     baseHP: 570
     growUpHP: 24
     baseACK: 165
@@ -2236,16 +2238,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 64
-    skill1Para: 302c32312c33
+    skill1Para: 0,21,3
     skill2ID: 34
-    skill2Para: 36
+    skill2Para: 6
     skill3ID: 22
-    skill3Para: 37
+    skill3Para: 7
     starLv: 3
     country: 2
     cost: 0
   - templateID: 46
-    name: e88d80e694b8
+    name: "\u8340\u6538"
     baseHP: 650
     growUpHP: 25
     baseACK: 180
@@ -2254,16 +2256,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 64
-    skill1Para: 302c31352c31
+    skill1Para: 0,15,1
     skill2ID: 46
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 41
-    skill3Para: 36
+    skill3Para: 6
     starLv: 3
     country: 2
     cost: 0
   - templateID: 47
-    name: e5be90e69983
+    name: "\u5F90\u6643"
     baseHP: 785
     growUpHP: 11
     baseACK: 200
@@ -2272,16 +2274,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 34
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 21
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 50
-    skill3Para: 34
+    skill3Para: 4
     starLv: 3
     country: 2
     cost: 0
   - templateID: 48
-    name: e5bca0e698a5e58d8e
+    name: "\u5F20\u6625\u534E"
     baseHP: 700
     growUpHP: 26
     baseACK: 180
@@ -2290,16 +2292,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 47
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 34
-    skill2Para: 36
+    skill2Para: 6
     skill3ID: 14
-    skill3Para: 31
+    skill3Para: 1
     starLv: 3
     country: 2
     cost: 0
   - templateID: 49
-    name: e69bb9e4bb81
+    name: "\u66F9\u4EC1"
     baseHP: 630
     growUpHP: 25
     baseACK: 180
@@ -2308,16 +2310,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 64
-    skill1Para: 302c31362c38
+    skill1Para: 0,16,8
     skill2ID: 50
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 16
-    skill3Para: 36
+    skill3Para: 6
     starLv: 3
     country: 2
     cost: 0
   - templateID: 50
-    name: e58fb8e9a9ace687bf
+    name: "\u53F8\u9A6C\u61FF"
     baseHP: 870
     growUpHP: 23
     baseACK: 230
@@ -2326,16 +2328,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 16
-    skill1Para: 36
+    skill1Para: 6
     skill2ID: 15
-    skill2Para: 32
+    skill2Para: 2
     skill3ID: 64
-    skill3Para: 302c36322c30
+    skill3Para: 0,62,0
     starLv: 4
     country: 2
     cost: 0
   - templateID: 51
-    name: e79484e5a7ac
+    name: "\u7504\u59EC"
     baseHP: 700
     growUpHP: 22
     baseACK: 195
@@ -2344,16 +2346,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 0
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 16
-    skill2Para: 38
+    skill2Para: 8
     skill3ID: 67
-    skill3Para: 30
+    skill3Para: 0
     starLv: 4
     country: 2
     cost: 0
   - templateID: 52
-    name: e5bca0e8bebd
+    name: "\u5F20\u8FBD"
     baseHP: 850
     growUpHP: 15
     baseACK: 250
@@ -2362,16 +2364,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 59
-    skill1Para: 31
+    skill1Para: 1
     skill2ID: 25
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 57
-    skill3Para: 36
+    skill3Para: 6
     starLv: 4
     country: 2
     cost: 0
   - templateID: 53
-    name: e8aeb8e8a49a
+    name: "\u8BB8\u891A"
     baseHP: 900
     growUpHP: 19
     baseACK: 225
@@ -2380,16 +2382,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 34
-    skill1Para: 36
+    skill1Para: 6
     skill2ID: 31
-    skill2Para: 36
+    skill2Para: 6
     skill3ID: 50
-    skill3Para: 35
+    skill3Para: 5
     starLv: 4
     country: 2
     cost: 0
   - templateID: 54
-    name: e983ade59889
+    name: "\u90ED\u5609"
     baseHP: 850
     growUpHP: 40
     baseACK: 240
@@ -2398,16 +2400,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 9
-    skill1Para: 35
+    skill1Para: 5
     skill2ID: 34
-    skill2Para: 38
+    skill2Para: 8
     skill3ID: 38
-    skill3Para: 35
+    skill3Para: 5
     starLv: 4
     country: 2
     cost: 0
   - templateID: 55
-    name: e585b8e99fa6
+    name: "\u5178\u97E6"
     baseHP: 1250
     growUpHP: 26
     baseACK: 295
@@ -2416,16 +2418,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 19
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 53
-    skill2Para: 36
+    skill2Para: 6
     skill3ID: 41
-    skill3Para: 35
+    skill3Para: 5
     starLv: 4
     country: 2
     cost: 0
   - templateID: 56
-    name: e5bca0e98383
+    name: "\u5F20\u90C3"
     baseHP: 950
     growUpHP: 50
     baseACK: 225
@@ -2434,16 +2436,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 46
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 29
-    skill2Para: 30
+    skill2Para: 0
     skill3ID: 18
-    skill3Para: 38
+    skill3Para: 8
     starLv: 4
     country: 2
     cost: 0
   - templateID: 57
-    name: e5a48fe4beafe68387
+    name: "\u590F\u4FAF\u60C7"
     baseHP: 700
     growUpHP: 18
     baseACK: 160
@@ -2452,16 +2454,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 2
-    skill1Para: 35
+    skill1Para: 5
     skill2ID: 38
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 64
-    skill3Para: 302c36302c30
+    skill3Para: 0,60,0
     starLv: 4
     country: 2
     cost: 0
   - templateID: 58
-    name: e8b4bee8afa9
+    name: "\u8D3E\u8BE9"
     baseHP: 880
     growUpHP: 30
     baseACK: 240
@@ -2470,16 +2472,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 34
-    skill1Para: 36
+    skill1Para: 6
     skill2ID: 38
-    skill2Para: 36
+    skill2Para: 6
     skill3ID: 66
-    skill3Para: 30
+    skill3Para: 0
     starLv: 4
     country: 2
     cost: 0
   - templateID: 59
-    name: e88d80e5bda7
+    name: "\u8340\u5F67"
     baseHP: 720
     growUpHP: 25
     baseACK: 220
@@ -2488,16 +2490,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 13
-    skill1Para: 36
+    skill1Para: 6
     skill2ID: 47
-    skill2Para: 36
+    skill2Para: 6
     skill3ID: 57
-    skill3Para: 36
+    skill3Para: 6
     starLv: 4
     country: 2
     cost: 0
   - templateID: 60
-    name: e69bb9e6938d
+    name: "\u66F9\u64CD"
     baseHP: 1250
     growUpHP: 34
     baseACK: 350
@@ -2506,16 +2508,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 25
-    skill1Para: 36
+    skill1Para: 6
     skill2ID: 29
-    skill2Para: 30
+    skill2Para: 0
     skill3ID: 58
-    skill3Para: 30
+    skill3Para: 0
     starLv: 5
     country: 2
     cost: 0
   - templateID: 61
-    name: e9878de8a385e6b0b4e585b5
+    name: "\u91CD\u88C5\u6C34\u5175"
     baseHP: 400
     growUpHP: 16
     baseACK: 100
@@ -2524,16 +2526,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 0
-    skill1Para: 30
+    skill1Para: 0
     skill2ID: 48
-    skill2Para: 33
+    skill2Para: 3
     skill3ID: 44
-    skill3Para: 34
+    skill3Para: 4
     starLv: 1
     country: 3
     cost: 0
   - templateID: 62
-    name: e9be99e9a39ee58dab
+    name: "\u9F99\u98DE\u536B"
     baseHP: 270
     growUpHP: 22
     baseACK: 90
@@ -2542,16 +2544,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 54
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 54
-    skill2Para: 33
+    skill2Para: 3
     skill3ID: 47
-    skill3Para: 32
+    skill3Para: 2
     starLv: 1
     country: 3
     cost: 0
   - templateID: 63
-    name: e993b6e7bf8ee9a39ee9aa91
+    name: "\u94F6\u7FCE\u98DE\u9A91"
     baseHP: 260
     growUpHP: 20
     baseACK: 110
@@ -2560,16 +2562,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 0
-    skill1Para: 30
+    skill1Para: 0
     skill2ID: 35
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 26
-    skill3Para: 33
+    skill3Para: 3
     starLv: 1
     country: 3
     cost: 0
   - templateID: 64
-    name: e8bda6e7bb9ee5bca9
+    name: "\u8F66\u7EDE\u5F29"
     baseHP: 280
     growUpHP: 27
     baseACK: 85
@@ -2578,16 +2580,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 53
-    skill1Para: 31
+    skill1Para: 1
     skill2ID: 8
-    skill2Para: 32
+    skill2Para: 2
     skill3ID: 47
-    skill3Para: 31
+    skill3Para: 1
     starLv: 1
     country: 3
     cost: 0
   - templateID: 65
-    name: e891a3e8a2ad
+    name: "\u8463\u88AD"
     baseHP: 510
     growUpHP: 28
     baseACK: 140
@@ -2596,16 +2598,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 35
-    skill1Para: 34
+    skill1Para: 4
     skill2ID: 24
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 22
-    skill3Para: 34
+    skill3Para: 4
     starLv: 2
     country: 3
     cost: 0
   - templateID: 66
-    name: e6bd98e7928b
+    name: "\u6F58\u748B"
     baseHP: 385
     growUpHP: 20
     baseACK: 105
@@ -2614,16 +2616,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 22
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 35
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 22
-    skill3Para: 35
+    skill3Para: 5
     starLv: 2
     country: 3
     cost: 0
   - templateID: 67
-    name: e8928be992a6
+    name: "\u848B\u94A6"
     baseHP: 450
     growUpHP: 33
     baseACK: 110
@@ -2632,16 +2634,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 2
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 2
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 39
-    skill3Para: 33
+    skill3Para: 3
     starLv: 2
     country: 3
     cost: 0
   - templateID: 68
-    name: e7a596e88c82
+    name: "\u7956\u8302"
     baseHP: 580
     growUpHP: 20
     baseACK: 150
@@ -2650,16 +2652,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 0
-    skill1Para: 30
+    skill1Para: 0
     skill2ID: 14
-    skill2Para: 31
+    skill2Para: 1
     skill3ID: 48
-    skill3Para: 35
+    skill3Para: 5
     starLv: 2
     country: 3
     cost: 0
   - templateID: 69
-    name: e69cb1e6a193
+    name: "\u6731\u6853"
     baseHP: 390
     growUpHP: 42
     baseACK: 100
@@ -2668,16 +2670,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 8
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 64
-    skill2Para: 302c35352c35
+    skill2Para: 0,55,5
     skill3ID: 8
-    skill3Para: 37
+    skill3Para: 7
     starLv: 2
     country: 3
     cost: 0
   - templateID: 70
-    name: e5be90e79b9b
+    name: "\u5F90\u76DB"
     baseHP: 540
     growUpHP: 39
     baseACK: 125
@@ -2686,16 +2688,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 22
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 25
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 22
-    skill3Para: 37
+    skill3Para: 7
     starLv: 3
     country: 3
     cost: 0
   - templateID: 71
-    name: e5ad99e59d9a
+    name: "\u5B59\u575A"
     baseHP: 730
     growUpHP: 52
     baseACK: 185
@@ -2704,16 +2706,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 24
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 22
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 35
-    skill3Para: 38
+    skill3Para: 8
     starLv: 3
     country: 3
     cost: 0
   - templateID: 72
-    name: e8afb8e8919be791be
+    name: "\u8BF8\u845B\u747E"
     baseHP: 680
     growUpHP: 28
     baseACK: 180
@@ -2722,16 +2724,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 54
-    skill1Para: 34
+    skill1Para: 4
     skill2ID: 35
-    skill2Para: 36
+    skill2Para: 6
     skill3ID: 6
-    skill3Para: 36
+    skill3Para: 6
     starLv: 3
     country: 3
     cost: 0
   - templateID: 73
-    name: e7a88be699ae
+    name: "\u7A0B\u666E"
     baseHP: 645
     growUpHP: 41
     baseACK: 140
@@ -2740,16 +2742,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 5
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 64
-    skill2Para: 302c372c35
+    skill2Para: 0,7,5
     skill3ID: 47
-    skill3Para: 36
+    skill3Para: 6
     starLv: 3
     country: 3
     cost: 0
   - templateID: 74
-    name: e591a8e6b3b0
+    name: "\u5468\u6CF0"
     baseHP: 555
     growUpHP: 42
     baseACK: 125
@@ -2758,16 +2760,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 8
-    skill1Para: 34
+    skill1Para: 4
     skill2ID: 17
-    skill2Para: 33
+    skill2Para: 3
     skill3ID: 53
-    skill3Para: 35
+    skill3Para: 5
     starLv: 3
     country: 3
     cost: 0
   - templateID: 75
-    name: e9bb84e79b96
+    name: "\u9EC4\u76D6"
     baseHP: 800
     growUpHP: 39
     baseACK: 215
@@ -2776,16 +2778,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 64
-    skill1Para: 302c35352c35
+    skill1Para: 0,55,5
     skill2ID: 48
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 53
-    skill3Para: 36
+    skill3Para: 6
     starLv: 3
     country: 3
     cost: 0
   - templateID: 76
-    name: e4b881e5a589
+    name: "\u4E01\u5949"
     baseHP: 600
     growUpHP: 20
     baseACK: 150
@@ -2794,16 +2796,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 8
-    skill1Para: 35
+    skill1Para: 5
     skill2ID: 51
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 43
-    skill3Para: 33
+    skill3Para: 3
     starLv: 3
     country: 3
     cost: 0
   - templateID: 77
-    name: e5bca0e698ad
+    name: "\u5F20\u662D"
     baseHP: 620
     growUpHP: 30
     baseACK: 160
@@ -2812,16 +2814,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 55
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 51
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 55
-    skill3Para: 37
+    skill3Para: 7
     starLv: 3
     country: 3
     cost: 0
   - templateID: 78
-    name: e99fa9e5bd93
+    name: "\u97E9\u5F53"
     baseHP: 620
     growUpHP: 23
     baseACK: 170
@@ -2830,16 +2832,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 53
-    skill1Para: 34
+    skill1Para: 4
     skill2ID: 6
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 45
-    skill3Para: 36
+    skill3Para: 6
     starLv: 3
     country: 3
     cost: 0
   - templateID: 79
-    name: e9b281e88283
+    name: "\u9C81\u8083"
     baseHP: 620
     growUpHP: 22
     baseACK: 125
@@ -2848,16 +2850,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 6
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 54
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 51
-    skill3Para: 34
+    skill3Para: 4
     starLv: 3
     country: 3
     cost: 0
   - templateID: 80
-    name: e5ad99e7ad96
+    name: "\u5B59\u7B56"
     baseHP: 980
     growUpHP: 36
     baseACK: 215
@@ -2866,16 +2868,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 14
-    skill1Para: 31
+    skill1Para: 1
     skill2ID: 48
-    skill2Para: 38
+    skill2Para: 8
     skill3ID: 53
-    skill3Para: 37
+    skill3Para: 7
     starLv: 4
     country: 3
     cost: 0
   - templateID: 81
-    name: e5b08fe4b994
+    name: "\u5C0F\u4E54"
     baseHP: 800
     growUpHP: 39
     baseACK: 195
@@ -2884,16 +2886,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 8
-    skill1Para: 34
+    skill1Para: 4
     skill2ID: 55
-    skill2Para: 36
+    skill2Para: 6
     skill3ID: 10
-    skill3Para: 36
+    skill3Para: 6
     starLv: 4
     country: 3
     cost: 0
   - templateID: 82
-    name: e5a4aae58fb2e68588
+    name: "\u592A\u53F2\u6148"
     baseHP: 780
     growUpHP: 48
     baseACK: 200
@@ -2902,16 +2904,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 5
-    skill1Para: 34
+    skill1Para: 4
     skill2ID: 57
-    skill2Para: 36
+    skill2Para: 6
     skill3ID: 47
-    skill3Para: 38
+    skill3Para: 8
     starLv: 4
     country: 3
     cost: 0
   - templateID: 83
-    name: e99986e9808a
+    name: "\u9646\u900A"
     baseHP: 810
     growUpHP: 55
     baseACK: 220
@@ -2920,16 +2922,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 2
-    skill1Para: 34
+    skill1Para: 4
     skill2ID: 35
-    skill2Para: 37
+    skill2Para: 7
     skill3ID: 4
-    skill3Para: 37
+    skill3Para: 7
     starLv: 4
     country: 3
     cost: 0
   - templateID: 84
-    name: e59095e89299
+    name: "\u5415\u8499"
     baseHP: 1290
     growUpHP: 30
     baseACK: 270
@@ -2938,16 +2940,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 35
-    skill1Para: 36
+    skill1Para: 6
     skill2ID: 41
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 39
-    skill3Para: 35
+    skill3Para: 5
     starLv: 4
     country: 3
     cost: 0
   - templateID: 85
-    name: e5a4a7e4b994
+    name: "\u5927\u4E54"
     baseHP: 900
     growUpHP: 30
     baseACK: 215
@@ -2956,16 +2958,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 64
-    skill1Para: 302c36312c30
+    skill1Para: 0,61,0
     skill2ID: 67
-    skill2Para: 30
+    skill2Para: 0
     skill3ID: 39
-    skill3Para: 35
+    skill3Para: 5
     starLv: 4
     country: 3
     cost: 0
   - templateID: 86
-    name: e5ad99e5b09ae9a699
+    name: "\u5B59\u5C1A\u9999"
     baseHP: 680
     growUpHP: 21
     baseACK: 230
@@ -2974,16 +2976,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 55
-    skill1Para: 34
+    skill1Para: 4
     skill2ID: 47
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 58
-    skill3Para: 30
+    skill3Para: 0
     starLv: 4
     country: 3
     cost: 0
   - templateID: 87
-    name: e79498e5ae81
+    name: "\u7518\u5B81"
     baseHP: 1290
     growUpHP: 30
     baseACK: 270
@@ -2992,16 +2994,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 25
-    skill1Para: 35
+    skill1Para: 5
     skill2ID: 35
-    skill2Para: 36
+    skill2Para: 6
     skill3ID: 47
-    skill3Para: 35
+    skill3Para: 5
     starLv: 4
     country: 3
     cost: 0
   - templateID: 88
-    name: e5878ce7bb9f
+    name: "\u51CC\u7EDF"
     baseHP: 820
     growUpHP: 40
     baseACK: 240
@@ -3010,16 +3012,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 35
-    skill1Para: 36
+    skill1Para: 6
     skill2ID: 6
-    skill2Para: 37
+    skill2Para: 7
     skill3ID: 53
-    skill3Para: 38
+    skill3Para: 8
     starLv: 4
     country: 3
     cost: 0
   - templateID: 89
-    name: e591a8e7919c
+    name: "\u5468\u745C"
     baseHP: 790
     growUpHP: 25
     baseACK: 225
@@ -3028,16 +3030,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 54
-    skill1Para: 35
+    skill1Para: 5
     skill2ID: 51
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 15
-    skill3Para: 31
+    skill3Para: 1
     starLv: 4
     country: 3
     cost: 0
   - templateID: 90
-    name: e5ad99e69d83
+    name: "\u5B59\u6743"
     baseHP: 1480
     growUpHP: 23
     baseACK: 355
@@ -3046,16 +3048,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 25
-    skill1Para: 36
+    skill1Para: 6
     skill2ID: 48
-    skill2Para: 38
+    skill2Para: 8
     skill3ID: 58
-    skill3Para: 30
+    skill3Para: 0
     starLv: 5
     country: 3
     cost: 0
   - templateID: 91
-    name: e5a4a7e6889fe5a3ab
+    name: "\u5927\u621F\u58EB"
     baseHP: 360
     growUpHP: 20
     baseACK: 95
@@ -3064,16 +3066,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 0
-    skill1Para: 30
+    skill1Para: 0
     skill2ID: 44
-    skill2Para: 33
+    skill2Para: 3
     skill3ID: 27
-    skill3Para: 35
+    skill3Para: 5
     starLv: 1
     country: 4
     cost: 0
   - templateID: 92
-    name: e897a4e794b2e585b5
+    name: "\u85E4\u7532\u5175"
     baseHP: 280
     growUpHP: 17
     baseACK: 75
@@ -3082,16 +3084,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 11
-    skill1Para: 31
+    skill1Para: 1
     skill2ID: 14
-    skill2Para: 31
+    skill2Para: 1
     skill3ID: 25
-    skill3Para: 34
+    skill3Para: 4
     starLv: 1
     country: 4
     cost: 0
   - templateID: 93
-    name: e8a5bfe58789e99381e9aa91
+    name: "\u897F\u51C9\u94C1\u9A91"
     baseHP: 275
     growUpHP: 6
     baseACK: 95
@@ -3100,16 +3102,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 31
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 36
-    skill2Para: 33
+    skill2Para: 3
     skill3ID: 12
-    skill3Para: 33
+    skill3Para: 3
     starLv: 1
     country: 4
     cost: 0
   - templateID: 94
-    name: e58588e799bbe6adbbe5a3ab
+    name: "\u5148\u767B\u6B7B\u58EB"
     baseHP: 310
     growUpHP: 18
     baseACK: 90
@@ -3118,16 +3120,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 0
-    skill1Para: 30
+    skill1Para: 0
     skill2ID: 14
-    skill2Para: 31
+    skill2Para: 1
     skill3ID: 6
-    skill3Para: 33
+    skill3Para: 3
     starLv: 1
     country: 4
     cost: 0
   - templateID: 95
-    name: e6b7b3e4ba8ee790bc
+    name: "\u6DF3\u4E8E\u743C"
     baseHP: 490
     growUpHP: 13
     baseACK: 135
@@ -3136,16 +3138,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 31
-    skill1Para: 34
+    skill1Para: 4
     skill2ID: 36
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 47
-    skill3Para: 33
+    skill3Para: 3
     starLv: 2
     country: 4
     cost: 0
   - templateID: 96
-    name: e5bca0e4bbbb
+    name: "\u5F20\u4EFB"
     baseHP: 450
     growUpHP: 18
     baseACK: 110
@@ -3154,16 +3156,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 11
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 32
-    skill2Para: 32
+    skill2Para: 2
     skill3ID: 40
-    skill3Para: 33
+    skill3Para: 3
     starLv: 2
     country: 4
     cost: 0
   - templateID: 97
-    name: e5bca0e69dbe
+    name: "\u5F20\u677E"
     baseHP: 510
     growUpHP: 7
     baseACK: 135
@@ -3172,16 +3174,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 48
-    skill1Para: 31
+    skill1Para: 1
     skill2ID: 44
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 53
-    skill3Para: 35
+    skill3Para: 5
     starLv: 2
     country: 4
     cost: 0
   - templateID: 98
-    name: e9ab98e9a1ba
+    name: "\u9AD8\u987A"
     baseHP: 440
     growUpHP: 10
     baseACK: 135
@@ -3190,16 +3192,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 36
-    skill1Para: 34
+    skill1Para: 4
     skill2ID: 28
-    skill2Para: 32
+    skill2Para: 2
     skill3ID: 32
-    skill3Para: 36
+    skill3Para: 6
     starLv: 2
     country: 4
     cost: 0
   - templateID: 99
-    name: e983ade59bbe
+    name: "\u90ED\u56FE"
     baseHP: 420
     growUpHP: 15
     baseACK: 170
@@ -3208,16 +3210,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 36
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 20
-    skill2Para: 32
+    skill2Para: 2
     skill3ID: 11
-    skill3Para: 35
+    skill3Para: 5
     starLv: 2
     country: 4
     cost: 0
   - templateID: 100
-    name: e7a59de89e8d
+    name: "\u795D\u878D"
     baseHP: 685
     growUpHP: 20
     baseACK: 140
@@ -3226,16 +3228,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 12
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 36
-    skill2Para: 37
+    skill2Para: 7
     skill3ID: 15
-    skill3Para: 31
+    skill3Para: 1
     starLv: 3
     country: 4
     cost: 0
   - templateID: 101
-    name: e99fa9e98182
+    name: "\u97E9\u9042"
     baseHP: 720
     growUpHP: 17
     baseACK: 175
@@ -3244,16 +3246,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 48
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 27
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 53
-    skill3Para: 35
+    skill3Para: 5
     starLv: 3
     country: 4
     cost: 0
   - templateID: 102
-    name: e99988e5aeab
+    name: "\u9648\u5BAB"
     baseHP: 650
     growUpHP: 39
     baseACK: 125
@@ -3262,16 +3264,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 3
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 17
-    skill2Para: 33
+    skill2Para: 3
     skill3ID: 40
-    skill3Para: 34
+    skill3Para: 4
     starLv: 3
     country: 4
     cost: 0
   - templateID: 103
-    name: e58d8ee99b84
+    name: "\u534E\u96C4"
     baseHP: 730
     growUpHP: 9
     baseACK: 205
@@ -3280,16 +3282,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 64
-    skill1Para: 302c31382c33
+    skill1Para: 0,18,3
     skill2ID: 26
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 25
-    skill3Para: 37
+    skill3Para: 7
     starLv: 3
     country: 4
     cost: 0
   - templateID: 104
-    name: e8aeb8e694b8
+    name: "\u8BB8\u6538"
     baseHP: 550
     growUpHP: 25
     baseACK: 115
@@ -3298,16 +3300,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 2
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 32
-    skill2Para: 33
+    skill2Para: 3
     skill3ID: 19
-    skill3Para: 36
+    skill3Para: 6
     starLv: 3
     country: 4
     cost: 0
   - templateID: 105
-    name: e794b0e4b8b0
+    name: "\u7530\u4E30"
     baseHP: 580
     growUpHP: 20
     baseACK: 175
@@ -3316,16 +3318,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 64
-    skill1Para: 302c31362c36
+    skill1Para: 0,16,6
     skill2ID: 2
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 55
-    skill3Para: 36
+    skill3Para: 6
     starLv: 3
     country: 4
     cost: 0
   - templateID: 106
-    name: e7baaae781b5
+    name: "\u7EAA\u7075"
     baseHP: 630
     growUpHP: 17
     baseACK: 185
@@ -3334,16 +3336,16 @@ MonoBehaviour:
     maxWaitRound: 2
     normolAttID: 1
     skill1ID: 26
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 53
-    skill2Para: 33
+    skill2Para: 3
     skill3ID: 48
-    skill3Para: 37
+    skill3Para: 7
     starLv: 3
     country: 4
     cost: 0
   - templateID: 107
-    name: e5ba9ee5beb7
+    name: "\u5E9E\u5FB7"
     baseHP: 690
     growUpHP: 41
     baseACK: 190
@@ -3352,16 +3354,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 25
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 65
-    skill2Para: 302c31382c36
+    skill2Para: 0,18,6
     skill3ID: 52
-    skill3Para: 34
+    skill3Para: 4
     starLv: 3
     country: 4
     cost: 0
   - templateID: 108
-    name: e9a29ce889af
+    name: "\u989C\u826F"
     baseHP: 615
     growUpHP: 20
     baseACK: 180
@@ -3370,16 +3372,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 36
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 11
-    skill2Para: 36
+    skill2Para: 6
     skill3ID: 28
-    skill3Para: 35
+    skill3Para: 5
     starLv: 3
     country: 4
     cost: 0
   - templateID: 109
-    name: e69687e4b891
+    name: "\u6587\u4E11"
     baseHP: 800
     growUpHP: 40
     baseACK: 150
@@ -3388,16 +3390,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 48
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 46
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 52
-    skill3Para: 35
+    skill3Para: 5
     starLv: 3
     country: 4
     cost: 0
   - templateID: 110
-    name: e8a281e7bb8d
+    name: "\u8881\u7ECD"
     baseHP: 840
     growUpHP: 52
     baseACK: 245
@@ -3406,16 +3408,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 44
-    skill1Para: 37
+    skill1Para: 7
     skill2ID: 36
-    skill2Para: 37
+    skill2Para: 7
     skill3ID: 40
-    skill3Para: 36
+    skill3Para: 6
     starLv: 4
     country: 4
     cost: 0
   - templateID: 111
-    name: e585ace5ad99e79392
+    name: "\u516C\u5B59\u74D2"
     baseHP: 890
     growUpHP: 45
     baseACK: 250
@@ -3424,16 +3426,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 36
-    skill1Para: 36
+    skill1Para: 6
     skill2ID: 41
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 26
-    skill3Para: 36
+    skill3Para: 6
     starLv: 4
     country: 4
     cost: 0
   - templateID: 112
-    name: e8a281e69caf
+    name: "\u8881\u672F"
     baseHP: 850
     growUpHP: 20
     baseACK: 255
@@ -3442,16 +3444,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 25
-    skill1Para: 35
+    skill1Para: 5
     skill2ID: 48
-    skill2Para: 37
+    skill2Para: 7
     skill3ID: 52
-    skill3Para: 35
+    skill3Para: 5
     starLv: 4
     country: 4
     cost: 0
   - templateID: 113
-    name: e8b282e89d89
+    name: "\u8C82\u8749"
     baseHP: 980
     growUpHP: 20
     baseACK: 250
@@ -3460,16 +3462,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 64
-    skill1Para: 302c31382c35
+    skill1Para: 0,18,5
     skill2ID: 30
-    skill2Para: 30
+    skill2Para: 0
     skill3ID: 64
-    skill3Para: 302c36302c30
+    skill3Para: 0,60,0
     starLv: 4
     country: 4
     cost: 0
   - templateID: 114
-    name: e9a9ace885be
+    name: "\u9A6C\u817E"
     baseHP: 1230
     growUpHP: 47
     baseACK: 285
@@ -3478,16 +3480,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 48
-    skill1Para: 32
+    skill1Para: 2
     skill2ID: 45
-    skill2Para: 36
+    skill2Para: 6
     skill3ID: 29
-    skill3Para: 30
+    skill3Para: 0
     starLv: 4
     country: 4
     cost: 0
   - templateID: 115
-    name: e891a3e58d93
+    name: "\u8463\u5353"
     baseHP: 900
     growUpHP: 32
     baseACK: 245
@@ -3496,16 +3498,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 24
-    skill1Para: 35
+    skill1Para: 5
     skill2ID: 27
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 43
-    skill3Para: 37
+    skill3Para: 7
     starLv: 4
     country: 4
     cost: 0
   - templateID: 116
-    name: e5bca0e8a792
+    name: "\u5F20\u89D2"
     baseHP: 960
     growUpHP: 40
     baseACK: 260
@@ -3514,16 +3516,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 26
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 40
-    skill2Para: 35
+    skill2Para: 5
     skill3ID: 44
-    skill3Para: 3130
+    skill3Para: 10
     starLv: 4
     country: 4
     cost: 0
   - templateID: 117
-    name: e58898e8a1a8
+    name: "\u5218\u8868"
     baseHP: 800
     growUpHP: 25
     baseACK: 260
@@ -3532,16 +3534,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 45
-    skill1Para: 33
+    skill1Para: 3
     skill2ID: 53
-    skill2Para: 34
+    skill2Para: 4
     skill3ID: 27
-    skill3Para: 37
+    skill3Para: 7
     starLv: 4
     country: 4
     cost: 0
   - templateID: 118
-    name: e58d8ee4bd97
+    name: "\u534E\u4F57"
     baseHP: 900
     growUpHP: 34
     baseACK: 255
@@ -3550,16 +3552,16 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 4
-    skill1Para: 36
+    skill1Para: 6
     skill2ID: 31
-    skill2Para: 36
+    skill2Para: 6
     skill3ID: 55
-    skill3Para: 37
+    skill3Para: 7
     starLv: 4
     country: 4
     cost: 0
   - templateID: 119
-    name: e5ad9fe88eb7
+    name: "\u5B5F\u83B7"
     baseHP: 1100
     growUpHP: 33
     baseACK: 280
@@ -3568,16 +3570,16 @@ MonoBehaviour:
     maxWaitRound: 6
     normolAttID: 1
     skill1ID: 25
-    skill1Para: 35
+    skill1Para: 5
     skill2ID: 27
-    skill2Para: 36
+    skill2Para: 6
     skill3ID: 53
-    skill3Para: 37
+    skill3Para: 7
     starLv: 4
     country: 4
     cost: 0
   - templateID: 120
-    name: e59095e5b883
+    name: "\u5415\u5E03"
     baseHP: 1330
     growUpHP: 25
     baseACK: 335
@@ -3586,11 +3588,11 @@ MonoBehaviour:
     maxWaitRound: 4
     normolAttID: 1
     skill1ID: 0
-    skill1Para: 38
+    skill1Para: 8
     skill2ID: 12
-    skill2Para: 38
+    skill2Para: 8
     skill3ID: 53
-    skill3Para: 3130
+    skill3Para: 10
     starLv: 5
     country: 4
     cost: 0

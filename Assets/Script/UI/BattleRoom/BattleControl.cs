@@ -41,6 +41,8 @@ public class BattleControl : MonoBehaviour
 		handleFactory = gameObject.AddComponent<HandleFactory>();
 		
 		actions = new List<BaseAction>(battleRoom.actions);
+
+		roomUI.Init(battleRoom);
 	}
 	
 	// 处理下一个Action

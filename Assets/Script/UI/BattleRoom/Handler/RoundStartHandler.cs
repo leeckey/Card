@@ -13,6 +13,6 @@ public class RoundStartHandler : BaseHandler
 	{
 		base.InitHandle();
 
-		handleList.Add(roomUI.battleRound.AddRound);
+		handleList.Add(roomUI.AddRound);
 	}
 }

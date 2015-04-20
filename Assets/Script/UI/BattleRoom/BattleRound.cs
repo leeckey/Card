@@ -6,6 +6,8 @@ using System.Collections;
 /// </summary>
 public class BattleRound : MonoBehaviour
 {
+	public UILabel roundLabel;
+
 	/// <summary>
 	/// 回合数增加
 	/// </summary>
@@ -13,7 +15,7 @@ public class BattleRound : MonoBehaviour
 	{
 		RoundStartAction roundStartAction = action as RoundStartAction;
 
-		print("当前回合:" + roundStartAction.round);
+		roundLabel.text = roundStartAction.round.ToString();
 
 		return 1f;
 	}

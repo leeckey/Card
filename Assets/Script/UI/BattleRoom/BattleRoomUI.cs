@@ -19,6 +19,38 @@ public class BattleRoomUI : MonoBehaviour
 	// 当前行动的玩家
 	PlayerGround currPlayer;
 
+	// 
+	public void Init(BattleRoom data)
+	{
+		playerground0.InitPlayerInfo(data.fighter0);
+		playerground1.InitPlayerInfo(data.fighter1);
+
+		currPlayer = null;
+	}
+
+	public float AddRound(BaseAction action)
+	{
+		battleRound.AddRound(action);
+
+		if (currPlayer == playerground0)
+			currPlayer = playerground1;
+		else
+			currPlayer = playerground0;
+
+		return 1f;
+	}
+
+	public float ShowDamage(BaseAction action)
+	{
+		DamageNotifyAction damageAction = action as DamageNotifyAction;
+		if (action.targetID == playerground0.ID)
+			playerground0.ShowDamage(damageAction.damage);
+		else if (action.targetID == playerground1.ID)
+			playerground1.ShowDamage(damageAction.damage);
+
+		return 1f;
+	}
+
 	/// <summary>
 	/// 卡牌回到牌堆
 	/// </summary>

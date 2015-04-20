@@ -7,7 +7,7 @@ using System.Collections.Generic;
 /// </summary>
 public class CardBaseArea : MonoBehaviour
 {
-	protected List<CardFighter> cards;
+	protected List<CardFighter> cards = new List<CardFighter>();
 	
 	// 是否存在某个卡牌
 	public bool ContainsCard(CardFighter card)
