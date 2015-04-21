@@ -30,6 +30,13 @@ public class BattleRoomUI : MonoBehaviour
 		return 1f;
 	}
 
+	public float EndRound(BaseAction action)
+	{
+		playerground0.ClearArea();
+		playerground1.ClearArea();
+		return 1f;
+	}
+
 	public float ShowDamage(BaseAction action)
 	{
 		DamageNotifyAction damageAction = action as DamageNotifyAction;

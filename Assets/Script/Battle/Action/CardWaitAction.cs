@@ -6,8 +6,6 @@ using System.Collections;
 /// </summary>
 public class CardWaitAction : BaseAction
 {
-	// 之前所在区域
-	public CardArea sourceArea;
 
 	CardWaitAction(int ownerID, int cardID, CardArea area)
 	{

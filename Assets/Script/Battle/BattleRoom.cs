@@ -84,9 +84,9 @@ public class BattleRoom
 	/// </summary>
 	int CheckWin()
 	{
-		if (fighter1.IsDead)
+		if (fighter1.IsDead || fighter1.IsCardOver())
 			return 1;
-		else if (fighter0.IsDead)
+		else if (fighter0.IsDead || fighter0.IsCardOver())
 			return -1;
 		else
 			return 0;

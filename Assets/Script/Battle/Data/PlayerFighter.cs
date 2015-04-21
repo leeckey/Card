@@ -54,6 +54,14 @@ public class PlayerFighter : BaseFighter
 	}
 
 	/// <summary>
+	/// Determines whether this instance is card all dead.
+	/// </summary>
+	public bool IsCardOver()
+	{
+		return allCard.Count == deadCard.Count;
+	}
+
+	/// <summary>
 	/// 战斗对手
 	/// </summary>
 	PlayerFighter rival;

@@ -22,24 +22,26 @@ public class PlayerGround : MonoBehaviour
 	int maxHp;
 
 	// 初始区域
-	public CardInitArea cardInitArea;
+	public CardAreaInit cardInitArea;
 
 	// 等待区域
-	public CardWaitArea cardWaitArea;
+	public CardAreaWait cardWaitArea;
 
 	// 战斗区域
-	public CardFightArea cardFightArea;
+	public CardAreaFight cardFightArea;
 
 	// 死亡区域
-	public CardDeadArea cardDeadArea;
+	public CardAreaDead cardDeadArea;
 
 	// 所有卡牌
-	List<CardFighter> allCards;
+	List<CardFighterUI> allCards;
+
+	public CardFighterUI cardPrefab;
 
 	/// <summary>
 	/// 获得对应的卡牌
 	/// </summary>
-	public CardFighter GetCardByID(int id)
+	public CardFighterUI GetCardByID(int id)
 	{
 		return allCards.Find(card => card.ID == id);
 	}
@@ -51,12 +53,14 @@ public class PlayerGround : MonoBehaviour
 		this.maxHp = fighter.maxHp;
 		this.hp = fighter.maxHp;
 
-		allCards = new List<CardFighter>();
+		allCards = new List<CardFighterUI>();
 		foreach (CardFighter card in fighter.allCard)
 		{
-			allCards.Add(card);
+			CardFighterUI newCardUI = NGUITools.AddChild(cardInitArea.cardParent, cardPrefab.gameObject).GetComponent<CardFighterUI>();
+			newCardUI.InitCardUI(card);
+			allCards.Add(newCardUI);
 		}
-		allCards.ForEach(card => cardInitArea.AddCard(card));
+		allCards.ForEach(card => cardInitArea.cards.Add(card));
 	}
 
 	public void ShowDamage(int damage)
@@ -72,69 +76,15 @@ public class PlayerGround : MonoBehaviour
 	}
 
 
-	public float InitAreaIn(BaseAction action)
-	{
-		return 0f;
-	}
-
-	public float InitAreaOut(BaseAction aciton)
-	{
-		return 0f;
-	}
-
-	public float WaitAreaIn(BaseAction aciton, Vector3 pos)
-	{
-		return 1f;
-	}
-
-	public float WaitAreaOut(BaseAction action, Vector3 pos)
-	{
-		return 1f;
-	}
-
-	public float FightAreaIn(BaseAction action)
-	{
-		return 0f;
-	}
-
-	public float FightAreaOut(BaseAction action)
-	{
-		return 0f;
-	}
-
-	public float DeadAreaIn(BaseAction action, Vector3 pos)
-	{
-		return 1f;
-	}
-
-	public float DeadAreaOut(BaseAction action, Vector3 pos)
-	{
-		return 1f;
-	}
-
 	/// <summary>
 	/// 卡牌回到牌堆
 	/// </summary>
 	public float CardBack(BaseAction action)
 	{
-		CardBackAction cardBackAction = action as CardBackAction;
-
-		CardFighter card = GetCardByID(cardBackAction.targetID);
-
-		// 等待中的卡牌回到牌堆
-		if (cardBackAction.sourceArea == CardArea.WaitArea)
-			return cardWaitArea.RemoveCard(card, cardInitArea.GetPos());
-
-		// 战斗中的卡牌回到牌堆
-		if (cardBackAction.sourceArea == CardArea.FightArea)
-			return cardFightArea.RemoveCard(card, cardInitArea.GetPos());
-
-		// 死亡的卡牌回到牌堆
-		if (cardBackAction.sourceArea == CardArea.DeadArea)
-			return cardDeadArea.RemoveCard(card, cardInitArea.GetPos());
-
-		cardInitArea.AddCard(card);
-		return 0f;
+		CardFighterUI card = GetCardByID(action.targetID);
+		
+		RemoveCard(action, card);
+		return cardInitArea.AddCard(card);
 	}
 	
 	/// <summary>
@@ -142,20 +92,10 @@ public class PlayerGround : MonoBehaviour
 	/// </summary>
 	public float CardDead(BaseAction action)
 	{
-		CardDeadAction cardDeadAction = action as CardDeadAction;
+		CardFighterUI card = GetCardByID(action.targetID);
 
-		CardFighter card = GetCardByID(cardDeadAction.targetID);
-
-		// 等待中的卡牌进入墓地
-		if (cardDeadAction.sourceArea == CardArea.WaitArea)
-			return cardWaitArea.RemoveCard(card, cardDeadArea.GetPos());
-		
-		// 战斗中的卡牌进入墓地
-		if (cardDeadAction.sourceArea == CardArea.FightArea)
-			return cardFightArea.RemoveCard(card, cardDeadArea.GetPos());
-
-		cardDeadArea.AddCard(card);
-		return 0f;
+		RemoveCard(action, card);
+		return cardDeadArea.AddCard(card);
 	}
 	
 	/// <summary>
@@ -163,26 +103,10 @@ public class PlayerGround : MonoBehaviour
 	/// </summary>
 	public float CardFight(BaseAction action)
 	{
-		CardFightAction cardFightAction = action as CardFightAction;
+		CardFighterUI card = GetCardByID(action.targetID);
 
-		CardFighter card = GetCardByID(cardFightAction.targetID);
-
-		// 等待中的卡牌进入战斗
-		if (cardFightAction.sourceArea == CardArea.WaitArea)
-		{
-			Vector3 pos = cardWaitArea.GetPos(card);
-			cardWaitArea.RemoveCard(card, pos);
-			return cardFightArea.AddCard(card, pos);
-		}
-		
-		// 死亡的卡牌进入战斗
-		if (cardDeadArea.ContainsCard(card))
-		{
-			cardDeadArea.RemoveCard(card);
-			return cardFightArea.AddCard(card, cardDeadArea.GetPos());
-		}
-
-		return 0f;
+		RemoveCard(action, card);
+		return cardFightArea.AddCard(card);
 	}
 	
 	/// <summary>
@@ -190,31 +114,34 @@ public class PlayerGround : MonoBehaviour
 	/// </summary>
 	public float CardWait(BaseAction action)
 	{
-		CardWaitAction cardWaitAction = action as CardWaitAction;
-
-		CardFighter card = GetCardByID(cardWaitAction.targetID);
-
-		// 牌堆的卡牌进入等待区
-		if (cardInitArea.ContainsCard(card))
-		{
-			cardInitArea.RemoveCard(card);
-			return cardWaitArea.AddCard(card, cardInitArea.GetPos());
-		}
+		CardFighterUI card = GetCardByID(action.targetID);
 		
-		// 战斗中的卡牌进入等待区
-		if (cardFightArea.ContainsCard(card))
-		{
-			cardWaitArea.AddCard(card);
-			return cardFightArea.RemoveCard(card, cardWaitArea.GetPos(card));
-		}
-		
-		// 死亡的卡牌进入等待区
-		if (cardDeadArea.ContainsCard(card))
-		{
-			cardDeadArea.RemoveCard(card);
-			return cardWaitArea.AddCard(card, cardDeadArea.GetPos());
-		}
-
-		return 0f;
+		RemoveCard(action, card);
+		return cardWaitArea.AddCard(card);
 	}
+
+
+	void RemoveCard(BaseAction action, CardFighterUI card)
+	{
+		if (action.sourceArea == CardArea.InitArea)
+			cardInitArea.RemoveCard(card);
+		else if (action.sourceArea == CardArea.WaitArea)
+			cardWaitArea.RemoveCard(card);
+		else if (action.sourceArea == CardArea.FightArea)
+			cardFightArea.RemoveCard(card);
+		else if (action.sourceArea == CardArea.DeadArea)
+			cardDeadArea.RemoveCard(card);
+	}
+
+	/// <summary>
+	/// Clears the area.
+	/// </summary>
+	public void ClearArea()
+	{
+		cardInitArea.ClearCard();
+		cardWaitArea.ClearCard();
+		cardFightArea.ClearCard();
+		cardDeadArea.ClearCard();
+	}
+
 }

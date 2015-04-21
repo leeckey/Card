@@ -15,6 +15,9 @@ public class BaseAction
 	// 被操作的对象
 	public int targetID;
 
+	// 之前所在区域
+	public CardArea sourceArea = CardArea.None;
+
 	// 输出为字符串调试用
 	public override string ToString()
 	{
@@ -51,6 +54,7 @@ public enum ActionType
 /// </summary>
 public enum CardArea
 {
+	None,
 	InitArea,
 	WaitArea,
 	FightArea,

@@ -6,8 +6,6 @@ using System.Collections;
 /// </summary>
 public class CardBackAction : BaseAction
 {
-	// 之前所在区域
-	public CardArea sourceArea;
 
 	CardBackAction(int ownerID, int cardID, CardArea area)
 	{

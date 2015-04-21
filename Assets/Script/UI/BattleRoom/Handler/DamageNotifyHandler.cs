@@ -8,6 +8,6 @@ public class DamageNotifyHandler : BaseHandler
 	{
 		base.InitHandle();
 		
-		handleList.Add(roomUI.ShowDamage);
+		//handleList.Add(roomUI.ShowDamage);
 	}
 }

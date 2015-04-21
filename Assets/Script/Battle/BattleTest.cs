@@ -49,6 +49,6 @@ public class BattleTest : MonoBehaviour
 		room.SetFighters(player0, player1);
 		room.StartFight();
 
-		//gameObject.GetComponentInChildren<BattleRoomUI>().gameObject.AddComponent<BattleControl>().StartFight(room);
+		gameObject.GetComponentInChildren<BattleRoomUI>().gameObject.AddComponent<BattleControl>().StartFight(room);
 	}
 }

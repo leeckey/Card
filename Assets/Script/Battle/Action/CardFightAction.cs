@@ -7,8 +7,6 @@ using System.Collections.Generic;
 /// </summary>
 public class CardFightAction : BaseAction
 {
-	// 之前所在区域
-	public CardArea sourceArea;
 
 	CardFightAction(int ownerID, int cardID, CardArea area)
 	{
