@@ -227,7 +227,6 @@ public class CardFighter : BaseFighter
 	/// </summary>
 	public void OnPresent()
 	{
-		Actions.Add(CardFightAction.GetAction(owner.ID, this.ID));
 		DispatchEvent(BattleEventType.ON_CARD_PRESENT);
 	}
 
@@ -288,17 +287,15 @@ public class CardFighter : BaseFighter
 			return;
 		
 		isDead = true;
-		Actions.Add(CardDeadAction.GetAction(owner.ID, this.ID));
-		owner.CardToCemetery(this);
+		owner.CardToCemetery(this, CardArea.FightArea);
 	}
 
 	/// <summary>
 	/// 卡牌回到牌堆
 	/// </summary>
-	public void DoBack()
+	public void DoBack(CardArea area = CardArea.FightArea)
 	{
-		Actions.Add(CardBackAction.GetAction(owner.ID, this.ID));
-		owner.CardToCardArea(this);
+		owner.CardToCardArea(this, area);
 	}
 
 	/// <summary>
@@ -312,10 +309,9 @@ public class CardFighter : BaseFighter
 	/// <summary>
 	/// 卡牌进入等待区
 	/// </summary>
-	public void DoWait()
+	public void DoWait(CardArea area)
 	{
-		Actions.Add(CardWaitAction.GetAction(owner.ID, this.ID));
-		owner.CardToWait(this);
+		owner.CardToWait(this, area);
 	}
 
 	/// <summary>

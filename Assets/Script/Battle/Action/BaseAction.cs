@@ -45,3 +45,16 @@ public enum ActionType
 	Cure,
 	MaxHpChange
 }
+
+/// <summary>
+/// 卡牌位置
+/// </summary>
+public enum CardArea
+{
+	InitArea,
+	WaitArea,
+	FightArea,
+	DeadArea
+}
+
+

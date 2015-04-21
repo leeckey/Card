@@ -44,7 +44,7 @@ public class CardFightArea : CardBaseArea
 	/// </summary>
 	public override float RemoveCard(CardFighter card, Vector3 pos)
 	{
-		cards.Remove(card);
+		base.RemoveCard(card, pos);
 		
 		// 显示对象移动到pos位置
 		

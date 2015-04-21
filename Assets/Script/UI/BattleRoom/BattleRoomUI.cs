@@ -16,26 +16,16 @@ public class BattleRoomUI : MonoBehaviour
 	// 玩家2战斗区域
 	public PlayerGround playerground1;
 
-	// 当前行动的玩家
-	PlayerGround currPlayer;
-
 	// 
 	public void Init(BattleRoom data)
 	{
 		playerground0.InitPlayerInfo(data.fighter0);
 		playerground1.InitPlayerInfo(data.fighter1);
-
-		currPlayer = null;
 	}
 
 	public float AddRound(BaseAction action)
 	{
 		battleRound.AddRound(action);
-
-		if (currPlayer == playerground0)
-			currPlayer = playerground1;
-		else
-			currPlayer = playerground0;
 
 		return 1f;
 	}
@@ -56,7 +46,7 @@ public class BattleRoomUI : MonoBehaviour
 	/// </summary>
 	public float CardBack(BaseAction action)
 	{
-		return currPlayer.CardBack(action);
+		return GetPlayer(action.sourceID).CardBack(action);
 	}
 
 	/// <summary>
@@ -64,7 +54,7 @@ public class BattleRoomUI : MonoBehaviour
 	/// </summary>
 	public float CardDead(BaseAction action)
 	{
-		return currPlayer.CardDead(action);
+		return GetPlayer(action.sourceID).CardDead(action);
 	}
 
 	/// <summary>
@@ -72,7 +62,7 @@ public class BattleRoomUI : MonoBehaviour
 	/// </summary>
 	public float CardFight(BaseAction action)
 	{
-		return currPlayer.CardFight(action);
+		return GetPlayer(action.sourceID).CardFight(action);
 	}
 
 	/// <summary>
@@ -80,6 +70,18 @@ public class BattleRoomUI : MonoBehaviour
 	/// </summary>
 	public float CardWait(BaseAction action)
 	{
-		return currPlayer.CardWait(action);
+		return GetPlayer(action.sourceID).CardWait(action);
+	}
+
+	// 获得当前行动的玩家
+	PlayerGround GetPlayer(int id)
+	{
+		if (playerground0.ID == id)
+			return playerground0;
+
+		if (playerground1.ID == id)
+			return playerground1;
+
+		return null;
 	}
 }

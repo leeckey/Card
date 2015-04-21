@@ -37,7 +37,9 @@ public class CardBaseArea : MonoBehaviour
 	/// </summary>
 	public virtual float RemoveCard(CardFighter card)
 	{
-		cards.Remove(card);
+		if (cards.Contains(card))
+			cards[cards.IndexOf(card)] = null;
+
 		return 0;
 	}
 
@@ -46,6 +48,8 @@ public class CardBaseArea : MonoBehaviour
 	/// </summary>
 	public virtual float RemoveCard(CardFighter card, Vector3 pos)
 	{
+		if (cards.Contains(card))
+			cards[cards.IndexOf(card)] = null;
 		return RemoveCard(card);
 	}
 
@@ -55,5 +59,13 @@ public class CardBaseArea : MonoBehaviour
 	public virtual Vector3 GetPos(CardFighter card = null)
 	{
 		return gameObject.transform.position;
-	}	
+	}
+
+	/// <summary>
+	/// 清理卡牌数组
+	/// </summary>
+	public virtual void ClearCard()
+	{
+		cards.Remove(null);
+	}
 }

@@ -41,8 +41,8 @@ public class Skill218 : BaseSkill
 	{
 		if (Random.Range(0, 100) < rate)
 		{
-			card.DoWait();
 			card.Actions.Add(SkillStartAction.GetAction(card.ID, skillID, GetTargetID(card)));
+			card.DoWait(CardArea.DeadArea);
 		}
 	}
 }

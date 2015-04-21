@@ -22,6 +22,6 @@ public class CardDeadArea : CardBaseArea
 	{
 		// 显示最新的卡牌
 
-		return base.RemoveCard (card);
+		return base.RemoveCard(card);
 	}
 }

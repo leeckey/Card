@@ -67,7 +67,7 @@ public class CardWaitArea : CardBaseArea
 			return 0f;
 
 		int index = cards.IndexOf(card);
-		cards.Remove(card);
+		cards[index] = null;
 
 		GameObject newCard = cardAreas[index].transform.GetChild(0).gameObject;
 

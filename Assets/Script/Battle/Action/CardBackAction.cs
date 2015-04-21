@@ -6,11 +6,15 @@ using System.Collections;
 /// </summary>
 public class CardBackAction : BaseAction
 {
-	CardBackAction(int ownerID, int cardID)
+	// 之前所在区域
+	public CardArea sourceArea;
+
+	CardBackAction(int ownerID, int cardID, CardArea area)
 	{
 		type = ActionType.CardBack;
 		sourceID = ownerID;
 		targetID = cardID;
+		sourceArea = area;
 	}
 	
 	public override string ToString()
@@ -18,8 +22,8 @@ public class CardBackAction : BaseAction
 		return string.Format("卡牌{0}回到牌堆", targetID);
 	}
 	
-	public static CardBackAction GetAction(int ownerID, int cardID)
+	public static CardBackAction GetAction(int ownerID, int cardID, CardArea area)
 	{
-		return new CardBackAction(ownerID, cardID);
+		return new CardBackAction(ownerID, cardID, area);
 	}
 }

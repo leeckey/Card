@@ -27,7 +27,7 @@ public class PlayerFighter : BaseFighter
 	List<CardFighter> fightCard;
 
 	// 墓地卡组
-	List<CardFighter> cemeteryCard;
+	List<CardFighter> deadCard;
 
 	// 玩家状态
 	FigtherStatus status;
@@ -50,7 +50,7 @@ public class PlayerFighter : BaseFighter
 		initialCard = new List<CardFighter>();
 		waitCard = new List<CardFighter>();
 		fightCard = new List<CardFighter>();
-		cemeteryCard = new List<CardFighter>();
+		deadCard = new List<CardFighter>();
 	}
 
 	/// <summary>
@@ -142,7 +142,7 @@ public class PlayerFighter : BaseFighter
 
 		CardFighter card = initialCard[Random.Range(0, initialCard.Count)];
 
-		card.DoWait();
+		CardToWait(card, CardArea.InitArea);
 	}
 
 	// 出牌
@@ -160,8 +160,9 @@ public class PlayerFighter : BaseFighter
 
 		foreach (CardFighter card in temp)
 		{
-			waitCard.Remove(card);
+			waitCard[waitCard.IndexOf(card)] = null;
 			fightCard.Add(card);
+			Actions.Add(CardFightAction.GetAction(ID, card.ID, CardArea.WaitArea));
 
 			// 卡牌出场消息
 			card.OnPresent();
@@ -198,40 +199,47 @@ public class PlayerFighter : BaseFighter
 	/// <summary>
 	/// 卡牌进入牌堆
 	/// </summary>
-	public void CardToCemetery(CardFighter card)
+	public void CardToCemetery(CardFighter card, CardArea area)
 	{
-		fightCard.Remove(card);
-		cemeteryCard.Add(card);
+		RemoveCard(card, area);
+		deadCard.Add(card);
+
+		Actions.Add(CardDeadAction.GetAction(ID, card.ID, area));
 	}
 
 	/// <summary>
 	/// 卡牌进入牌堆
 	/// </summary>
-	public void CardToCardArea(CardFighter card)
+	public void CardToCardArea(CardFighter card, CardArea area)
 	{
-		if (fightCard.Contains(card))
-			fightCard.Remove(card);
-		else if (waitCard.Contains(card))
-			waitCard.Remove(card);
-		else if (cemeteryCard.Contains(card))
-			cemeteryCard.Remove(card);
-
+		RemoveCard(card, area);
 		initialCard.Add(card);
+
+		Actions.Add(CardBackAction.GetAction(ID, card.ID, area));
 	}
 
 	/// <summary>
 	/// 卡牌进入等待区
 	/// </summary>
-	public void CardToWait(CardFighter card)
+	public void CardToWait(CardFighter card, CardArea area)
 	{
-		if (fightCard.Contains(card))
-			fightCard.Remove(card);
-		else if (initialCard.Contains(card))
-			initialCard.Remove(card);
-		else if (cemeteryCard.Contains(card))
-			cemeteryCard.Remove(card);
+		RemoveCard(card, area);
 		
 		waitCard.Add(card);
+		Actions.Add(CardWaitAction.GetAction(ID, card.ID, area));
+	}
+
+	// 清除卡牌
+	void RemoveCard(CardFighter card, CardArea area)
+	{
+		if (area == CardArea.WaitArea && waitCard.Contains(card))
+			waitCard[waitCard.IndexOf(card)] = null;
+		else if (area == CardArea.InitArea && initialCard.Contains(card))
+			initialCard[initialCard.IndexOf(card)] = null;
+		else if (area == CardArea.FightArea && fightCard.Contains(card))
+			fightCard[fightCard.IndexOf(card)] = null;
+		else if (area == CardArea.DeadArea && deadCard.Contains(card))
+			deadCard[deadCard.IndexOf(card)] = null;
 	}
 
 	/// <summary>
@@ -239,8 +247,9 @@ public class PlayerFighter : BaseFighter
 	/// </summary>
 	public void CardRevive(CardFighter card)
 	{
-		cemeteryCard.Remove(card);
+		deadCard[deadCard.IndexOf(card)] = null;
 		fightCard.Add(card);
+		Actions.Add(CardFightAction.GetAction(ID, this.ID, CardArea.DeadArea));
 
 		// 卡牌出场
 		card.OnPresent();
@@ -251,11 +260,22 @@ public class PlayerFighter : BaseFighter
 	/// </summary>
 	public void RoundEnd()
 	{
+		ClearCard();
+
 		foreach (CardFighter card in waitCard)
 		{
-			if (card.waitRound > 0)
+			if (card != null && card.waitRound > 0)
 				card.waitRound --;
 		}
+	}
+
+	// 清理卡牌
+	void ClearCard()
+	{
+		initialCard.Remove(null);
+		waitCard.Remove(null);
+		fightCard.Remove(null);
+		deadCard.Remove(null);
 	}
 
 	/// <summary>

@@ -71,6 +71,47 @@ public class PlayerGround : MonoBehaviour
 		HOTween.To(hpBarBack, 0.8f, new TweenParms().Prop("fillAmount", (float)hp / maxHp).Delay(0.2f));
 	}
 
+
+	public float InitAreaIn(BaseAction action)
+	{
+		return 0f;
+	}
+
+	public float InitAreaOut(BaseAction aciton)
+	{
+		return 0f;
+	}
+
+	public float WaitAreaIn(BaseAction aciton, Vector3 pos)
+	{
+		return 1f;
+	}
+
+	public float WaitAreaOut(BaseAction action, Vector3 pos)
+	{
+		return 1f;
+	}
+
+	public float FightAreaIn(BaseAction action)
+	{
+		return 0f;
+	}
+
+	public float FightAreaOut(BaseAction action)
+	{
+		return 0f;
+	}
+
+	public float DeadAreaIn(BaseAction action, Vector3 pos)
+	{
+		return 1f;
+	}
+
+	public float DeadAreaOut(BaseAction action, Vector3 pos)
+	{
+		return 1f;
+	}
+
 	/// <summary>
 	/// 卡牌回到牌堆
 	/// </summary>
@@ -81,15 +122,15 @@ public class PlayerGround : MonoBehaviour
 		CardFighter card = GetCardByID(cardBackAction.targetID);
 
 		// 等待中的卡牌回到牌堆
-		if (cardWaitArea.ContainsCard(card))
+		if (cardBackAction.sourceArea == CardArea.WaitArea)
 			return cardWaitArea.RemoveCard(card, cardInitArea.GetPos());
 
 		// 战斗中的卡牌回到牌堆
-		if (cardFightArea.ContainsCard(card))
+		if (cardBackAction.sourceArea == CardArea.FightArea)
 			return cardFightArea.RemoveCard(card, cardInitArea.GetPos());
 
 		// 死亡的卡牌回到牌堆
-		if (cardDeadArea.ContainsCard(card))
+		if (cardBackAction.sourceArea == CardArea.DeadArea)
 			return cardDeadArea.RemoveCard(card, cardInitArea.GetPos());
 
 		cardInitArea.AddCard(card);
@@ -106,11 +147,11 @@ public class PlayerGround : MonoBehaviour
 		CardFighter card = GetCardByID(cardDeadAction.targetID);
 
 		// 等待中的卡牌进入墓地
-		if (cardWaitArea.ContainsCard(card))
+		if (cardDeadAction.sourceArea == CardArea.WaitArea)
 			return cardWaitArea.RemoveCard(card, cardDeadArea.GetPos());
 		
 		// 战斗中的卡牌进入墓地
-		if (cardFightArea.ContainsCard(card))
+		if (cardDeadAction.sourceArea == CardArea.FightArea)
 			return cardFightArea.RemoveCard(card, cardDeadArea.GetPos());
 
 		cardDeadArea.AddCard(card);
@@ -127,10 +168,10 @@ public class PlayerGround : MonoBehaviour
 		CardFighter card = GetCardByID(cardFightAction.targetID);
 
 		// 等待中的卡牌进入战斗
-		if (cardWaitArea.ContainsCard(card))
+		if (cardFightAction.sourceArea == CardArea.WaitArea)
 		{
 			Vector3 pos = cardWaitArea.GetPos(card);
-			cardWaitArea.RemoveCard(card);
+			cardWaitArea.RemoveCard(card, pos);
 			return cardFightArea.AddCard(card, pos);
 		}
 		
