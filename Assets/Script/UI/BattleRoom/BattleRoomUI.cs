@@ -44,8 +44,12 @@ public class BattleRoomUI : MonoBehaviour
 			playerground0.ShowDamage(damageAction.damage);
 		else if (action.targetID == playerground1.ID)
 			playerground1.ShowDamage(damageAction.damage);
+		else if (playerground0.GetCardByID(action.targetID) != null)
+			return playerground0.ShowCardDamage(damageAction);
+		else if (playerground1.GetCardByID(action.targetID) != null)
+			return playerground1.ShowCardDamage(damageAction);
 
-		return 1f;
+		return 0;
 	}
 
 	/// <summary>

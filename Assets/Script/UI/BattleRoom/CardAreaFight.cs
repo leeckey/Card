@@ -80,6 +80,7 @@ public class CardAreaFight : CardAreaBase
 		base.ClearCard();
 		for (int i = 0; i < cards.Count; i++)
 		{
+			cards[i].transform.parent = cardAreas[i].transform;
 			HOTween.To(cards[i].transform, 0.3f, new TweenParms().Prop("position", cardAreas[i].transform.position));
 		}
 	}

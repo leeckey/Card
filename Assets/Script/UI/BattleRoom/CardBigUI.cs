@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Holoville.HOTween;
 
 public class CardBigUI : MonoBehaviour
 {
@@ -15,7 +16,11 @@ public class CardBigUI : MonoBehaviour
 
 	public UISprite cardBg;
 
+	public UILabel damageLabel;
+
 	CardFighter card;
+
+	int curHp;
 
 	public void SetCard(CardFighter card)
 	{
@@ -28,8 +33,18 @@ public class CardBigUI : MonoBehaviour
 	public void Reset()
 	{
 		cardName.text = card.cardData.name;
-		attLabel.text = string.Format("AT {0}", card.Attack);
-		hpLabel.text = string.Format("HP {1}", card.MaxHP);
+		attLabel.text = card.Attack.ToString();
+		hpLabel.text = card.MaxHP.ToString();
 		levelLabel.text = card.Level.ToString();
+		curHp = card.MaxHP;
+	}
+
+	public void ShowDamage(int damage)
+	{
+		damageLabel.text = "-" + damage;
+		TweenText.Begin(hpLabel, 0.3f, curHp, curHp - damage);
+		Vector3 pos = damageLabel.transform.localPosition;
+		HOTween.From(damageLabel.transform, 0.3f, new TweenParms().Prop("localPosition", new Vector3(pos.x, pos.y + 50, pos.z)));
+		HOTween.From(damageLabel, 0.3f, new TweenParms().Prop("alpha", 1f));
 	}
 }

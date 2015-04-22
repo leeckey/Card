@@ -34,8 +34,8 @@ public class CardSmallUI : MonoBehaviour
 
 	public void ShowActive()
 	{
-		attLabel.text = string.Format("AT {0}", card.Attack);
-		hpLabel.text = string.Format("HP {1}", card.MaxHP);
+		attLabel.text = card.Attack.ToString();
+		hpLabel.text = card.MaxHP.ToString();
 		round = card.waitRound;
 		waitRound.text = round.ToString();
 		roundGo.SetActive(true);

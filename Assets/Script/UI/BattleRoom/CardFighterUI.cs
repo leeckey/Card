@@ -62,4 +62,10 @@ public class CardFighterUI : MonoBehaviour
 		else
 			container.alpha = 0f;
 	}
+
+	public float ShowCardDamage(int damage)
+	{
+		bigUI.ShowDamage(damage);
+		return BattleControl.defaultTime;
+	}
 }

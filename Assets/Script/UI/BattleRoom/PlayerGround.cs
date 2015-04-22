@@ -81,6 +81,13 @@ public class PlayerGround : MonoBehaviour
 		return cardFightArea.ShowCard(card);
 	}
 
+	public float ShowCardDamage(DamageNotifyAction action)
+	{
+		int cardID = action.targetID;
+		CardFighterUI cardUI = GetCardByID(cardID);
+		return cardUI.ShowCardDamage(action.damage);
+	}
+
 
 	/// <summary>
 	/// 卡牌回到牌堆
