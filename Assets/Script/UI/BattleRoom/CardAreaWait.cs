@@ -17,12 +17,13 @@ public class CardAreaWait : CardAreaBase
 	{
 		cards.Add(card);
 
+		card.ShowUI(true);
 		// 显示这张卡牌到等待区域
 		card.transform.parent = cardParent.transform;
 		HOTween.To(card.transform, 0.3f, new TweenParms().Prop("position", cardAreas[cards.Count - 1].transform.position));
 		card.SetActive(true);
 
-		return 1f;
+		return BattleControl.defaultTime;
 	}
 
 	public override float RemoveCard(CardFighterUI card)

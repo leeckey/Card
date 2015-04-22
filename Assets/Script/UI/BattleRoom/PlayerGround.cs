@@ -75,6 +75,12 @@ public class PlayerGround : MonoBehaviour
 		HOTween.To(hpBarBack, 0.8f, new TweenParms().Prop("fillAmount", (float)hp / maxHp).Delay(0.2f));
 	}
 
+	public float ShowCard(int cardID)
+	{
+		CardFighterUI card = GetCardByID(cardID);
+		return cardFightArea.ShowCard(card);
+	}
+
 
 	/// <summary>
 	/// 卡牌回到牌堆

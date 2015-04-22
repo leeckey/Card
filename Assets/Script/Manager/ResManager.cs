@@ -29,4 +29,14 @@ public class ResManager
 	{
 		return LoadRes<Texture>("Texture/" + path);
 	}
+
+	public static Texture LoadCardIcon(int id)
+	{
+		return LoadRes<Texture>("Texture/CardIcon/CardIcon_" + id);
+	}
+
+	public static Texture LoadCardTexture(int id)
+	{
+		return LoadRes<Texture>("Texture/CardTexture/CardTextrue_" + id);
+	}
 }

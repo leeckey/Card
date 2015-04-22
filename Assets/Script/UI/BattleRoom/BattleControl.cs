@@ -16,6 +16,9 @@ public class BattleControl : MonoBehaviour
 	// 战斗UI
 	BattleRoomUI roomUI;
 
+	// 默认每个动作的之间间隔时间
+	public static float defaultTime = 1f;
+
 	void Awake()
 	{
 		roomUI = gameObject.GetComponent<BattleRoomUI>();

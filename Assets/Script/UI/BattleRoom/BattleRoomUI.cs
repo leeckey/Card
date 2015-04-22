@@ -27,14 +27,14 @@ public class BattleRoomUI : MonoBehaviour
 	{
 		battleRound.AddRound(action);
 
-		return 1f;
+		return BattleControl.defaultTime;
 	}
 
 	public float EndRound(BaseAction action)
 	{
 		playerground0.ClearArea();
 		playerground1.ClearArea();
-		return 1f;
+		return BattleControl.defaultTime;
 	}
 
 	public float ShowDamage(BaseAction action)
@@ -78,6 +78,20 @@ public class BattleRoomUI : MonoBehaviour
 	public float CardWait(BaseAction action)
 	{
 		return GetPlayer(action.sourceID).CardWait(action);
+	}
+
+	public float CardShow(BaseAction action)
+	{
+		int cardID = action.sourceID;
+		if (action.sourceArea != CardArea.None)
+			cardID = action.targetID;
+
+		if (playerground0.GetCardByID(cardID) != null)
+			return playerground0.ShowCard(cardID);
+		else if (playerground1.GetCardByID(cardID) != null)
+			return playerground1.ShowCard(cardID);
+
+		return 0;
 	}
 
 	// 获得当前行动的玩家

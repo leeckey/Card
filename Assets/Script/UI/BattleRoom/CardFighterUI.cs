@@ -5,6 +5,10 @@ public class CardFighterUI : MonoBehaviour
 {
 	public CardFighter fighter;
 
+	public CardSmallUI smallUI;
+
+	public CardBigUI bigUI;
+
 	UIWidget container;
 
 	void Awake()
@@ -21,6 +25,28 @@ public class CardFighterUI : MonoBehaviour
 
 			return 0;
 		}
+	}
+
+	public void ShowUI(bool small)
+	{
+		if (small)
+		{
+			smallUI.gameObject.SetActive(true);
+			bigUI.gameObject.SetActive(false);
+		}
+		else
+		{
+			smallUI.gameObject.SetActive(false);
+			bigUI.gameObject.SetActive(true);
+		}
+
+		SetActive(true);
+	}
+
+	public void ShowDead()
+	{
+		ShowUI(true);
+		smallUI.ShowDead();
 	}
 
 	public void InitCardUI(CardFighter card)

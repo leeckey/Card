@@ -303,6 +303,7 @@ public class CardFighter : BaseFighter
 	/// </summary>
 	public void DoRevive()
 	{
+		Reset();
 		owner.CardRevive(this);
 	}
 

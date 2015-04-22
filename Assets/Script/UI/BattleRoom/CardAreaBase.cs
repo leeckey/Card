@@ -19,13 +19,18 @@ public class CardAreaBase : MonoBehaviour
 		return cards.Contains(card);
 	}
 
+	public bool ContainsCard(int id)
+	{
+		return cards.Find(card => card.ID == id) != null;
+	}
+
 	/// <summary>
 	/// 增加一个卡牌
 	/// </summary>
 	public virtual float AddCard(CardFighterUI card)
 	{
 		cards.Add(card);
-		return 1f;
+		return BattleControl.defaultTime;
 	}
 
 	/// <summary>
@@ -36,7 +41,7 @@ public class CardAreaBase : MonoBehaviour
 		if (cards.Contains(card))
 			cards[cards.IndexOf(card)] = null;
 
-		return 0f;
+		return 0;
 	}
 
 	/// <summary>
