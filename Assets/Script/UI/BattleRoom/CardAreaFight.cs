@@ -25,7 +25,7 @@ public class CardAreaFight : CardAreaBase
 
 		// 显示这张卡牌到等待区域
 		card.transform.parent = cardAreas[cards.Count - 1].transform;
-		HOTween.To(card.transform, 0.3f, new TweenParms().Prop("position", cardAreas[cards.Count - 1].transform.position).OnComplete(() => {
+		HOTween.To(card.transform, 0.3f, new TweenParms().Prop("localPosition", Vector3.zero).Delay(time).OnComplete(() => {
 			if (card != null)
 				card.ShowUI(false);
 		}));

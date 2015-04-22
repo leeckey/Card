@@ -25,6 +25,8 @@ public class BuildAnimation : Editor
 		DirectoryInfo raw = new DirectoryInfo(ImagePath);		
 		foreach (DirectoryInfo dictorys in raw.GetDirectories()) 
 		{
+			if (AssetDatabase.LoadAssetAtPath(PrefabPath+ "/" + dictorys.Name+ ".prefab", typeof(GameObject)) != null)
+				continue;
 			List<AnimationClip> clips = new List<AnimationClip>();
 			//foreach (DirectoryInfo dictoryAnimations in dictorys.GetDirectories()) 
 			//{
@@ -33,8 +35,9 @@ public class BuildAnimation : Editor
 			//}
 			//把所有的动画文件生成在一个AnimationController里
 			AnimatorController controller =	BuildAnimationController(clips, dictorys.Name);
+
 			//最后生成程序用的Prefab文件
-			BuildPrefab(dictorys,controller);
+			BuildPrefab(dictorys, controller);
 		}	
 	}
 	
@@ -53,7 +56,7 @@ public class BuildAnimation : Editor
 		ObjectReferenceKeyframe[] keyFrames = new ObjectReferenceKeyframe[images.Length];
 
 		//动画长度是按秒为单位，1/10就表示1秒切10张图片，根据项目的情况可以自己调节
-		float frameTime = 1f;
+		float frameTime = 1/15f;
 		for (int i =0; i< images.Length; i++)
 		{
 			Sprite sprite = Resources.LoadAssetAtPath<Sprite>(DataPathToAssetPath(images[i].FullName));
@@ -66,7 +69,7 @@ public class BuildAnimation : Editor
 		clip.frameRate = 30;
 		
 		//有些动画我希望天生它就动画循环
-		if (animationName.IndexOf("idle") >= 0)
+		if (animationName.IndexOf("Buff") >= 0)
 		{
 			//设置idle文件为循环动画
 			SerializedObject serializedClip = new SerializedObject(clip);
@@ -76,16 +79,16 @@ public class BuildAnimation : Editor
 		}
 
 		string parentName = System.IO.Directory.GetParent(dictorys.FullName).Name;
-		System.IO.Directory.CreateDirectory(AnimationPath +"/"+parentName);
-		AnimationUtility.SetObjectReferenceCurve(clip,curveBinding,keyFrames);
-		AssetDatabase.CreateAsset(clip,AnimationPath +"/"+parentName +"/" +animationName+".anim");
+		System.IO.Directory.CreateDirectory(AnimationPath + "/" + parentName);
+		AnimationUtility.SetObjectReferenceCurve(clip, curveBinding, keyFrames);
+		AssetDatabase.CreateAsset(clip, AnimationPath +"/"+parentName +"/" +animationName+".anim");
 		AssetDatabase.SaveAssets();
 		return clip;
 	}
 	
 	static AnimatorController BuildAnimationController(List<AnimationClip> clips, string name)
 	{
-		AnimatorController animatorController = AnimatorController.CreateAnimatorControllerAtPath(AnimationControllerPath +"/"+name+".controller");
+		AnimatorController animatorController = AnimatorController.CreateAnimatorControllerAtPath(AnimationControllerPath + "/" + name + ".controller");
 		AnimatorControllerLayer layer = animatorController.GetLayer(0);
 		UnityEditorInternal.StateMachine sm = layer.stateMachine;
 		foreach(AnimationClip newClip in clips)
@@ -105,11 +108,11 @@ public class BuildAnimation : Editor
 		FileInfo images = dictorys.GetFiles("*.png")[0];
 		GameObject go = new GameObject();
 		go.name = dictorys.Name;
-		SpriteRenderer spriteRender =go.AddComponent<SpriteRenderer>();
+		SpriteRenderer spriteRender = go.AddComponent<SpriteRenderer>();
 		spriteRender.sprite = Resources.LoadAssetAtPath<Sprite>(DataPathToAssetPath(images.FullName));
 		Animator animator = go.AddComponent<Animator>();
 		animator.runtimeAnimatorController = animatorCountorller;
-		PrefabUtility.CreatePrefab(PrefabPath+"/"+go.name+".prefab",go);
+		PrefabUtility.CreatePrefab(PrefabPath + "/" + go.name+".prefab", go);
 		DestroyImmediate(go);
 	}
 	

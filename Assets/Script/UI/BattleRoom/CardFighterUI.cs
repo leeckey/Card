@@ -31,13 +31,13 @@ public class CardFighterUI : MonoBehaviour
 	{
 		if (small)
 		{
-			smallUI.gameObject.SetActive(true);
-			bigUI.gameObject.SetActive(false);
+			//smallUI.gameObject.SetActive(true);
+			//bigUI.gameObject.SetActive(false);
 		}
 		else
 		{
-			smallUI.gameObject.SetActive(false);
-			bigUI.gameObject.SetActive(true);
+			//smallUI.gameObject.SetActive(false);
+			//bigUI.gameObject.SetActive(true);
 		}
 
 		SetActive(true);
@@ -45,8 +45,8 @@ public class CardFighterUI : MonoBehaviour
 
 	public void ShowDead()
 	{
-		ShowUI(true);
-		smallUI.ShowDead();
+		//ShowUI(true);
+		//smallUI.ShowDead();
 	}
 
 	public void InitCardUI(CardFighter card)
@@ -61,11 +61,15 @@ public class CardFighterUI : MonoBehaviour
 			container.alpha = 1f;
 		else
 			container.alpha = 0f;
+
+		//gameObject.SetActive(false);
+		//gameObject.SetActive(true);
+		container.ParentHasChanged();
 	}
 
 	public float ShowCardDamage(int damage)
 	{
-		bigUI.ShowDamage(damage);
+		//bigUI.ShowDamage(damage);
 		return BattleControl.defaultTime;
 	}
 }

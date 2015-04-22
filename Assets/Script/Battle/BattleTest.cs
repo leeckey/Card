@@ -34,7 +34,7 @@ public class BattleTest : MonoBehaviour
 			cardData.ID = i;
 			CardFighter card = CardFighter.NewCard(cardData);
 
-			if (i < 5)
+			if (i < 3)
 			{
 				card.owner = player0;
 				player0.allCard.Add(card);

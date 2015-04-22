@@ -58,7 +58,8 @@ public class PlayerFighter : BaseFighter
 	/// </summary>
 	public bool IsCardOver()
 	{
-		return allCard.Count == deadCard.Count;
+		return false;
+		//return allCard.Count == deadCard.Count;
 	}
 
 	/// <summary>
