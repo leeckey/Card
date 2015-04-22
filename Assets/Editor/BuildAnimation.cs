@@ -57,7 +57,7 @@ public class BuildAnimation : Editor
 		for (int i =0; i< images.Length; i++)
 		{
 			Sprite sprite = Resources.LoadAssetAtPath<Sprite>(DataPathToAssetPath(images[i].FullName));
-			keyFrames[i] =   new ObjectReferenceKeyframe ();
+			keyFrames[i] = new ObjectReferenceKeyframe();
 			keyFrames[i].time = frameTime * i;
 			keyFrames[i].value = sprite;
 		}
