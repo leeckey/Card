@@ -64,7 +64,10 @@ public class CardFighterUI : MonoBehaviour
 
 		//gameObject.SetActive(false);
 		//gameObject.SetActive(true);
-		container.ParentHasChanged();
+		// container.ParentHasChanged();
+		UIWidget[] childs = gameObject.GetComponentsInChildren<UIWidget>();
+		foreach (UIWidget widget in childs)
+			widget.ParentHasChanged();
 	}
 
 	public float ShowCardDamage(int damage)
