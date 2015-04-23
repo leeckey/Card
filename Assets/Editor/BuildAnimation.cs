@@ -19,7 +19,7 @@ public class BuildAnimation : Editor
 	//美术给的原始图片路径
 	private static string ImagePath = Application.dataPath +"/Art/Effect";
 	
-	[MenuItem("Build/BuildAnimaiton")]
+	[MenuItem("Tools/BuildAnimaiton")]
 	static void BuildAniamtion() 
 	{
 		DirectoryInfo raw = new DirectoryInfo(ImagePath);		
@@ -41,14 +41,16 @@ public class BuildAnimation : Editor
 		}	
 	}
 	
-	
+	/// <summary>
+	/// 生成动画片段
+	/// </summary>
 	static AnimationClip BuildAnimationClip(DirectoryInfo dictorys)
 	{
 		string animationName = dictorys.Name;
 		//查找所有图片，因为我找的测试动画是.jpg 
 		FileInfo[] images = dictorys.GetFiles("*.png");
 		AnimationClip clip = new AnimationClip();
-		AnimationUtility.SetAnimationType(clip,ModelImporterAnimationType.Generic);
+		AnimationUtility.SetAnimationType(clip, ModelImporterAnimationType.Generic);
 		EditorCurveBinding curveBinding = new EditorCurveBinding();
 		curveBinding.type = typeof(SpriteRenderer);
 		curveBinding.path = "";
@@ -67,7 +69,7 @@ public class BuildAnimation : Editor
 
 		//动画帧率，30比较合适
 		clip.frameRate = 30;
-		
+
 		//有些动画我希望天生它就动画循环
 		if (animationName.IndexOf("Buff") >= 0)
 		{
@@ -85,7 +87,10 @@ public class BuildAnimation : Editor
 		AssetDatabase.SaveAssets();
 		return clip;
 	}
-	
+
+	/// <summary>
+	/// 生成动画控制器
+	/// </summary>
 	static AnimatorController BuildAnimationController(List<AnimationClip> clips, string name)
 	{
 		AnimatorController animatorController = AnimatorController.CreateAnimatorControllerAtPath(AnimationControllerPath + "/" + name + ".controller");
@@ -93,7 +98,7 @@ public class BuildAnimation : Editor
 		UnityEditorInternal.StateMachine sm = layer.stateMachine;
 		foreach(AnimationClip newClip in clips)
 		{
-			State  state = sm.AddState(newClip.name);
+			State state = sm.AddState(newClip.name);
 			state.SetAnimationClip(newClip,layer);
 			Transition trans = sm.AddAnyStateTransition(state);
 			trans.RemoveCondition(0);
@@ -101,7 +106,10 @@ public class BuildAnimation : Editor
 		AssetDatabase.SaveAssets();
 		return animatorController;
 	}
-	
+
+	/// <summary>
+	/// 生成动画对象
+	/// </summary>
 	static void BuildPrefab(DirectoryInfo dictorys, AnimatorController animatorCountorller)
 	{
 		//生成Prefab 添加一张预览用的Sprite
@@ -116,7 +124,7 @@ public class BuildAnimation : Editor
 		DestroyImmediate(go);
 	}
 	
-	
+	// 路径准换
 	public static string DataPathToAssetPath(string path)
 	{
 		if (Application.platform == RuntimePlatform.WindowsEditor)
@@ -125,7 +133,7 @@ public class BuildAnimation : Editor
 			return path.Substring(path.IndexOf("Assets/"));
 	}
 	
-	
+	// 动画配置类
 	class AnimationClipSettings
 	{
 		SerializedProperty m_Property;

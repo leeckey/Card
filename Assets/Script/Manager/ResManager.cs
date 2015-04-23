@@ -39,4 +39,9 @@ public class ResManager
 	{
 		return LoadRes<Texture>("Texture/CardTexture/CardTextrue_" + id);
 	}
+
+	public static GameObject LoadSkillEffect(int skillID)
+	{
+		return LoadRes<GameObject>("Prefabs/Effect/Effect_" + skillID);
+	}
 }

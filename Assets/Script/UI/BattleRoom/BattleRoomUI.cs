@@ -44,12 +44,73 @@ public class BattleRoomUI : MonoBehaviour
 			playerground0.ShowDamage(damageAction.damage);
 		else if (action.targetID == playerground1.ID)
 			playerground1.ShowDamage(damageAction.damage);
-		else if (playerground0.GetCardByID(action.targetID) != null)
-			return playerground0.ShowCardDamage(damageAction);
-		else if (playerground1.GetCardByID(action.targetID) != null)
-			return playerground1.ShowCardDamage(damageAction);
+		else
+		{
+			CardFighterUI cardUI = GetCardUI(action.targetID);
+			if (cardUI != null)
+				return cardUI.ShowCardDamage(damageAction.damage);
+		}
 
 		return 0;
+	}
+
+	public float AttackChange(BaseAction action)
+	{
+		AttackChangeAction attackChangeAction = action as AttackChangeAction;
+		CardFighterUI cardUI = GetCardUI(action.targetID);
+		if (cardUI != null)
+			return cardUI.AttackChange(attackChangeAction.num);
+
+		return 0;
+	}
+
+	public float CardCure(BaseAction action)
+	{
+		CureNotifyAction cureAction = action as CureNotifyAction;
+		CardFighterUI cardUI = GetCardUI(action.targetID);
+		if (cardUI != null)
+			return cardUI.ShowCardCure(cureAction.cure);
+		
+		return 0;
+	}
+
+	public float MaxHpChange(BaseAction action)
+	{
+		MaxHpChangeAction maxHpAction = action as MaxHpChangeAction;
+		CardFighterUI cardUI = GetCardUI(action.targetID);
+		if (cardUI != null)
+			return cardUI.MaxHpChange(maxHpAction.num);
+		
+		return 0;
+	}
+
+	public CardFighterUI GetCardUI(int id)
+	{
+		CardFighterUI cardUI = playerground0.GetCardByID(id);
+		if (cardUI == null)
+			cardUI = playerground1.GetCardByID(id);
+
+		return cardUI;
+	}
+
+	public float CastSkill(BaseAction action)
+	{
+		SkillStartAction skillStartAction = action as SkillStartAction;
+
+		int cardID = skillStartAction.sourceID;
+		CardFighterUI cardUI = GetCardUI(cardID);
+
+		cardUI.StandUp();
+
+		foreach (int id in skillStartAction.targets)
+		{
+			CardFighterUI target = GetCardUI(id);
+			target.ShowSkill(skillStartAction.skillID);
+		}
+
+		cardUI.SitDown();
+
+		return BattleControl.defaultTime;
 	}
 
 	/// <summary>

@@ -75,4 +75,40 @@ public class CardFighterUI : MonoBehaviour
 		//bigUI.ShowDamage(damage);
 		return BattleControl.defaultTime;
 	}
+
+	public float AttackChange(int att)
+	{
+		return BattleControl.defaultTime;
+	}
+
+	public float ShowCardCure(int cure)
+	{
+		return BattleControl.defaultTime;
+	}
+
+	public float MaxHpChange(int num)
+	{
+		return BattleControl.defaultTime;
+	}
+
+	public float ShowSkill(int skillID)
+	{
+		GameObject effect = ResManager.LoadSkillEffect(skillID);
+		Animator animator = effect.GetComponent<Animator>();
+		// animator.animation.clip.
+		// AnimatorController controll = effect.GetComponent<AnimatorController>();
+
+		return BattleControl.defaultTime;
+	}
+
+	public void StandUp()
+	{
+
+	}
+
+	public void SitDown()
+	{
+
+	}
+	
 }
