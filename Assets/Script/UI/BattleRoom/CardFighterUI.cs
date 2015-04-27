@@ -21,7 +21,7 @@ public class CardFighterUI : MonoBehaviour
 		get
 		{
 			if (fighter != null)
-				return fighter.ID; 
+				return fighter.ID;
 
 			return 0;
 		}
@@ -70,35 +70,35 @@ public class CardFighterUI : MonoBehaviour
 			widget.ParentHasChanged();
 	}
 
-	public float ShowCardDamage(int damage)
+	public void ShowCardDamage(int damage)
 	{
 		//bigUI.ShowDamage(damage);
-		return BattleControl.defaultTime;
 	}
 
-	public float AttackChange(int att)
+	public void AttackChange(int att)
 	{
-		return BattleControl.defaultTime;
+
 	}
 
-	public float ShowCardCure(int cure)
+	public void ShowCardCure(int cure)
 	{
-		return BattleControl.defaultTime;
+
 	}
 
-	public float MaxHpChange(int num)
+	public void MaxHpChange(int num)
 	{
-		return BattleControl.defaultTime;
+
 	}
 
-	public float ShowSkill(int skillID)
+	public IEnumerator ShowSkill(int skillID)
 	{
 		GameObject effect = ResManager.LoadSkillEffect(skillID);
 		Animator animator = effect.GetComponent<Animator>();
 		// animator.animation.clip.
 		// AnimatorController controll = effect.GetComponent<AnimatorController>();
 
-		return BattleControl.defaultTime;
+
+		yield return null;
 	}
 
 	public void StandUp()

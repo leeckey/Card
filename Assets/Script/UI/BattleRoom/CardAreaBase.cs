@@ -27,21 +27,18 @@ public class CardAreaBase : MonoBehaviour
 	/// <summary>
 	/// 增加一个卡牌
 	/// </summary>
-	public virtual float AddCard(CardFighterUI card)
+	public virtual void AddCard(CardFighterUI card)
 	{
 		cards.Add(card);
-		return BattleControl.defaultTime;
 	}
 
 	/// <summary>
 	/// 移除区域中一个卡牌
 	/// </summary>
-	public virtual float RemoveCard(CardFighterUI card)
+	public virtual void RemoveCard(CardFighterUI card)
 	{
 		if (cards.Contains(card))
 			cards[cards.IndexOf(card)] = null;
-
-		return 0;
 	}
 
 	/// <summary>

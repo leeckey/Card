@@ -17,46 +17,49 @@ public class CardAreaFight : CardAreaBase
 	/// <summary>
 	/// 增加一个卡牌
 	/// </summary>
-	public override float AddCard(CardFighterUI card)
+	public override void AddCard(CardFighterUI card)
 	{
 		cards.Add(card);
 
-		float time = CenterArea(cards.Count - 1);
+		//if (CenterArea(cards.Count - 1))
+		//	yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
 
 		// 显示这张卡牌到等待区域
-		card.transform.parent = cardAreas[cards.Count - 1].transform;
-		HOTween.To(card.transform, 0.3f, new TweenParms().Prop("localPosition", Vector3.zero).Delay(time).OnComplete(() => {
+
+		HOTween.To(card.transform, BattleTime.CARD_MOVE_TIME, 
+		           new TweenParms().Prop("position", cardAreas[cards.Count - 1].transform.position).Delay(BattleTime.CARD_MOVE_TIME).OnComplete(() => {
 			if (card != null)
+			{
+				card.transform.parent = cardAreas[cards.Count - 1].transform;
 				card.ShowUI(false);
+			}
 		}));
 		card.SetActive(true);
-		
-		return BattleControl.defaultTime + time;
 	}
 
-	public float ShowCard(CardFighterUI card)
+	public bool ShowCard(CardFighterUI card)
 	{
-		int index = cards.Count - 1;
+		int index = cards.Count;
 		if (card != null)
 			index = cards.IndexOf(card);
 
 		return CenterArea(index);
 	}
 
-	public float CenterArea(int index)
+	public bool CenterArea(int index)
 	{
 		if (index < centerIndex - 2)
 		{
 			OnCenter(index + 2);
-			return BattleControl.defaultTime;
+			return true;
 		}
 		else if (index > centerIndex + 2)
 		{
 			OnCenter(index - 2);
-			return BattleControl.defaultTime;
+			return true;
 		}
 
-		return 0;
+		return false;
 	}
 
 	void OnCenter(int index)
@@ -64,16 +67,7 @@ public class CardAreaFight : CardAreaBase
 		centerIndex = index;
 		uiCenter.CenterOn(cardAreas[index].transform);
 	}
-
-	/// <summary>
-	/// 移除区域中一个卡牌
-	/// </summary>
-	public override float RemoveCard(CardFighterUI card)
-	{
-		// 删除显示对象
-		
-		return base.RemoveCard(card);
-	}
+	
 
 	public override void ClearCard()
 	{
@@ -81,7 +75,7 @@ public class CardAreaFight : CardAreaBase
 		for (int i = 0; i < cards.Count; i++)
 		{
 			cards[i].transform.parent = cardAreas[i].transform;
-			HOTween.To(cards[i].transform, 0.3f, new TweenParms().Prop("position", cardAreas[i].transform.position));
+			HOTween.To(cards[i].transform, BattleTime.CARD_MOVE_TIME, new TweenParms().Prop("position", cardAreas[i].transform.position));
 		}
 	}
 }

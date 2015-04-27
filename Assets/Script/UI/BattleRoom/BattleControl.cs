@@ -14,10 +14,8 @@ public class BattleControl : MonoBehaviour
 	HandleFactory handleFactory;
 
 	// 战斗UI
-	BattleRoomUI roomUI;
+	public BattleRoomUI roomUI;
 
-	// 默认每个动作的之间间隔时间
-	public static float defaultTime = 1f;
 
 	void Awake()
 	{
@@ -57,7 +55,7 @@ public class BattleControl : MonoBehaviour
 			actions.RemoveAt(0);
 			
 			BaseHandler handle = handleFactory.GetHandle(action.type);
-			handle.Handle(action);
+			handle.Handle(this, action);
 		}
 		else
 		{

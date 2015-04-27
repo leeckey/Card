@@ -5,8 +5,6 @@ public class CardDeadHandler : BaseHandler
 {
 	protected override void InitHandle()
 	{
-		base.InitHandle();
-		
-		handleList.Add(roomUI.CardDead);
+		handler = roomUI.CardDead;
 	}
 }

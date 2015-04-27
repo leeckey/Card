@@ -11,12 +11,12 @@ public class BattleRound : MonoBehaviour
 	/// <summary>
 	/// 回合数增加
 	/// </summary>
-	public float AddRound(BaseAction action)
+	public IEnumerator AddRound(BaseAction action)
 	{
 		RoundStartAction roundStartAction = action as RoundStartAction;
 
 		roundLabel.text = roundStartAction.round.ToString();
 
-		return 1f;
+		yield return new WaitForSeconds(BattleTime.ROUND_CHANGE_TIME);
 	}
 }

@@ -13,23 +13,15 @@ public class CardAreaWait : CardAreaBase
 	/// <summary>
 	/// 增加一个卡牌
 	/// </summary>
-	public override float AddCard(CardFighterUI card)
+	public override void AddCard(CardFighterUI card)
 	{
 		cards.Add(card);
-
 		card.ShowUI(true);
+
 		// 显示这张卡牌到等待区域
 		card.transform.parent = cardParent.transform;
-		HOTween.To(card.transform, 0.3f, new TweenParms().Prop("position", cardAreas[cards.Count - 1].transform.position));
+		HOTween.To(card.transform, BattleTime.CARD_MOVE_TIME, new TweenParms().Prop("position", cardAreas[cards.Count - 1].transform.position));
 		card.SetActive(true);
-
-		return BattleControl.defaultTime;
-	}
-
-	public override float RemoveCard(CardFighterUI card)
-	{
-		card.SetActive(false);
-		return base.RemoveCard(card);
 	}
 
 	public override void ClearCard()
@@ -37,7 +29,7 @@ public class CardAreaWait : CardAreaBase
 		base.ClearCard();
 		for (int i = 0; i < cards.Count; i++)
 		{
-			HOTween.To(cards[i].transform, 0.3f, new TweenParms().Prop("position", cardAreas[i].transform.position));
+			HOTween.To(cards[i].transform, BattleTime.CARD_MOVE_TIME, new TweenParms().Prop("position", cardAreas[i].transform.position));
 		}
 	}
 }

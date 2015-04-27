@@ -577,7 +577,7 @@ MonoBehaviour:
     param1: 25
     param2: 45
     param3: 0
-    buffID: 2
+    buffID: 0
   - id: 6
     templateID: 101
     name: "\u8FDE\u73AF\u95EA\u7535"
@@ -590,7 +590,7 @@ MonoBehaviour:
     param1: 25
     param2: 40
     param3: 0
-    buffID: 2
+    buffID: 0
   - id: 7
     templateID: 101
     name: "\u96F7\u66B4"
@@ -603,7 +603,7 @@ MonoBehaviour:
     param1: 25
     param2: 35
     param3: 0
-    buffID: 2
+    buffID: 0
   - id: 8
     templateID: 101
     name: "\u51B0\u5F39"
@@ -616,7 +616,7 @@ MonoBehaviour:
     param1: 20
     param2: 45
     param3: 0
-    buffID: 1
+    buffID: 0
   - id: 9
     templateID: 101
     name: "\u971C\u51BB\u65B0\u661F"
@@ -629,7 +629,7 @@ MonoBehaviour:
     param1: 20
     param2: 40
     param3: 0
-    buffID: 1
+    buffID: 0
   - id: 10
     templateID: 101
     name: "\u66B4\u98CE\u96EA"
@@ -642,7 +642,7 @@ MonoBehaviour:
     param1: 20
     param2: 35
     param3: 0
-    buffID: 1
+    buffID: 0
   - id: 11
     templateID: 101
     name: "\u6BD2\u6DB2"
@@ -655,7 +655,7 @@ MonoBehaviour:
     param1: 20
     param2: 100
     param3: 0
-    buffID: 3
+    buffID: 0
   - id: 12
     templateID: 101
     name: "\u6BD2\u96FE"
@@ -668,7 +668,7 @@ MonoBehaviour:
     param1: 20
     param2: 100
     param3: 0
-    buffID: 3
+    buffID: 0
   - id: 13
     templateID: 103
     name: "\u8840\u70BC"
@@ -694,7 +694,7 @@ MonoBehaviour:
     param1: 0
     param2: 65
     param3: 0
-    buffID: 4
+    buffID: 0
   - id: 15
     templateID: 101
     name: "\u9677\u9631"
@@ -707,7 +707,7 @@ MonoBehaviour:
     param1: 0
     param2: 65
     param3: 0
-    buffID: 4
+    buffID: 0
   - id: 16
     templateID: 106
     name: "\u8BC5\u5492"
@@ -759,7 +759,7 @@ MonoBehaviour:
     param1: 0
     param2: 0
     param3: 0
-    buffID: 5
+    buffID: 0
   - id: 20
     templateID: 221
     name: "\u75BE\u75C5"
@@ -891,7 +891,7 @@ MonoBehaviour:
     param1: 0
     param2: 0
     param3: 0
-    buffID: 6
+    buffID: 0
   - id: 30
     templateID: 200
     name: "\u6A2A\u626B"
@@ -1112,7 +1112,7 @@ MonoBehaviour:
     param1: 25
     param2: 0
     param3: 0
-    buffID: 5
+    buffID: 0
   - id: 47
     templateID: 204
     name: "\u95EA\u907F"
@@ -1410,7 +1410,7 @@ MonoBehaviour:
     discription: "\u884C\u52A8\u7ED3\u675F\u540E\u53D7\u523020\u70B9\u4F24\u5BB3"
     param1: 20
     round: 1
-    superposition: 1
+    superposition: 0
   - id: 4
     templateID: 100
     name: "\u9677\u9631"
@@ -1426,7 +1426,7 @@ MonoBehaviour:
     discription: "\u884C\u52A8\u7ED3\u675F\u540E\u53D7\u523020\u70B9\u4F24\u5BB3"
     param1: 20
     round: 9999
-    superposition: 1
+    superposition: 0
   - id: 6
     templateID: 103
     name: "\u88C2\u4F24"
@@ -1453,7 +1453,7 @@ MonoBehaviour:
     skill3Para: 1
     starLv: 1
     country: 1
-    cost: 3
+    cost: 0
   - templateID: 2
     name: "\u957F\u67AA\u5175"
     baseHP: 330
@@ -1471,7 +1471,7 @@ MonoBehaviour:
     skill3Para: 4
     starLv: 1
     country: 1
-    cost: 4
+    cost: 0
   - templateID: 3
     name: "\u5143\u620E\u5F29"
     baseHP: 370
@@ -1489,7 +1489,7 @@ MonoBehaviour:
     skill3Para: 2
     starLv: 1
     country: 1
-    cost: 3
+    cost: 0
   - templateID: 4
     name: "\u9AA0\u5200\u9A91"
     baseHP: 360
@@ -1507,7 +1507,7 @@ MonoBehaviour:
     skill3Para: 4
     starLv: 1
     country: 1
-    cost: 5
+    cost: 0
   - templateID: 5
     name: "\u9648\u5230"
     baseHP: 500
@@ -1525,7 +1525,7 @@ MonoBehaviour:
     skill3Para: 2
     starLv: 2
     country: 1
-    cost: 6
+    cost: 0
   - templateID: 6
     name: "\u5468\u4ED3"
     baseHP: 520
@@ -1543,7 +1543,7 @@ MonoBehaviour:
     skill3Para: 0
     starLv: 2
     country: 1
-    cost: 6
+    cost: 0
   - templateID: 7
     name: "\u5B59\u4E7E"
     baseHP: 460
@@ -1561,7 +1561,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 2
     country: 1
-    cost: 8
+    cost: 0
   - templateID: 8
     name: "\u7CDC\u7AFA"
     baseHP: 400
@@ -1579,7 +1579,7 @@ MonoBehaviour:
     skill3Para: 3
     starLv: 2
     country: 1
-    cost: 5
+    cost: 0
   - templateID: 9
     name: "\u738B\u5E73"
     baseHP: 520
@@ -1597,7 +1597,7 @@ MonoBehaviour:
     skill3Para: 3
     starLv: 2
     country: 1
-    cost: 6
+    cost: 0
   - templateID: 10
     name: "\u5173\u5174"
     baseHP: 620
@@ -1615,7 +1615,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 3
     country: 1
-    cost: 9
+    cost: 0
   - templateID: 11
     name: "\u5173\u5E73"
     baseHP: 780
@@ -1633,7 +1633,7 @@ MonoBehaviour:
     skill3Para: 7
     starLv: 3
     country: 1
-    cost: 10
+    cost: 0
   - templateID: 12
     name: "\u9A6C\u5CB1"
     baseHP: 620
@@ -1651,7 +1651,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 3
     country: 1
-    cost: 10
+    cost: 0
   - templateID: 13
     name: "\u848B\u742C"
     baseHP: 650
@@ -1669,7 +1669,7 @@ MonoBehaviour:
     skill3Para: 4
     starLv: 3
     country: 1
-    cost: 8
+    cost: 0
   - templateID: 14
     name: "\u8D39\u794E"
     baseHP: 560
@@ -1687,7 +1687,7 @@ MonoBehaviour:
     skill3Para: 6
     starLv: 3
     country: 1
-    cost: 8
+    cost: 0
   - templateID: 15
     name: "\u9A6C\u8C21"
     baseHP: 650
@@ -1705,7 +1705,7 @@ MonoBehaviour:
     skill3Para: 3
     starLv: 3
     country: 1
-    cost: 11
+    cost: 0
   - templateID: 16
     name: "\u5ED6\u5316"
     baseHP: 750
@@ -1723,7 +1723,7 @@ MonoBehaviour:
     skill3Para: 4
     starLv: 3
     country: 1
-    cost: 11
+    cost: 0
   - templateID: 17
     name: "\u6CD5\u6B63"
     baseHP: 550
@@ -1741,7 +1741,7 @@ MonoBehaviour:
     skill3Para: 4
     starLv: 3
     country: 1
-    cost: 8
+    cost: 0
   - templateID: 18
     name: "\u5F20\u82DE"
     baseHP: 600
@@ -1759,7 +1759,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 3
     country: 1
-    cost: 9
+    cost: 0
   - templateID: 19
     name: "\u9B4F\u5EF6"
     baseHP: 540
@@ -1777,7 +1777,7 @@ MonoBehaviour:
     skill3Para: 0
     starLv: 3
     country: 1
-    cost: 11
+    cost: 0
   - templateID: 20
     name: "\u9EC4\u5FE0"
     baseHP: 880
@@ -1795,7 +1795,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 4
     country: 1
-    cost: 12
+    cost: 0
   - templateID: 21
     name: "\u9EC4\u6708\u82F1"
     baseHP: 800
@@ -1813,7 +1813,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 4
     country: 1
-    cost: 13
+    cost: 0
   - templateID: 22
     name: "\u8D75\u4E91"
     baseHP: 1100
@@ -1831,7 +1831,7 @@ MonoBehaviour:
     skill3Para: 6
     starLv: 4
     country: 1
-    cost: 14
+    cost: 0
   - templateID: 23
     name: "\u8BF8\u845B\u4EAE"
     baseHP: 790
@@ -1849,7 +1849,7 @@ MonoBehaviour:
     skill3Para: 0
     starLv: 4
     country: 1
-    cost: 11
+    cost: 0
   - templateID: 24
     name: "\u5F90\u5EB6"
     baseHP: 990
@@ -1867,7 +1867,7 @@ MonoBehaviour:
     skill3Para: 7
     starLv: 4
     country: 1
-    cost: 13
+    cost: 0
   - templateID: 25
     name: "\u9A6C\u8D85"
     baseHP: 815
@@ -1885,7 +1885,7 @@ MonoBehaviour:
     skill3Para: 8
     starLv: 4
     country: 1
-    cost: 12
+    cost: 0
   - templateID: 26
     name: "\u5E9E\u7EDF"
     baseHP: 820
@@ -1903,7 +1903,7 @@ MonoBehaviour:
     skill3Para: 8
     starLv: 4
     country: 1
-    cost: 11
+    cost: 0
   - templateID: 27
     name: "\u59DC\u7EF4"
     baseHP: 840
@@ -1921,7 +1921,7 @@ MonoBehaviour:
     skill3Para: 8
     starLv: 4
     country: 1
-    cost: 13
+    cost: 0
   - templateID: 28
     name: "\u5173\u7FBD"
     baseHP: 900
@@ -1939,7 +1939,7 @@ MonoBehaviour:
     skill3Para: 6
     starLv: 4
     country: 1
-    cost: 13
+    cost: 0
   - templateID: 29
     name: "\u5F20\u98DE"
     baseHP: 780
@@ -1957,7 +1957,7 @@ MonoBehaviour:
     skill3Para: 3
     starLv: 4
     country: 1
-    cost: 13
+    cost: 0
   - templateID: 30
     name: "\u5218\u5907"
     baseHP: 1450
@@ -1975,7 +1975,7 @@ MonoBehaviour:
     skill3Para: 0
     starLv: 5
     country: 1
-    cost: 14
+    cost: 0
   - templateID: 31
     name: "\u864E\u536B\u519B"
     baseHP: 310
@@ -1993,7 +1993,7 @@ MonoBehaviour:
     skill3Para: 4
     starLv: 1
     country: 2
-    cost: 4
+    cost: 0
   - templateID: 32
     name: "\u864E\u8C79\u9A91"
     baseHP: 270
@@ -2011,7 +2011,7 @@ MonoBehaviour:
     skill3Para: 4
     starLv: 1
     country: 2
-    cost: 5
+    cost: 0
   - templateID: 33
     name: "\u9739\u96F3\u8F66"
     baseHP: 400
@@ -2029,7 +2029,7 @@ MonoBehaviour:
     skill3Para: 4
     starLv: 1
     country: 2
-    cost: 4
+    cost: 0
   - templateID: 34
     name: "\u9752\u5DDE\u5175"
     baseHP: 290
@@ -2047,7 +2047,7 @@ MonoBehaviour:
     skill3Para: 6
     starLv: 1
     country: 2
-    cost: 3
+    cost: 0
   - templateID: 35
     name: "\u949F\u4F1A"
     baseHP: 470
@@ -2065,7 +2065,7 @@ MonoBehaviour:
     skill3Para: 7
     starLv: 2
     country: 2
-    cost: 7
+    cost: 0
   - templateID: 36
     name: "\u66F9\u5F70"
     baseHP: 400
@@ -2083,7 +2083,7 @@ MonoBehaviour:
     skill3Para: 4
     starLv: 2
     country: 2
-    cost: 6
+    cost: 0
   - templateID: 37
     name: "\u674E\u5178"
     baseHP: 480
@@ -2101,7 +2101,7 @@ MonoBehaviour:
     skill3Para: 3
     starLv: 2
     country: 2
-    cost: 7
+    cost: 0
   - templateID: 38
     name: "\u9093\u827E"
     baseHP: 500
@@ -2119,7 +2119,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 2
     country: 2
-    cost: 6
+    cost: 0
   - templateID: 39
     name: "\u4E50\u8FDB"
     baseHP: 370
@@ -2137,7 +2137,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 2
     country: 2
-    cost: 5
+    cost: 0
   - templateID: 40
     name: "\u66F9\u4E15"
     baseHP: 520
@@ -2155,7 +2155,7 @@ MonoBehaviour:
     skill3Para: 7
     starLv: 3
     country: 2
-    cost: 8
+    cost: 0
   - templateID: 41
     name: "\u66F9\u6D2A"
     baseHP: 590
@@ -2173,7 +2173,7 @@ MonoBehaviour:
     skill3Para: 7
     starLv: 3
     country: 2
-    cost: 9
+    cost: 0
   - templateID: 42
     name: "\u8521\u6587\u59EC"
     baseHP: 560
@@ -2191,7 +2191,7 @@ MonoBehaviour:
     skill3Para: 4
     starLv: 3
     country: 2
-    cost: 9
+    cost: 0
   - templateID: 43
     name: "\u590F\u4FAF\u6E0A"
     baseHP: 760
@@ -2209,7 +2209,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 3
     country: 2
-    cost: 11
+    cost: 0
   - templateID: 44
     name: "\u4E8E\u7981"
     baseHP: 700
@@ -2227,7 +2227,7 @@ MonoBehaviour:
     skill3Para: 4
     starLv: 3
     country: 2
-    cost: 8
+    cost: 0
   - templateID: 45
     name: "\u6768\u4FEE"
     baseHP: 570
@@ -2245,7 +2245,7 @@ MonoBehaviour:
     skill3Para: 7
     starLv: 3
     country: 2
-    cost: 8
+    cost: 0
   - templateID: 46
     name: "\u8340\u6538"
     baseHP: 650
@@ -2263,7 +2263,7 @@ MonoBehaviour:
     skill3Para: 6
     starLv: 3
     country: 2
-    cost: 9
+    cost: 0
   - templateID: 47
     name: "\u5F90\u6643"
     baseHP: 785
@@ -2281,7 +2281,7 @@ MonoBehaviour:
     skill3Para: 4
     starLv: 3
     country: 2
-    cost: 10
+    cost: 0
   - templateID: 48
     name: "\u5F20\u6625\u534E"
     baseHP: 700
@@ -2299,7 +2299,7 @@ MonoBehaviour:
     skill3Para: 1
     starLv: 3
     country: 2
-    cost: 9
+    cost: 0
   - templateID: 49
     name: "\u66F9\u4EC1"
     baseHP: 630
@@ -2317,7 +2317,7 @@ MonoBehaviour:
     skill3Para: 6
     starLv: 3
     country: 2
-    cost: 10
+    cost: 0
   - templateID: 50
     name: "\u53F8\u9A6C\u61FF"
     baseHP: 870
@@ -2335,7 +2335,7 @@ MonoBehaviour:
     skill3Para: 0,62,0
     starLv: 4
     country: 2
-    cost: 12
+    cost: 0
   - templateID: 51
     name: "\u7504\u59EC"
     baseHP: 700
@@ -2353,7 +2353,7 @@ MonoBehaviour:
     skill3Para: 0
     starLv: 4
     country: 2
-    cost: 12
+    cost: 0
   - templateID: 52
     name: "\u5F20\u8FBD"
     baseHP: 850
@@ -2371,7 +2371,7 @@ MonoBehaviour:
     skill3Para: 6
     starLv: 4
     country: 2
-    cost: 13
+    cost: 0
   - templateID: 53
     name: "\u8BB8\u891A"
     baseHP: 900
@@ -2389,7 +2389,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 4
     country: 2
-    cost: 13
+    cost: 0
   - templateID: 54
     name: "\u90ED\u5609"
     baseHP: 850
@@ -2407,7 +2407,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 4
     country: 2
-    cost: 11
+    cost: 0
   - templateID: 55
     name: "\u5178\u97E6"
     baseHP: 1250
@@ -2425,7 +2425,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 4
     country: 2
-    cost: 14
+    cost: 0
   - templateID: 56
     name: "\u5F20\u90C3"
     baseHP: 950
@@ -2443,7 +2443,7 @@ MonoBehaviour:
     skill3Para: 8
     starLv: 4
     country: 2
-    cost: 12
+    cost: 0
   - templateID: 57
     name: "\u590F\u4FAF\u60C7"
     baseHP: 700
@@ -2461,7 +2461,7 @@ MonoBehaviour:
     skill3Para: 0,60,0
     starLv: 4
     country: 2
-    cost: 12
+    cost: 0
   - templateID: 58
     name: "\u8D3E\u8BE9"
     baseHP: 880
@@ -2479,7 +2479,7 @@ MonoBehaviour:
     skill3Para: 0
     starLv: 4
     country: 2
-    cost: 14
+    cost: 0
   - templateID: 59
     name: "\u8340\u5F67"
     baseHP: 720
@@ -2497,7 +2497,7 @@ MonoBehaviour:
     skill3Para: 6
     starLv: 4
     country: 2
-    cost: 13
+    cost: 0
   - templateID: 60
     name: "\u66F9\u64CD"
     baseHP: 1250
@@ -2515,7 +2515,7 @@ MonoBehaviour:
     skill3Para: 0
     starLv: 5
     country: 2
-    cost: 14
+    cost: 0
   - templateID: 61
     name: "\u91CD\u88C5\u6C34\u5175"
     baseHP: 400
@@ -2533,7 +2533,7 @@ MonoBehaviour:
     skill3Para: 4
     starLv: 1
     country: 3
-    cost: 5
+    cost: 0
   - templateID: 62
     name: "\u9F99\u98DE\u536B"
     baseHP: 270
@@ -2551,7 +2551,7 @@ MonoBehaviour:
     skill3Para: 2
     starLv: 1
     country: 3
-    cost: 3
+    cost: 0
   - templateID: 63
     name: "\u94F6\u7FCE\u98DE\u9A91"
     baseHP: 260
@@ -2569,7 +2569,7 @@ MonoBehaviour:
     skill3Para: 3
     starLv: 1
     country: 3
-    cost: 3
+    cost: 0
   - templateID: 64
     name: "\u8F66\u7EDE\u5F29"
     baseHP: 280
@@ -2587,7 +2587,7 @@ MonoBehaviour:
     skill3Para: 1
     starLv: 1
     country: 3
-    cost: 4
+    cost: 0
   - templateID: 65
     name: "\u8463\u88AD"
     baseHP: 510
@@ -2605,7 +2605,7 @@ MonoBehaviour:
     skill3Para: 4
     starLv: 2
     country: 3
-    cost: 7
+    cost: 0
   - templateID: 66
     name: "\u6F58\u748B"
     baseHP: 385
@@ -2623,7 +2623,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 2
     country: 3
-    cost: 5
+    cost: 0
   - templateID: 67
     name: "\u848B\u94A6"
     baseHP: 450
@@ -2641,7 +2641,7 @@ MonoBehaviour:
     skill3Para: 3
     starLv: 2
     country: 3
-    cost: 7
+    cost: 0
   - templateID: 68
     name: "\u7956\u8302"
     baseHP: 580
@@ -2659,7 +2659,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 2
     country: 3
-    cost: 6
+    cost: 0
   - templateID: 69
     name: "\u6731\u6853"
     baseHP: 390
@@ -2677,7 +2677,7 @@ MonoBehaviour:
     skill3Para: 7
     starLv: 2
     country: 3
-    cost: 6
+    cost: 0
   - templateID: 70
     name: "\u5F90\u76DB"
     baseHP: 540
@@ -2695,7 +2695,7 @@ MonoBehaviour:
     skill3Para: 7
     starLv: 3
     country: 3
-    cost: 8
+    cost: 0
   - templateID: 71
     name: "\u5B59\u575A"
     baseHP: 730
@@ -2713,7 +2713,7 @@ MonoBehaviour:
     skill3Para: 8
     starLv: 3
     country: 3
-    cost: 11
+    cost: 0
   - templateID: 72
     name: "\u8BF8\u845B\u747E"
     baseHP: 680
@@ -2731,7 +2731,7 @@ MonoBehaviour:
     skill3Para: 6
     starLv: 3
     country: 3
-    cost: 9
+    cost: 0
   - templateID: 73
     name: "\u7A0B\u666E"
     baseHP: 645
@@ -2749,7 +2749,7 @@ MonoBehaviour:
     skill3Para: 6
     starLv: 3
     country: 3
-    cost: 10
+    cost: 0
   - templateID: 74
     name: "\u5468\u6CF0"
     baseHP: 555
@@ -2767,7 +2767,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 3
     country: 3
-    cost: 8
+    cost: 0
   - templateID: 75
     name: "\u9EC4\u76D6"
     baseHP: 800
@@ -2785,7 +2785,7 @@ MonoBehaviour:
     skill3Para: 6
     starLv: 3
     country: 3
-    cost: 10
+    cost: 0
   - templateID: 76
     name: "\u4E01\u5949"
     baseHP: 600
@@ -2803,7 +2803,7 @@ MonoBehaviour:
     skill3Para: 3
     starLv: 3
     country: 3
-    cost: 8
+    cost: 0
   - templateID: 77
     name: "\u5F20\u662D"
     baseHP: 620
@@ -2821,7 +2821,7 @@ MonoBehaviour:
     skill3Para: 7
     starLv: 3
     country: 3
-    cost: 9
+    cost: 0
   - templateID: 78
     name: "\u97E9\u5F53"
     baseHP: 620
@@ -2839,7 +2839,7 @@ MonoBehaviour:
     skill3Para: 6
     starLv: 3
     country: 3
-    cost: 11
+    cost: 0
   - templateID: 79
     name: "\u9C81\u8083"
     baseHP: 620
@@ -2857,7 +2857,7 @@ MonoBehaviour:
     skill3Para: 4
     starLv: 3
     country: 3
-    cost: 9
+    cost: 0
   - templateID: 80
     name: "\u5B59\u7B56"
     baseHP: 980
@@ -2875,7 +2875,7 @@ MonoBehaviour:
     skill3Para: 7
     starLv: 4
     country: 3
-    cost: 12
+    cost: 0
   - templateID: 81
     name: "\u5C0F\u4E54"
     baseHP: 800
@@ -2893,7 +2893,7 @@ MonoBehaviour:
     skill3Para: 6
     starLv: 4
     country: 3
-    cost: 12
+    cost: 0
   - templateID: 82
     name: "\u592A\u53F2\u6148"
     baseHP: 780
@@ -2911,7 +2911,7 @@ MonoBehaviour:
     skill3Para: 8
     starLv: 4
     country: 3
-    cost: 13
+    cost: 0
   - templateID: 83
     name: "\u9646\u900A"
     baseHP: 810
@@ -2929,7 +2929,7 @@ MonoBehaviour:
     skill3Para: 7
     starLv: 4
     country: 3
-    cost: 11
+    cost: 0
   - templateID: 84
     name: "\u5415\u8499"
     baseHP: 1290
@@ -2947,7 +2947,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 4
     country: 3
-    cost: 13
+    cost: 0
   - templateID: 85
     name: "\u5927\u4E54"
     baseHP: 900
@@ -2965,7 +2965,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 4
     country: 3
-    cost: 14
+    cost: 0
   - templateID: 86
     name: "\u5B59\u5C1A\u9999"
     baseHP: 680
@@ -2983,7 +2983,7 @@ MonoBehaviour:
     skill3Para: 0
     starLv: 4
     country: 3
-    cost: 12
+    cost: 0
   - templateID: 87
     name: "\u7518\u5B81"
     baseHP: 1290
@@ -3001,7 +3001,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 4
     country: 3
-    cost: 13
+    cost: 0
   - templateID: 88
     name: "\u51CC\u7EDF"
     baseHP: 820
@@ -3019,7 +3019,7 @@ MonoBehaviour:
     skill3Para: 8
     starLv: 4
     country: 3
-    cost: 14
+    cost: 0
   - templateID: 89
     name: "\u5468\u745C"
     baseHP: 790
@@ -3037,7 +3037,7 @@ MonoBehaviour:
     skill3Para: 1
     starLv: 4
     country: 3
-    cost: 11
+    cost: 0
   - templateID: 90
     name: "\u5B59\u6743"
     baseHP: 1480
@@ -3055,7 +3055,7 @@ MonoBehaviour:
     skill3Para: 0
     starLv: 5
     country: 3
-    cost: 14
+    cost: 0
   - templateID: 91
     name: "\u5927\u621F\u58EB"
     baseHP: 360
@@ -3073,7 +3073,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 1
     country: 4
-    cost: 5
+    cost: 0
   - templateID: 92
     name: "\u85E4\u7532\u5175"
     baseHP: 280
@@ -3091,7 +3091,7 @@ MonoBehaviour:
     skill3Para: 4
     starLv: 1
     country: 4
-    cost: 3
+    cost: 0
   - templateID: 93
     name: "\u897F\u51C9\u94C1\u9A91"
     baseHP: 275
@@ -3109,7 +3109,7 @@ MonoBehaviour:
     skill3Para: 3
     starLv: 1
     country: 4
-    cost: 4
+    cost: 0
   - templateID: 94
     name: "\u5148\u767B\u6B7B\u58EB"
     baseHP: 310
@@ -3127,7 +3127,7 @@ MonoBehaviour:
     skill3Para: 3
     starLv: 1
     country: 4
-    cost: 3
+    cost: 0
   - templateID: 95
     name: "\u6DF3\u4E8E\u743C"
     baseHP: 490
@@ -3145,7 +3145,7 @@ MonoBehaviour:
     skill3Para: 3
     starLv: 2
     country: 4
-    cost: 6
+    cost: 0
   - templateID: 96
     name: "\u5F20\u4EFB"
     baseHP: 450
@@ -3163,7 +3163,7 @@ MonoBehaviour:
     skill3Para: 3
     starLv: 2
     country: 4
-    cost: 5
+    cost: 0
   - templateID: 97
     name: "\u5F20\u677E"
     baseHP: 510
@@ -3181,7 +3181,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 2
     country: 4
-    cost: 7
+    cost: 0
   - templateID: 98
     name: "\u9AD8\u987A"
     baseHP: 440
@@ -3199,7 +3199,7 @@ MonoBehaviour:
     skill3Para: 6
     starLv: 2
     country: 4
-    cost: 5
+    cost: 0
   - templateID: 99
     name: "\u90ED\u56FE"
     baseHP: 420
@@ -3217,7 +3217,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 2
     country: 4
-    cost: 6
+    cost: 0
   - templateID: 100
     name: "\u795D\u878D"
     baseHP: 685
@@ -3235,7 +3235,7 @@ MonoBehaviour:
     skill3Para: 1
     starLv: 3
     country: 4
-    cost: 10
+    cost: 0
   - templateID: 101
     name: "\u97E9\u9042"
     baseHP: 720
@@ -3253,7 +3253,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 3
     country: 4
-    cost: 8
+    cost: 0
   - templateID: 102
     name: "\u9648\u5BAB"
     baseHP: 650
@@ -3271,7 +3271,7 @@ MonoBehaviour:
     skill3Para: 4
     starLv: 3
     country: 4
-    cost: 9
+    cost: 0
   - templateID: 103
     name: "\u534E\u96C4"
     baseHP: 730
@@ -3289,7 +3289,7 @@ MonoBehaviour:
     skill3Para: 7
     starLv: 3
     country: 4
-    cost: 9
+    cost: 0
   - templateID: 104
     name: "\u8BB8\u6538"
     baseHP: 550
@@ -3307,7 +3307,7 @@ MonoBehaviour:
     skill3Para: 6
     starLv: 3
     country: 4
-    cost: 8
+    cost: 0
   - templateID: 105
     name: "\u7530\u4E30"
     baseHP: 580
@@ -3325,7 +3325,7 @@ MonoBehaviour:
     skill3Para: 6
     starLv: 3
     country: 4
-    cost: 9
+    cost: 0
   - templateID: 106
     name: "\u7EAA\u7075"
     baseHP: 630
@@ -3343,7 +3343,7 @@ MonoBehaviour:
     skill3Para: 7
     starLv: 3
     country: 4
-    cost: 10
+    cost: 0
   - templateID: 107
     name: "\u5E9E\u5FB7"
     baseHP: 690
@@ -3361,7 +3361,7 @@ MonoBehaviour:
     skill3Para: 4
     starLv: 3
     country: 4
-    cost: 8
+    cost: 0
   - templateID: 108
     name: "\u989C\u826F"
     baseHP: 615
@@ -3379,7 +3379,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 3
     country: 4
-    cost: 11
+    cost: 0
   - templateID: 109
     name: "\u6587\u4E11"
     baseHP: 800
@@ -3397,7 +3397,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 3
     country: 4
-    cost: 9
+    cost: 0
   - templateID: 110
     name: "\u8881\u7ECD"
     baseHP: 840
@@ -3415,7 +3415,7 @@ MonoBehaviour:
     skill3Para: 6
     starLv: 4
     country: 4
-    cost: 11
+    cost: 0
   - templateID: 111
     name: "\u516C\u5B59\u74D2"
     baseHP: 890
@@ -3433,7 +3433,7 @@ MonoBehaviour:
     skill3Para: 6
     starLv: 4
     country: 4
-    cost: 13
+    cost: 0
   - templateID: 112
     name: "\u8881\u672F"
     baseHP: 850
@@ -3451,7 +3451,7 @@ MonoBehaviour:
     skill3Para: 5
     starLv: 4
     country: 4
-    cost: 12
+    cost: 0
   - templateID: 113
     name: "\u8C82\u8749"
     baseHP: 980
@@ -3469,7 +3469,7 @@ MonoBehaviour:
     skill3Para: 0,60,0
     starLv: 4
     country: 4
-    cost: 14
+    cost: 0
   - templateID: 114
     name: "\u9A6C\u817E"
     baseHP: 1230
@@ -3487,7 +3487,7 @@ MonoBehaviour:
     skill3Para: 0
     starLv: 4
     country: 4
-    cost: 13
+    cost: 0
   - templateID: 115
     name: "\u8463\u5353"
     baseHP: 900
@@ -3505,7 +3505,7 @@ MonoBehaviour:
     skill3Para: 7
     starLv: 4
     country: 4
-    cost: 12
+    cost: 0
   - templateID: 116
     name: "\u5F20\u89D2"
     baseHP: 960
@@ -3523,7 +3523,7 @@ MonoBehaviour:
     skill3Para: 10
     starLv: 4
     country: 4
-    cost: 13
+    cost: 0
   - templateID: 117
     name: "\u5218\u8868"
     baseHP: 800
@@ -3541,7 +3541,7 @@ MonoBehaviour:
     skill3Para: 7
     starLv: 4
     country: 4
-    cost: 11
+    cost: 0
   - templateID: 118
     name: "\u534E\u4F57"
     baseHP: 900
@@ -3559,7 +3559,7 @@ MonoBehaviour:
     skill3Para: 7
     starLv: 4
     country: 4
-    cost: 13
+    cost: 0
   - templateID: 119
     name: "\u5B5F\u83B7"
     baseHP: 1100
@@ -3577,7 +3577,7 @@ MonoBehaviour:
     skill3Para: 7
     starLv: 4
     country: 4
-    cost: 13
+    cost: 0
   - templateID: 120
     name: "\u5415\u5E03"
     baseHP: 1330
@@ -3595,4 +3595,4 @@ MonoBehaviour:
     skill3Para: 10
     starLv: 5
     country: 4
-    cost: 15
+    cost: 0

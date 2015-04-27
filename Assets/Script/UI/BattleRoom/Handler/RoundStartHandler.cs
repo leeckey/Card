@@ -11,8 +11,6 @@ public class RoundStartHandler : BaseHandler
 	/// </summary>
 	protected override void InitHandle()
 	{
-		base.InitHandle();
-
-		handleList.Add(roomUI.AddRound);
+		handler = roomUI.AddRound;
 	}
 }

@@ -23,65 +23,71 @@ public class BattleRoomUI : MonoBehaviour
 		playerground1.InitPlayerInfo(data.fighter1);
 	}
 
-	public float AddRound(BaseAction action)
+	/// <summary>
+	/// 增加回合数
+	/// </summary>
+	public IEnumerator AddRound(BaseAction action)
 	{
-		battleRound.AddRound(action);
-
-		return BattleControl.defaultTime;
+		yield return StartCoroutine(battleRound.AddRound(action));
 	}
 
-	public float EndRound(BaseAction action)
+	public IEnumerator EndRound(BaseAction action)
 	{
 		playerground0.ClearArea();
 		playerground1.ClearArea();
-		return BattleControl.defaultTime;
+
+		yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
 	}
 
-	public float ShowDamage(BaseAction action)
+	public IEnumerator ShowDamage(BaseAction action)
 	{
 		DamageNotifyAction damageAction = action as DamageNotifyAction;
 		if (action.targetID == playerground0.ID)
+		{
 			playerground0.ShowDamage(damageAction.damage);
+		} 
 		else if (action.targetID == playerground1.ID)
+		{
 			playerground1.ShowDamage(damageAction.damage);
+		}
 		else
 		{
 			CardFighterUI cardUI = GetCardUI(action.targetID);
 			if (cardUI != null)
-				return cardUI.ShowCardDamage(damageAction.damage);
+				cardUI.ShowCardDamage(damageAction.damage);
 		}
 
-		return 0;
+		yield return new WaitForSeconds(BattleTime.DAMAGE_SHOW_TIME);
 	}
 
-	public float AttackChange(BaseAction action)
+	public IEnumerator AttackChange(BaseAction action)
 	{
 		AttackChangeAction attackChangeAction = action as AttackChangeAction;
 		CardFighterUI cardUI = GetCardUI(action.targetID);
 		if (cardUI != null)
-			return cardUI.AttackChange(attackChangeAction.num);
+			cardUI.AttackChange(attackChangeAction.num);
 
-		return 0;
+		yield return new WaitForSeconds(BattleTime.ATTACK_CHANGE_TIME);
 	}
 
-	public float CardCure(BaseAction action)
+	public IEnumerator CardCure(BaseAction action)
 	{
 		CureNotifyAction cureAction = action as CureNotifyAction;
 		CardFighterUI cardUI = GetCardUI(action.targetID);
 		if (cardUI != null)
-			return cardUI.ShowCardCure(cureAction.cure);
+			cardUI.ShowCardCure(cureAction.cure);
 		
-		return 0;
+		yield return new WaitForSeconds(BattleTime.DAMAGE_SHOW_TIME);
 	}
 
-	public float MaxHpChange(BaseAction action)
+	public IEnumerator MaxHpChange(BaseAction action)
 	{
 		MaxHpChangeAction maxHpAction = action as MaxHpChangeAction;
 		CardFighterUI cardUI = GetCardUI(action.targetID);
 		if (cardUI != null)
-			return cardUI.MaxHpChange(maxHpAction.num);
+			cardUI.MaxHpChange(maxHpAction.num);
 		
-		return 0;
+		yield return new WaitForSeconds(BattleTime.ATTACK_CHANGE_TIME);
 	}
 
 	public CardFighterUI GetCardUI(int id)
@@ -93,7 +99,7 @@ public class BattleRoomUI : MonoBehaviour
 		return cardUI;
 	}
 
-	public float CastSkill(BaseAction action)
+	public IEnumerator CastSkill(BaseAction action)
 	{
 		SkillStartAction skillStartAction = action as SkillStartAction;
 
@@ -110,53 +116,64 @@ public class BattleRoomUI : MonoBehaviour
 
 		cardUI.SitDown();
 
-		return BattleControl.defaultTime;
+		yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
 	}
 
 	/// <summary>
 	/// 卡牌回到牌堆
 	/// </summary>
-	public float CardBack(BaseAction action)
+	public IEnumerator CardBack(BaseAction action)
 	{
-		return GetPlayer(action.sourceID).CardBack(action);
+		GetPlayer(action.sourceID).CardBack(action);
+
+		yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
 	}
 
 	/// <summary>
 	/// 卡牌进入墓地
 	/// </summary>
-	public float CardDead(BaseAction action)
+	public IEnumerator CardDead(BaseAction action)
 	{
-		return GetPlayer(action.sourceID).CardDead(action);
+		GetPlayer(action.sourceID).CardDead(action);
+
+		yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
 	}
 
 	/// <summary>
 	/// 卡牌进入战斗
 	/// </summary>
-	public float CardFight(BaseAction action)
+	public IEnumerator CardFight(BaseAction action)
 	{
-		return GetPlayer(action.sourceID).CardFight(action);
+		if (GetPlayer(action.sourceID).ShowLastCard())
+			yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
+
+		GetPlayer(action.sourceID).CardFight(action);
+
+		yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
 	}
 
 	/// <summary>
 	/// 卡牌进入等待区
 	/// </summary>
-	public float CardWait(BaseAction action)
+	public IEnumerator CardWait(BaseAction action)
 	{
-		return GetPlayer(action.sourceID).CardWait(action);
+		GetPlayer(action.sourceID).CardWait(action);
+
+		yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
 	}
 
-	public float CardShow(BaseAction action)
+	public IEnumerator CardShow(BaseAction action)
 	{
 		int cardID = action.sourceID;
 		if (action.sourceArea != CardArea.None)
 			cardID = action.targetID;
 
 		if (playerground0.GetCardByID(cardID) != null)
-			return playerground0.ShowCard(cardID);
+			playerground0.ShowCard(cardID);
 		else if (playerground1.GetCardByID(cardID) != null)
-			return playerground1.ShowCard(cardID);
+			playerground1.ShowCard(cardID);
 
-		return 0;
+		yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
 	}
 
 	// 获得当前行动的玩家

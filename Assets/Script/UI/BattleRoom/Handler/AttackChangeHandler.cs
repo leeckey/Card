@@ -8,8 +8,6 @@ public class AttackChangeHandler : BaseHandler
 {
 	protected override void InitHandle()
 	{
-		base.InitHandle();
-		
-		handleList.Add(roomUI.AttackChange);
+
 	}
 }

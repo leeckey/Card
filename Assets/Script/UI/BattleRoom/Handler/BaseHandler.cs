@@ -2,6 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 
+// 处理动作函数委托
+public delegate IEnumerator HandlerDelegate(BaseAction action);
+
 /// <summary>
 /// 行动基类
 /// </summary>
@@ -16,25 +19,15 @@ public class BaseHandler : MonoBehaviour
 	// 当前处理的行为
 	protected BaseAction action;
 
-	public delegate float HandlerDelegate(BaseAction action);
-	public List<HandlerDelegate> handleList;
 
-
-	void Awake()
-	{
-		roomUI = gameObject.GetComponent<BattleRoomUI>();
-
-		battleControl = gameObject.GetComponent<BattleControl>();
-	}
-
-	protected virtual void InitHandle()
-	{
-		handleList = new List<HandlerDelegate>();
-	}
+	public HandlerDelegate handler;
 
 	// 处理动画
-	public virtual void Handle(BaseAction action)
+	public virtual void Handle(BattleControl battleControl, BaseAction action)
 	{
+		this.battleControl = battleControl;
+		roomUI = battleControl.roomUI;
+
 		this.action = action;
 
 		InitHandle();
@@ -42,20 +35,16 @@ public class BaseHandler : MonoBehaviour
 		StartCoroutine(_Handle());
 	}
 
+	protected virtual void InitHandle()
+	{
+		handler = null;
+	}
+
 	// 处理所有动作
 	protected IEnumerator _Handle()
 	{
-		float delay = 0f;
-		while (handleList.Count > 0)
-		{
-			HandlerDelegate handle = handleList[0];
-			handleList.RemoveAt(0);
-			delay = handle(action);
-
-			//if (delay > 0f)
-			//Debug.Log(string.Format("执行方法{1}，等待时间{0}秒", delay, handle.ToString()));
-			yield return new WaitForSeconds(delay);
-		}
+		if (handler != null)
+			yield return StartCoroutine(handler(action));
 
 		battleControl.MoveNext();
 	}

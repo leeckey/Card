@@ -8,8 +8,6 @@ public class RoundEndHandler : BaseHandler
 	/// </summary>
 	protected override void InitHandle()
 	{
-		base.InitHandle();
-		
-		handleList.Add(roomUI.EndRound);
+		handler = roomUI.EndRound;
 	}
 }

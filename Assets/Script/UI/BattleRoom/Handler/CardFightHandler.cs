@@ -5,8 +5,6 @@ public class CardFightHandler : BaseHandler
 {
 	protected override void InitHandle()
 	{
-		base.InitHandle();
-		
-		handleList.Add(roomUI.CardFight);
+		handler = roomUI.CardFight;
 	}
 }

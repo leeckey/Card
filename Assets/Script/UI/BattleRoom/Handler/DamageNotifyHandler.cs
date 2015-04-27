@@ -6,8 +6,6 @@ public class DamageNotifyHandler : BaseHandler
 
 	protected override void InitHandle()
 	{
-		base.InitHandle();
-		
-		handleList.Add(roomUI.ShowDamage);
+		handler = roomUI.ShowDamage;
 	}
 }

@@ -5,8 +5,6 @@ public class CardWaitHandler : BaseHandler
 {
 	protected override void InitHandle()
 	{
-		base.InitHandle();
-		
-		handleList.Add(roomUI.CardWait);
+		handler = roomUI.CardWait;
 	}
 }
