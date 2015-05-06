@@ -17,17 +17,15 @@ public class CardAreaFight : CardAreaBase
 	/// <summary>
 	/// 增加一个卡牌
 	/// </summary>
-	public override void AddCard(CardFighterUI card)
+	public override IEnumerator AddCard(CardFighterUI card)
 	{
 		cards.Add(card);
 
-		//if (CenterArea(cards.Count - 1))
-		//	yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
+		yield return StartCoroutine(ShowCard(card));
 
 		// 显示这张卡牌到等待区域
-
 		HOTween.To(card.transform, BattleTime.CARD_MOVE_TIME, 
-		           new TweenParms().Prop("position", cardAreas[cards.Count - 1].transform.position).Delay(BattleTime.CARD_MOVE_TIME).OnComplete(() => {
+		           new TweenParms().Prop("position", cardAreas[cards.Count - 1].transform.position).OnComplete(() => {
 			if (card != null)
 			{
 				card.transform.parent = cardAreas[cards.Count - 1].transform;
@@ -35,15 +33,20 @@ public class CardAreaFight : CardAreaBase
 			}
 		}));
 		card.SetActive(true);
+
+		yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
 	}
 
-	public bool ShowCard(CardFighterUI card)
+	public IEnumerator ShowCard(CardFighterUI card)
 	{
 		int index = cards.Count;
 		if (card != null)
 			index = cards.IndexOf(card);
 
-		return CenterArea(index);
+		if (CenterArea(index))
+			yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
+		else
+			yield return null;
 	}
 
 	public bool CenterArea(int index)

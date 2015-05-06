@@ -75,59 +75,59 @@ public class PlayerGround : MonoBehaviour
 		HOTween.To(hpBarBack, 0.8f, new TweenParms().Prop("fillAmount", (float)hp / maxHp).Delay(0.2f));
 	}
 
-	public bool ShowCard(int cardID)
+	public IEnumerator ShowCard(int cardID)
 	{
 		CardFighterUI card = GetCardByID(cardID);
-		return cardFightArea.ShowCard(card);
+		yield return StartCoroutine(cardFightArea.ShowCard(card));
 	}
 
-	public bool ShowLastCard()
+	public IEnumerator ShowLastCard()
 	{
-		return cardFightArea.ShowCard(null);
+		yield return StartCoroutine(cardFightArea.ShowCard(null));
 	}
 
 	/// <summary>
 	/// 卡牌回到牌堆
 	/// </summary>
-	public void CardBack(BaseAction action)
+	public IEnumerator CardBack(BaseAction action)
 	{
 		CardFighterUI card = GetCardByID(action.targetID);
 		
 		RemoveCard(action, card);
-		cardInitArea.AddCard(card);
+		yield return StartCoroutine(cardInitArea.AddCard(card));
 	}
 	
 	/// <summary>
 	/// 卡牌进入墓地
 	/// </summary>
-	public void CardDead(BaseAction action)
+	public IEnumerator CardDead(BaseAction action)
 	{
 		CardFighterUI card = GetCardByID(action.targetID);
 
 		RemoveCard(action, card);
-		cardDeadArea.AddCard(card);
+		yield return StartCoroutine(cardDeadArea.AddCard(card));
 	}
 	
 	/// <summary>
 	/// 卡牌进入战斗
 	/// </summary>
-	public void CardFight(BaseAction action)
+	public IEnumerator CardFight(BaseAction action)
 	{
 		CardFighterUI card = GetCardByID(action.targetID);
 
 		RemoveCard(action, card);
-		cardFightArea.AddCard(card);
+		yield return StartCoroutine(cardFightArea.AddCard(card));
 	}
 	
 	/// <summary>
 	/// 卡牌进入等待区
 	/// </summary>
-	public void CardWait(BaseAction action)
+	public IEnumerator CardWait(BaseAction action)
 	{
 		CardFighterUI card = GetCardByID(action.targetID);
 		
 		RemoveCard(action, card);
-		cardWaitArea.AddCard(card);
+		yield return StartCoroutine(cardWaitArea.AddCard(card));
 	}
 
 

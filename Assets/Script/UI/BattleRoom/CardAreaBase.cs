@@ -27,9 +27,11 @@ public class CardAreaBase : MonoBehaviour
 	/// <summary>
 	/// 增加一个卡牌
 	/// </summary>
-	public virtual void AddCard(CardFighterUI card)
+	public virtual IEnumerator AddCard(CardFighterUI card)
 	{
 		cards.Add(card);
+
+		yield return null;
 	}
 
 	/// <summary>

@@ -124,9 +124,7 @@ public class BattleRoomUI : MonoBehaviour
 	/// </summary>
 	public IEnumerator CardBack(BaseAction action)
 	{
-		GetPlayer(action.sourceID).CardBack(action);
-
-		yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
+		yield return StartCoroutine(GetPlayer(action.sourceID).CardBack(action));
 	}
 
 	/// <summary>
@@ -134,9 +132,7 @@ public class BattleRoomUI : MonoBehaviour
 	/// </summary>
 	public IEnumerator CardDead(BaseAction action)
 	{
-		GetPlayer(action.sourceID).CardDead(action);
-
-		yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
+		yield return StartCoroutine(GetPlayer(action.sourceID).CardDead(action));
 	}
 
 	/// <summary>
@@ -144,12 +140,10 @@ public class BattleRoomUI : MonoBehaviour
 	/// </summary>
 	public IEnumerator CardFight(BaseAction action)
 	{
-		if (GetPlayer(action.sourceID).ShowLastCard())
-			yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
+		//if (GetPlayer(action.sourceID).ShowLastCard())
+		//	yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
 
-		GetPlayer(action.sourceID).CardFight(action);
-
-		yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
+		yield return StartCoroutine(GetPlayer(action.sourceID).CardFight(action));
 	}
 
 	/// <summary>
@@ -157,9 +151,7 @@ public class BattleRoomUI : MonoBehaviour
 	/// </summary>
 	public IEnumerator CardWait(BaseAction action)
 	{
-		GetPlayer(action.sourceID).CardWait(action);
-
-		yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
+		yield return StartCoroutine(GetPlayer(action.sourceID).CardWait(action));
 	}
 
 	public IEnumerator CardShow(BaseAction action)
@@ -169,11 +161,9 @@ public class BattleRoomUI : MonoBehaviour
 			cardID = action.targetID;
 
 		if (playerground0.GetCardByID(cardID) != null)
-			playerground0.ShowCard(cardID);
+			yield return StartCoroutine(playerground0.ShowCard(cardID));
 		else if (playerground1.GetCardByID(cardID) != null)
-			playerground1.ShowCard(cardID);
-
-		yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
+			yield return StartCoroutine(playerground1.ShowCard(cardID));
 	}
 
 	// 获得当前行动的玩家

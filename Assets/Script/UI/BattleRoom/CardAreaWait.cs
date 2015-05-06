@@ -13,7 +13,7 @@ public class CardAreaWait : CardAreaBase
 	/// <summary>
 	/// 增加一个卡牌
 	/// </summary>
-	public override void AddCard(CardFighterUI card)
+	public override IEnumerator AddCard(CardFighterUI card)
 	{
 		cards.Add(card);
 		card.ShowUI(true);
@@ -22,6 +22,8 @@ public class CardAreaWait : CardAreaBase
 		card.transform.parent = cardParent.transform;
 		HOTween.To(card.transform, BattleTime.CARD_MOVE_TIME, new TweenParms().Prop("position", cardAreas[cards.Count - 1].transform.position));
 		card.SetActive(true);
+
+		yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
 	}
 
 	public override void ClearCard()
