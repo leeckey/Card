@@ -32,7 +32,7 @@ public class ResManager
 
 	public static Texture LoadCardIcon(int id)
 	{
-		return LoadRes<Texture>("Texture/CardIcon/CardIcon_" + id);
+		return LoadRes<Texture>("Texture/CardIcon/Small/img_photoCard_" + id);
 	}
 
 	public static Texture LoadCardTexture(int id)
@@ -44,4 +44,5 @@ public class ResManager
 	{
 		return LoadRes<GameObject>("Prefabs/Effect/Effect_" + skillID);
 	}
+	
 }

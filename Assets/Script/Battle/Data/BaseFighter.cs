@@ -24,7 +24,7 @@ public class BaseFighter : EventDispatcher<FighterEvent>
 	public int canBeCure = 0;
 
 	// 初始化
-	protected virtual void Reset()
+	public virtual void Reset()
 	{
 
 	}

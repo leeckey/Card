@@ -56,6 +56,7 @@ public class PlayerGround : MonoBehaviour
 		allCards = new List<CardFighterUI>();
 		foreach (CardFighter card in fighter.allCard)
 		{
+			card.Reset();
 			CardFighterUI newCardUI = NGUITools.AddChild(cardInitArea.cardParent, cardPrefab.gameObject).GetComponent<CardFighterUI>();
 			newCardUI.InitCardUI(card);
 			allCards.Add(newCardUI);

@@ -33,6 +33,7 @@ public class CardFighterUI : MonoBehaviour
 		{
 			//smallUI.gameObject.SetActive(true);
 			//bigUI.gameObject.SetActive(false);
+			smallUI.ShowActive();
 		}
 		else
 		{
@@ -53,6 +54,7 @@ public class CardFighterUI : MonoBehaviour
 	{
 		this.fighter = card;
 		this.name = "Card" + ID;
+		smallUI.SetFighter(card);
 	}
 
 	public void SetActive(bool show)
@@ -109,6 +111,11 @@ public class CardFighterUI : MonoBehaviour
 	public void SitDown()
 	{
 
+	}
+
+	public void RoundEnd()
+	{
+		smallUI.RoundEnd();
 	}
 	
 }

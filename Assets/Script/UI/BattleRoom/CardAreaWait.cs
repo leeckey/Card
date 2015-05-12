@@ -31,6 +31,7 @@ public class CardAreaWait : CardAreaBase
 		base.ClearCard();
 		for (int i = 0; i < cards.Count; i++)
 		{
+			cards[i].RoundEnd();
 			HOTween.To(cards[i].transform, BattleTime.CARD_MOVE_TIME, new TweenParms().Prop("position", cardAreas[i].transform.position));
 		}
 	}

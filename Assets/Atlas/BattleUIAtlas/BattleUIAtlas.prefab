@@ -290,7 +290,7 @@ MonoBehaviour:
     paddingBottom: 2
   - name: HeadBg
     x: 612
-    y: 30
+    y: 252
     width: 110
     height: 110
     borderLeft: 0
@@ -303,7 +303,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Icon0
     x: 612
-    y: 252
+    y: 141
     width: 110
     height: 110
     borderLeft: 0
@@ -316,7 +316,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Icon1
     x: 612
-    y: 141
+    y: 30
     width: 110
     height: 110
     borderLeft: 0
@@ -367,7 +367,7 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Round2
-    x: 39
+    x: 71
     y: 39
     width: 22
     height: 22
@@ -380,7 +380,7 @@ MonoBehaviour:
     paddingTop: 4
     paddingBottom: 4
   - name: Round3
-    x: 39
+    x: 71
     y: 18
     width: 22
     height: 20
@@ -392,6 +392,19 @@ MonoBehaviour:
     paddingRight: 6
     paddingTop: 5
     paddingBottom: 5
+  - name: RroundBg
+    x: 39
+    y: 21
+    width: 31
+    height: 40
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   mPixelSize: 1
   mReplacement: {fileID: 0}
   mCoordinates: 0

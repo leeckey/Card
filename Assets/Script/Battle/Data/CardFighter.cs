@@ -91,7 +91,7 @@ public class CardFighter : BaseFighter
 	}
 
 	// 重置数据
-	protected override void Reset()
+	public override void Reset()
 	{
 		// 最大血量和攻击力
 		MaxHP = cardData.baseHP + cardData.growUpHP * Level;

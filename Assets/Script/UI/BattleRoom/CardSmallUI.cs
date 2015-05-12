@@ -12,6 +12,8 @@ public class CardSmallUI : MonoBehaviour
 
 	public UILabel hpLabel;
 
+	public UIWidget container;
+
 	CardFighter card;
 	int round;
 
@@ -21,7 +23,7 @@ public class CardSmallUI : MonoBehaviour
 
 		cardIcon.mainTexture = ResManager.LoadCardIcon(card.cardData.templateID);
 
-		ShowActive();
+		// ShowActive();
 	}
 
 	public void RoundEnd()
@@ -39,6 +41,7 @@ public class CardSmallUI : MonoBehaviour
 		round = card.waitRound;
 		waitRound.text = round.ToString();
 		roundGo.SetActive(true);
+		container.alpha = 1f;
 	}
 
 
