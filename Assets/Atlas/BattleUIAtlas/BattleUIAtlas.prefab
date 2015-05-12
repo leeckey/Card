@@ -42,8 +42,8 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: ce388361e91c7e24da3e154aff2a5b52, type: 2}
   mSprites:
   - name: AttackBtn
-    x: 482
-    y: 104
+    x: 260
+    y: 1066
     width: 129
     height: 127
     borderLeft: 0
@@ -55,8 +55,8 @@ MonoBehaviour:
     paddingTop: 1
     paddingBottom: 1
   - name: AutoBtn
-    x: 482
-    y: 361
+    x: 0
+    y: 1064
     width: 129
     height: 129
     borderLeft: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: Bg1
     x: 0
-    y: 704
+    y: 1728
     width: 240
     height: 320
     borderLeft: 0
@@ -81,8 +81,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Bg2
-    x: 0
-    y: 383
+    x: 241
+    y: 1728
     width: 240
     height: 320
     borderLeft: 0
@@ -94,8 +94,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Bg3
-    x: 0
-    y: 62
+    x: 482
+    y: 1728
     width: 240
     height: 320
     borderLeft: 0
@@ -107,8 +107,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Bg4
-    x: 241
-    y: 704
+    x: 723
+    y: 1728
     width: 240
     height: 320
     borderLeft: 0
@@ -120,8 +120,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Bg5
-    x: 482
-    y: 704
+    x: 0
+    y: 1407
     width: 240
     height: 320
     borderLeft: 0
@@ -133,8 +133,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Bg6
-    x: 723
-    y: 704
+    x: 241
+    y: 1407
     width: 240
     height: 320
     borderLeft: 0
@@ -146,8 +146,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Bg7
-    x: 241
-    y: 383
+    x: 482
+    y: 1407
     width: 240
     height: 320
     borderLeft: 0
@@ -159,8 +159,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Bg8
-    x: 241
-    y: 62
+    x: 723
+    y: 1407
     width: 240
     height: 320
     borderLeft: 0
@@ -172,8 +172,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Blood
-    x: 482
-    y: 4
+    x: 111
+    y: 964
     width: 101
     height: 99
     borderLeft: 0
@@ -185,8 +185,8 @@ MonoBehaviour:
     paddingTop: 3
     paddingBottom: 2
   - name: Blood1
-    x: 723
-    y: 263
+    x: 213
+    y: 964
     width: 101
     height: 99
     borderLeft: 0
@@ -198,8 +198,8 @@ MonoBehaviour:
     paddingTop: 3
     paddingBottom: 2
   - name: BloodBg
-    x: 752
-    y: 560
+    x: 754
+    y: 1263
     width: 143
     height: 143
     borderLeft: 0
@@ -211,8 +211,8 @@ MonoBehaviour:
     paddingTop: 1
     paddingBottom: 0
   - name: CardBg
-    x: 633
-    y: 529
+    x: 635
+    y: 1232
     width: 118
     height: 174
     borderLeft: 0
@@ -223,9 +223,61 @@ MonoBehaviour:
     paddingRight: 3
     paddingTop: 2
     paddingBottom: 3
+  - name: CardBg_1
+    x: 514
+    y: 1231
+    width: 120
+    height: 175
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: CardBg_2
+    x: 272
+    y: 1231
+    width: 120
+    height: 175
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: CardBg_3
+    x: 393
+    y: 1231
+    width: 120
+    height: 175
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: CardBg_4
+    x: 151
+    y: 1231
+    width: 120
+    height: 175
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
   - name: CardSelect
-    x: 482
-    y: 491
+    x: 0
+    y: 1194
     width: 150
     height: 212
     borderLeft: 0
@@ -237,8 +289,8 @@ MonoBehaviour:
     paddingTop: 4
     paddingBottom: 4
   - name: Dead
-    x: 742
-    y: 375
+    x: 520
+    y: 1078
     width: 116
     height: 115
     borderLeft: 0
@@ -250,8 +302,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: EndBtn
-    x: 482
-    y: 232
+    x: 130
+    y: 1065
     width: 129
     height: 128
     borderLeft: 0
@@ -263,8 +315,8 @@ MonoBehaviour:
     paddingTop: 1
     paddingBottom: 0
   - name: Head
-    x: 896
-    y: 582
+    x: 898
+    y: 1285
     width: 121
     height: 121
     borderLeft: 0
@@ -276,8 +328,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 2
   - name: Head1
-    x: 859
-    y: 375
+    x: 637
+    y: 1078
     width: 114
     height: 115
     borderLeft: 0
@@ -289,8 +341,8 @@ MonoBehaviour:
     paddingTop: 1
     paddingBottom: 2
   - name: HeadBg
-    x: 612
-    y: 252
+    x: 752
+    y: 1083
     width: 110
     height: 110
     borderLeft: 0
@@ -302,8 +354,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Icon0
-    x: 612
-    y: 141
+    x: 863
+    y: 1083
     width: 110
     height: 110
     borderLeft: 0
@@ -315,8 +367,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Icon1
-    x: 612
-    y: 30
+    x: 0
+    y: 953
     width: 110
     height: 110
     borderLeft: 0
@@ -328,8 +380,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: JumpBtn
-    x: 612
-    y: 363
+    x: 390
+    y: 1066
     width: 129
     height: 127
     borderLeft: 0
@@ -341,8 +393,8 @@ MonoBehaviour:
     paddingTop: 3
     paddingBottom: 0
   - name: Round
-    x: 0
-    y: 19
+    x: 964
+    y: 2006
     width: 38
     height: 42
     borderLeft: 0
@@ -354,8 +406,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Round1
-    x: 723
-    y: 162
+    x: 315
+    y: 963
     width: 68
     height: 100
     borderLeft: 0
@@ -367,8 +419,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: Round2
-    x: 71
-    y: 39
+    x: 996
+    y: 1983
     width: 22
     height: 22
     borderLeft: 0
@@ -380,8 +432,8 @@ MonoBehaviour:
     paddingTop: 4
     paddingBottom: 4
   - name: Round3
-    x: 71
-    y: 18
+    x: 964
+    y: 1944
     width: 22
     height: 20
     borderLeft: 0
@@ -393,8 +445,8 @@ MonoBehaviour:
     paddingTop: 5
     paddingBottom: 5
   - name: RroundBg
-    x: 39
-    y: 21
+    x: 964
+    y: 1965
     width: 31
     height: 40
     borderLeft: 0

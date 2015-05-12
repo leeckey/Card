@@ -34,11 +34,14 @@ public class CardFighterUI : MonoBehaviour
 			//smallUI.gameObject.SetActive(true);
 			//bigUI.gameObject.SetActive(false);
 			smallUI.ShowActive();
+			bigUI.Hide();
 		}
 		else
 		{
 			//smallUI.gameObject.SetActive(false);
 			//bigUI.gameObject.SetActive(true);
+			bigUI.ShowActive();
+			smallUI.Hide();
 		}
 
 		SetActive(true);
@@ -46,8 +49,8 @@ public class CardFighterUI : MonoBehaviour
 
 	public void ShowDead()
 	{
-		//ShowUI(true);
-		//smallUI.ShowDead();
+		ShowUI(true);
+		smallUI.ShowDead();
 	}
 
 	public void InitCardUI(CardFighter card)
@@ -55,6 +58,7 @@ public class CardFighterUI : MonoBehaviour
 		this.fighter = card;
 		this.name = "Card" + ID;
 		smallUI.SetFighter(card);
+		bigUI.SetFighter(card);
 	}
 
 	public void SetActive(bool show)
@@ -74,7 +78,7 @@ public class CardFighterUI : MonoBehaviour
 
 	public void ShowCardDamage(int damage)
 	{
-		//bigUI.ShowDamage(damage);
+		bigUI.ShowDamage(damage);
 	}
 
 	public void AttackChange(int att)

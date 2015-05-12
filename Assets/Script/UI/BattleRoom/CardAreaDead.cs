@@ -19,7 +19,7 @@ public class CardAreaDead : CardAreaBase
 		// 显示这张卡牌到等待区域
 		card.transform.parent = cardParent.transform;
 		HOTween.To(card.transform, BattleTime.CARD_MOVE_TIME, new TweenParms().Prop("position", cardParent.transform.position));
-		card.SetActive(true);
+		card.ShowDead();
 
 		yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
 	}

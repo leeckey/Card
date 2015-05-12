@@ -35,9 +35,9 @@ public class ResManager
 		return LoadRes<Texture>("Texture/CardIcon/Small/img_photoCard_" + id);
 	}
 
-	public static Texture LoadCardTexture(int id)
+	public static Texture LoadCardMinTexture(int id)
 	{
-		return LoadRes<Texture>("Texture/CardTexture/CardTextrue_" + id);
+		return LoadRes<Texture>("Texture/CardIcon/Min/img_minCard_" + id);
 	}
 
 	public static GameObject LoadSkillEffect(int skillID)

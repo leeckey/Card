@@ -36,8 +36,8 @@ public class CardSmallUI : MonoBehaviour
 
 	public void ShowActive()
 	{
-		attLabel.text = card.Attack.ToString();
-		hpLabel.text = card.MaxHP.ToString();
+		attLabel.text = "AT:" + card.Attack.ToString();
+		hpLabel.text = "HP:" + card.MaxHP.ToString();
 		round = card.waitRound;
 		waitRound.text = round.ToString();
 		roundGo.SetActive(true);
@@ -51,6 +51,11 @@ public class CardSmallUI : MonoBehaviour
 		hpLabel.text = string.Empty;
 		roundGo.SetActive(false);
 		cardIcon.shader = Shader.Find("_Lucifer_UI_Gray");
+	}
+
+	public void Hide()
+	{
+		container.alpha = 0f;
 	}
 
 }
