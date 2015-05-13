@@ -35,9 +35,9 @@ public class Skill222 : BaseSkill
 	{
 		if (card.lastAttackValue > 0)
 		{
+			card.Actions.Add(SkillStartAction.GetAction(card.ID, skillID, GetTargetID(card)));
 			BaseBuff buff = BuffFactory.GetBuffByID(BuffID, skillLevel);
 			card.target.AddBuff(buff);
-			card.Actions.Add(SkillStartAction.GetAction(card.ID, skillID, GetTargetID(card)));
 		}
 	}
 }

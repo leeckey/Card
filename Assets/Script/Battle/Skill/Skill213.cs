@@ -40,8 +40,8 @@ public class Skill213 : BaseSkill
 	{
 		if (card.lastAttackValue > 0)
 		{
-			card.target.DeductAttack(deAtt);
 			card.Actions.Add(SkillStartAction.GetAction(card.ID, skillID, GetTargetID(card)));
+			card.target.DeductAttack(deAtt);
 		}
 	}
 }

@@ -46,6 +46,8 @@ public class BaseHandler : MonoBehaviour
 		if (handler != null)
 			yield return StartCoroutine(handler(action));
 
+		yield return new WaitForSeconds(BattleTime.ACTION_WAIT_TIME);
+
 		battleControl.MoveNext();
 	}
 }

@@ -40,8 +40,8 @@ public class Skill212 : BaseSkill
 	{
 		if (card.lastAttackValue > 0)
 		{
-			card.AddAttack(addAtt);
 			card.Actions.Add(SkillStartAction.GetAction(card.ID, skillID, GetTargetID(card)));
+			card.AddAttack(addAtt);
 		}
 	}
 }

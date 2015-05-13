@@ -40,8 +40,8 @@ public class Skill209 : BaseSkill
 	{
 		if (card.lastAttackValue > 0)
 		{
-			card.owner.Rival.DeductHp((int)(card.lastAttackValue * rate / 100f));
 			card.Actions.Add(SkillStartAction.GetAction(card.ID, skillID, GetTargetID(card)));
+			card.owner.Rival.DeductHp((int)(card.lastAttackValue * rate / 100f));
 		}
 	}
 }

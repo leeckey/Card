@@ -109,17 +109,27 @@ public class CardFighterUI : MonoBehaviour
 
 	public void StandUp()
 	{
-
+		bigUI.StandUp();
 	}
 
 	public void SitDown()
 	{
-
+		bigUI.SitDown();
 	}
 
 	public void RoundEnd()
 	{
 		smallUI.RoundEnd();
 	}
-	
+
+	public void SetDirection(PlayerDirection pos)
+	{
+		if (pos == PlayerDirection.Up)
+			bigUI.upLength = -15;
+		else
+			bigUI.upLength = 15;
+	}
+
 }
+
+

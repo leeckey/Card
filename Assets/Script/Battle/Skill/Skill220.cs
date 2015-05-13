@@ -32,8 +32,8 @@ public class Skill220 : BaseSkill
 	
 	void OnAttackSucc(FighterEvent e)
 	{
+		card.Actions.Add(SkillStartAction.GetAction(card.ID, skillID, GetTargetID(card)));
 		BaseBuff buff = BuffFactory.GetBuffByID(BuffID, skillLevel);
 		card.attacker.AddBuff(buff);
-		card.Actions.Add(SkillStartAction.GetAction(card.ID, skillID, GetTargetID(card)));
 	}
 }

@@ -39,9 +39,9 @@ public class Skill221 : BaseSkill
 	{
 		if (card.lastAttackValue > 0)
 		{
+			card.Actions.Add(SkillStartAction.GetAction(card.ID, skillID, GetTargetID(card)));
 			card.target.DeductAttack(deAtt);
 			card.target.DeductHp(deAtt);
-			card.Actions.Add(SkillStartAction.GetAction(card.ID, skillID, GetTargetID(card)));
 		}
 	}
 }

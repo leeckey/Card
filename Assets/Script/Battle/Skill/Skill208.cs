@@ -40,8 +40,8 @@ public class Skill208 : BaseSkill
 	{
 		if (card.lastAttackValue > 0)
 		{
-			card.AddHp((int)(card.lastAttackValue * rate / 100f));
 			card.Actions.Add(SkillStartAction.GetAction(card.ID, skillID, GetTargetID(card)));
+			card.AddHp((int)(card.lastAttackValue * rate / 100f));
 		}
 	}
 }

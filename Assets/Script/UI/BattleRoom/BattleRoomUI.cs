@@ -108,10 +108,14 @@ public class BattleRoomUI : MonoBehaviour
 
 		cardUI.StandUp();
 
+		yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
+		
+
 		foreach (int id in skillStartAction.targets)
 		{
 			CardFighterUI target = GetCardUI(id);
-			target.ShowSkill(skillStartAction.skillID);
+			if (target != null)
+				target.ShowSkill(skillStartAction.skillID);
 		}
 
 		cardUI.SitDown();

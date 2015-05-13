@@ -323,13 +323,13 @@ public class PlayerFighter : BaseFighter
 			break;
 		case SkillTargetType.TARGET_RANDOM_TYPE:
 			// 随机一个
-			fightCard.ForEach(card => { if (card != null) temp.Add(card); });
+			rival.fightCard.ForEach(card => { if (card != null) temp.Add(card); });
 			if (temp.Count > 0)
 				targets.Add(temp[Random.Range(0, temp.Count)]);
 			break;
 		case SkillTargetType.TARGET_RANDOM2_TYPE:
 			// 随机二个
-			fightCard.ForEach(card => { if (card != null) temp.Add(card); });
+			rival.fightCard.ForEach(card => { if (card != null) temp.Add(card); });
 
 			while (i < 2 && temp.Count > 0)
 			{
@@ -341,7 +341,7 @@ public class PlayerFighter : BaseFighter
 			break;
 		case SkillTargetType.TARGET_RANDOM3_TYPE:
 			// 随机三个
-			fightCard.ForEach(card => { if (card != null) temp.Add(card); });
+			rival.fightCard.ForEach(card => { if (card != null) temp.Add(card); });
 
 			while (i < 3 && temp.Count > 0)
 			{
@@ -354,7 +354,7 @@ public class PlayerFighter : BaseFighter
 		case SkillTargetType.TARGET_MIN_HP_TYPE:
 			// 血量最少的一个
 			int minHP = int.MaxValue;
-			foreach (CardFighter card in fightCard)
+			foreach (CardFighter card in rival.fightCard)
 			{
 				if (card != null && card.HP < minHP)
 					tempCard = card;
@@ -364,7 +364,7 @@ public class PlayerFighter : BaseFighter
 			break;
 		case SkillTargetType.TARGET_MAX_LOSE_HP_TYPE:
 			// 掉血最多的一个
-			foreach (CardFighter card in fightCard)
+			foreach (CardFighter card in rival.fightCard)
 			{
 				if (card != null && card.MaxHP - card.HP > maxHp)
 					tempCard = card;
@@ -374,7 +374,7 @@ public class PlayerFighter : BaseFighter
 			break;
 		case SkillTargetType.TARGET_ALL_TYPE:
 			// 对方所有
-			fightCard.ForEach(card => { targets.Add(card); });
+			rival.fightCard.ForEach(card => { targets.Add(card); });
 			break;
 		case SkillTargetType.TARGET_RANDOM_CURE:
 			// 随机一个可以治疗的目标
@@ -422,13 +422,13 @@ public class PlayerFighter : BaseFighter
 				targets.Add(tempCard);
 			break;
 		case SkillTargetType.NO_BUFF_RANDOM:
-			fightCard.ForEach(card => { if (card != null && !card.HasBuff(skill.BuffID)) temp.Add(card); });
+			rival.fightCard.ForEach(card => { if (card != null && !card.HasBuff(skill.BuffID)) temp.Add(card); });
 			if (temp.Count > 0)
 				targets.Add(temp[Random.Range(0, temp.Count)]);
 			// 随机1个没有相同buff的卡牌
 			break;
 		case SkillTargetType.NO_BUFF_RANDOM2:
-			fightCard.ForEach(card => { if (card != null && !card.HasBuff(skill.BuffID)) temp.Add(card); });
+			rival.fightCard.ForEach(card => { if (card != null && !card.HasBuff(skill.BuffID)) temp.Add(card); });
 			while (i < 2 && temp.Count > 0)
 			{
 				tempCard = temp[Random.Range(0, temp.Count)];
@@ -439,7 +439,7 @@ public class PlayerFighter : BaseFighter
 			// 随机2个没有相同buff的卡牌
 			break;
 		case SkillTargetType.NO_BUFF_RANDOM3:
-			fightCard.ForEach(card => { if (card != null && !card.HasBuff(skill.BuffID)) temp.Add(card); });
+			rival.fightCard.ForEach(card => { if (card != null && !card.HasBuff(skill.BuffID)) temp.Add(card); });
 			while (i < 3 && temp.Count > 0)
 			{
 				tempCard = temp[Random.Range(0, temp.Count)];
@@ -450,7 +450,7 @@ public class PlayerFighter : BaseFighter
 			// 随机3个没有相同buff的卡牌
 			break;
 		case SkillTargetType.NO_BUFF_ALL:
-			fightCard.ForEach(card => { if (card != null && !card.HasBuff(skill.BuffID)) targets.Add(card); });
+			rival.fightCard.ForEach(card => { if (card != null && !card.HasBuff(skill.BuffID)) targets.Add(card); });
 			// 所有没有相同buff的卡牌
 			break;
 		case SkillTargetType.TARGET_SELF_FRONT_OR_FIGHTER:

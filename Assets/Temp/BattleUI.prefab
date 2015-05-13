@@ -6370,6 +6370,7 @@ MonoBehaviour:
   cardFightArea: {fileID: 11400132}
   cardDeadArea: {fileID: 11400136}
   cardPrefab: {fileID: 11400196}
+  direction: 1
 --- !u!114 &11400116
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6392,6 +6393,7 @@ MonoBehaviour:
   cardFightArea: {fileID: 11400130}
   cardDeadArea: {fileID: 11400126}
   cardPrefab: {fileID: 11400196}
+  direction: 0
 --- !u!114 &11400118
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7197,7 +7199,7 @@ MonoBehaviour:
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
-  mClipRange: {x: 256, y: 0, z: 650, w: 200}
+  mClipRange: {x: 256, y: -10, z: 650, w: 220}
   mClipSoftness: {x: 4, y: 4}
   mDepth: 2
   mSortingOrder: 0
@@ -7337,7 +7339,7 @@ MonoBehaviour:
   mClipTexture: {fileID: 0}
   mAlpha: 1
   mClipping: 3
-  mClipRange: {x: 256, y: 0, z: 650, w: 200}
+  mClipRange: {x: 256, y: 10, z: 650, w: 220}
   mClipSoftness: {x: 4, y: 4}
   mDepth: 2
   mSortingOrder: 0
@@ -7568,6 +7570,7 @@ MonoBehaviour:
   cardBg: {fileID: 11400154}
   damageLabel: {fileID: 11400138}
   container: {fileID: 11400154}
+  upLength: 10
 --- !u!114 &11400182
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -38,6 +38,8 @@ public class PlayerGround : MonoBehaviour
 
 	public CardFighterUI cardPrefab;
 
+	public PlayerDirection direction = PlayerDirection.Up;
+
 	/// <summary>
 	/// 获得对应的卡牌
 	/// </summary>
@@ -60,6 +62,7 @@ public class PlayerGround : MonoBehaviour
 			CardFighterUI newCardUI = NGUITools.AddChild(cardInitArea.cardParent, cardPrefab.gameObject).GetComponent<CardFighterUI>();
 			newCardUI.InitCardUI(card);
 			allCards.Add(newCardUI);
+			newCardUI.SetDirection(direction);
 		}
 		allCards.ForEach(card => cardInitArea.cards.Add(card));
 	}
@@ -155,4 +158,10 @@ public class PlayerGround : MonoBehaviour
 		cardDeadArea.ClearCard();
 	}
 
+}
+
+public enum PlayerDirection
+{
+	Up,
+	Down
 }

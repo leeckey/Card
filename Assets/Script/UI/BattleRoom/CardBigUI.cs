@@ -22,6 +22,8 @@ public class CardBigUI : MonoBehaviour
 	CardFighter card;
 	int curHp;
 
+	public float upLength = 10f;
+
 	void Awake()
 	{
 		Hide();
@@ -61,5 +63,17 @@ public class CardBigUI : MonoBehaviour
 		HOTween.From(damageLabel.transform, 0.3f, new TweenParms().Prop("localPosition", new Vector3(pos.x, pos.y - 50, pos.z)));
 		//HOTween.From(damageLabel, 0.3f, new TweenParms().Prop("alpha", 1f));
 		HOTween.To(damageLabel, 0.3f, new TweenParms().Prop("alpha", 0f).Delay(2f));
+	}
+
+	public void StandUp()
+	{
+		Vector3 pos = transform.localPosition;
+		HOTween.To(transform, 0.3f, new TweenParms().Prop("localPosition", new Vector3(pos.x, pos.y + upLength, pos.z)));
+	}
+	
+	public void SitDown()
+	{
+		Vector3 pos = transform.localPosition;
+		HOTween.To(transform, 0.3f, new TweenParms().Prop("localPosition", new Vector3(pos.x, pos.y - upLength, pos.z)));
 	}
 }
