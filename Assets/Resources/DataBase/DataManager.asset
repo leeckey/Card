@@ -516,7 +516,7 @@ MonoBehaviour:
   - id: 1
     templateID: 100
     name: "\u653B\u51FB"
-    effectPath: assets/effects/putonggongji.fam
+    effectPath: 1
     discription: "\u666E\u901A\u653B\u51FB"
     skillType: 0
     magicType: 0
@@ -529,7 +529,7 @@ MonoBehaviour:
   - id: 2
     templateID: 102
     name: "\u706B\u7403"
-    effectPath: assets/effects/huoqiu.fam
+    effectPath: 1
     discription: "\u4F7F\u654C\u65B91\u5F20\u5361\u724C\u53D7\u5230{0}-{1}\u70B9\u4F24\u5BB3"
     skillType: 1
     magicType: 1
@@ -542,7 +542,7 @@ MonoBehaviour:
   - id: 3
     templateID: 102
     name: "\u706B\u5899"
-    effectPath: assets/effects/huoqiu.fam
+    effectPath: 1
     discription: "\u4F7F\u654C\u65B93\u5F20\u5361\u724C\u53D7\u5230{0}-{1}\u70B9\u4F24\u5BB3"
     skillType: 1
     magicType: 1
@@ -555,7 +555,7 @@ MonoBehaviour:
   - id: 4
     templateID: 102
     name: "\u70C8\u7130\u98CE\u66B4"
-    effectPath: assets/effects/huoqiu.fam
+    effectPath: 1
     discription: "\u4F7F\u654C\u65B9\u6240\u6709\u5361\u724C\u53D7\u5230{0}-{1}\u70B9\u4F24\u5BB3"
     skillType: 1
     magicType: 1
@@ -568,7 +568,7 @@ MonoBehaviour:
   - id: 5
     templateID: 101
     name: "\u843D\u96F7"
-    effectPath: assets/effects/shandian.fam
+    effectPath: 1
     discription: "\u4F7F\u654C\u65B91\u5F20\u5361\u724C\u53D7\u5230{0}\u70B9\u4F24\u5BB3\uFF0C{1}%\u6982\u7387\u65E0\u6CD5\u7269\u7406\u653B\u51FB"
     skillType: 1
     magicType: 1
@@ -581,7 +581,7 @@ MonoBehaviour:
   - id: 6
     templateID: 101
     name: "\u8FDE\u73AF\u95EA\u7535"
-    effectPath: assets/effects/shandian.fam
+    effectPath: 1
     discription: "\u4F7F\u654C\u65B93\u5F20\u5361\u724C\u53D7\u5230{0}\u70B9\u4F24\u5BB3\uFF0C{1}%\u6982\u7387\u65E0\u6CD5\u7269\u7406\u653B\u51FB"
     skillType: 1
     magicType: 1
@@ -594,7 +594,7 @@ MonoBehaviour:
   - id: 7
     templateID: 101
     name: "\u96F7\u66B4"
-    effectPath: assets/effects/shandian.fam
+    effectPath: 1
     discription: "\u4F7F\u654C\u65B9\u6240\u6709\u5361\u724C\u53D7\u5230{0}\u70B9\u4F24\u5BB3\uFF0C{1}%\u6982\u7387\u65E0\u6CD5\u7269\u7406\u653B\u51FB"
     skillType: 1
     magicType: 1
@@ -607,7 +607,7 @@ MonoBehaviour:
   - id: 8
     templateID: 101
     name: "\u51B0\u5F39"
-    effectPath: assets/effects/bingjian.fam
+    effectPath: 1
     discription: "\u4F7F\u654C\u65B91\u5F20\u5361\u724C\u53D7\u5230{0}\u70B9\u4F24\u5BB3\uFF0C\u5E76\u6709{1}%\u6982\u7387\u4E27\u5931\u4E0B\u4E00\u56DE\u5408\u884C\u52A8"
     skillType: 1
     magicType: 1
@@ -620,7 +620,7 @@ MonoBehaviour:
   - id: 9
     templateID: 101
     name: "\u971C\u51BB\u65B0\u661F"
-    effectPath: assets/effects/bingjian.fam
+    effectPath: 1
     discription: "\u4F7F\u654C\u65B93\u5F20\u5361\u724C\u53D7\u5230{0}\u70B9\u4F24\u5BB3\uFF0C\u5E76\u6709{1}%\u6982\u7387\u4E27\u5931\u4E0B\u4E00\u56DE\u5408\u884C\u52A8"
     skillType: 1
     magicType: 1
@@ -633,7 +633,7 @@ MonoBehaviour:
   - id: 10
     templateID: 101
     name: "\u66B4\u98CE\u96EA"
-    effectPath: assets/effects/bingjian.fam
+    effectPath: 1
     discription: "\u4F7F\u654C\u65B9\u6240\u6709\u5361\u724C\u53D7\u5230{0}\u70B9\u4F24\u5BB3\uFF0C\u5E76\u6709{1}%\u6982\u7387\u4E27\u5931\u4E0B\u4E00\u56DE\u5408\u884C\u52A8"
     skillType: 1
     magicType: 1
@@ -646,7 +646,7 @@ MonoBehaviour:
   - id: 11
     templateID: 101
     name: "\u6BD2\u6DB2"
-    effectPath: assets/effects/duwu.fam
+    effectPath: 1
     discription: "\u4F7F\u654C\u65B91\u5F20\u5361\u724C\u53D7\u5230{0}\u70B9\u4F24\u5BB3\uFF0C\u5E76\u5728\u5176\u884C\u52A8\u7ED3\u675F\u540E\u53D7\u5230{0}\u70B9\u4F24\u5BB3"
     skillType: 1
     magicType: 0
@@ -659,7 +659,7 @@ MonoBehaviour:
   - id: 12
     templateID: 101
     name: "\u6BD2\u96FE"
-    effectPath: assets/effects/duwu.fam
+    effectPath: 1
     discription: "\u4F7F\u654C\u65B93\u5F20\u5361\u724C\u53D7\u5230{0}\u70B9\u4F24\u5BB3\uFF0C\u5E76\u5728\u5176\u884C\u52A8\u7ED3\u675F\u540E\u53D7\u5230{0}\u70B9\u4F24\u5BB3"
     skillType: 1
     magicType: 0
@@ -672,7 +672,7 @@ MonoBehaviour:
   - id: 13
     templateID: 103
     name: "\u8840\u70BC"
-    effectPath: assets/effects/xuelian.fam
+    effectPath: 1
     discription: "\u4F7F\u654C\u65B91\u5F20\u5361\u724C\u53D7\u5230{0}\u70B9\u4F24\u5BB3\uFF0C\u5E76\u4E14\u4F7F\u81EA\u8EAB\u6062\u590D\u76F8\u540C\u7684\u751F\u547D\u503C"
     skillType: 1
     magicType: 1
@@ -685,7 +685,7 @@ MonoBehaviour:
   - id: 14
     templateID: 101
     name: "\u9677\u9631"
-    effectPath: assets/effects/xianjin.fam
+    effectPath: 1
     discription: "\u4F7F\u654C\u65B91\u5F20\u5361\u724C{1}%\u6982\u7387\u4E27\u5931\u4E0B\u4E00\u4E2A\u884C\u52A8\u56DE\u5408"
     skillType: 1
     magicType: 0
@@ -698,7 +698,7 @@ MonoBehaviour:
   - id: 15
     templateID: 101
     name: "\u9677\u9631"
-    effectPath: assets/effects/xianjin.fam
+    effectPath: 1
     discription: "\u4F7F\u654C\u65B92\u5F20\u5361\u724C{1}%\u6982\u7387\u4E27\u5931\u4E0B\u4E00\u4E2A\u884C\u52A8\u56DE\u5408"
     skillType: 1
     magicType: 0
@@ -711,7 +711,7 @@ MonoBehaviour:
   - id: 16
     templateID: 106
     name: "\u8BC5\u5492"
-    effectPath: assets/effects/putonggongji.fam
+    effectPath: 1
     discription: "\u964D\u4F4E\u654C\u65B9\u82F1\u96C4{0}\u70B9\u751F\u547D\u503C"
     skillType: 1
     magicType: 0
@@ -724,7 +724,7 @@ MonoBehaviour:
   - id: 17
     templateID: 213
     name: "\u524A\u5F31"
-    effectPath: assets/effects/xueruo.fam
+    effectPath: 1
     discription: "\u5F53\u5BF9\u5BF9\u65B9\u9020\u6210\u7269\u7406\u4F24\u5BB3\u65F6\uFF0C\u51CF\u5C11\u5BF9\u65B9{0}\u70B9\u653B\u51FB\u529B "
     skillType: 2
     magicType: 1
@@ -737,7 +737,7 @@ MonoBehaviour:
   - id: 18
     templateID: 104
     name: "\u7FA4\u4F53\u524A\u5F31"
-    effectPath: assets/effects/xueruo.fam
+    effectPath: 1
     discription: "\u964D\u4F4E\u5BF9\u65B9\u6240\u6709\u5361\u724C{0}\u70B9\u653B\u51FB\u529B"
     skillType: 1
     magicType: 1
@@ -750,7 +750,7 @@ MonoBehaviour:
   - id: 19
     templateID: 100
     name: "\u70C8\u706B\u711A\u795E"
-    effectPath: assets/effects/xueruo.fam
+    effectPath: 1
     discription: "\u7ED9\u4E88\u654C\u65B9\u573A\u4E0A\u6240\u6709\u5361\u724C\u71C3\u70E7\u4F24\u5BB3\uFF0C\u4F7F\u5176\u5728\u6BCF\u6B21\u884C\u52A8\u7ED3\u675F\u540E\u4E22\u5931{0}\u70B9\u751F\u547D\u503C"
     skillType: 1
     magicType: 1
@@ -763,7 +763,7 @@ MonoBehaviour:
   - id: 20
     templateID: 221
     name: "\u75BE\u75C5"
-    effectPath: assets/effects/xueruo.fam
+    effectPath: 1
     discription: "\u5F53\u653B\u51FB\u5E76\u5BF9\u76EE\u6807\u9020\u6210\u4F24\u5BB3\u65F6\uFF0C\u5BF9\u65B9\u4E27\u5931{0}\u70B9\u653B\u51FB\u529B\u548C\u751F\u547D\u503C "
     skillType: 2
     magicType: 0
@@ -776,7 +776,7 @@ MonoBehaviour:
   - id: 21
     templateID: 106
     name: "\u761F\u75AB"
-    effectPath: assets/effects/xueruo.fam
+    effectPath: 1
     discription: "\u4F7F\u5BF9\u65B9\u6240\u6709\u5361\u724C\u4E27\u5931{0}\u70B9\u653B\u51FB\u529B\u548C\u751F\u547D\u503C "
     skillType: 1
     magicType: 0
@@ -789,7 +789,7 @@ MonoBehaviour:
   - id: 22
     templateID: 101
     name: "\u963B\u51FB"
-    effectPath: assets/effects/zuji.fam
+    effectPath: 1
     discription: "\u7ED9\u4E88\u654C\u65B9\u5F53\u524D\u62E5\u6709\u6700\u5C11\u4F53\u529B\u7684\u5361\u724C{0}\u70B9\u4F24\u5BB3"
     skillType: 1
     magicType: 0
@@ -802,7 +802,7 @@ MonoBehaviour:
   - id: 23
     templateID: 101
     name: "\u4E8C\u91CD\u963B\u51FB"
-    effectPath: assets/effects/zuji.fam
+    effectPath: 1
     discription: "\u7ED9\u4E88\u654C\u65B9\u5F53\u524D\u62E5\u6709\u6700\u5C11\u4F53\u529B\u76842\u5F20\u5361\u724C{0}\u70B9\u4F24\u5BB3"
     skillType: 1
     magicType: 0
@@ -815,7 +815,7 @@ MonoBehaviour:
   - id: 24
     templateID: 209
     name: "\u7A7F\u523A"
-    effectPath: assets/effects/chuanci.fam
+    effectPath: 1
     discription: "\u5F53\u5BF9\u5730\u65B9\u5361\u724C\u9020\u6210\u4F24\u5BB3\u65F6\uFF0C\u654C\u65B9\u82F1\u96C4\u540C\u65F6\u53D7\u5230{0}%\u7684\u4F24\u5BB3"
     skillType: 2
     magicType: 0
@@ -828,7 +828,7 @@ MonoBehaviour:
   - id: 25
     templateID: 201
     name: "\u66B4\u51FB"
-    effectPath: assets/effects/baoji.fam
+    effectPath: 1
     discription: "\u653B\u51FB\u5BF9\u65B9\u5361\u724C\u65F6\u6709{0}%\u51E0\u7387\u63D0\u5347{1}%\u7684\u653B\u51FB\u529B"
     skillType: 2
     magicType: 0
@@ -841,7 +841,7 @@ MonoBehaviour:
   - id: 26
     templateID: 212
     name: "\u55DC\u8840"
-    effectPath: assets/effects/shixue.fam
+    effectPath: 1
     discription: "\u6BCF\u6B21\u653B\u51FB\u5BF9\u65B9\u9020\u6210\u4F24\u5BB3\u65F6\uFF0C\u63D0\u5347{0}\u70B9\u653B\u51FB\u529B
       \ "
     skillType: 2
@@ -855,7 +855,7 @@ MonoBehaviour:
   - id: 27
     templateID: 211
     name: "\u72C2\u70ED"
-    effectPath: assets/effects/kuangre.fam
+    effectPath: 1
     discription: "\u5F53\u88AB\u653B\u51FB\u4E14\u53D7\u5230\u7269\u7406\u4F24\u5BB3\u65F6\u63D0\u5347{0}\u70B9\u653B\u51FB\u529B
       \ "
     skillType: 2
@@ -869,7 +869,7 @@ MonoBehaviour:
   - id: 28
     templateID: 214
     name: "\u80CC\u523A"
-    effectPath: assets/effects/baoji.fam
+    effectPath: 1
     discription: "\u51FA\u573A\u56DE\u5408\uFF0C\u589E\u52A0\u989D\u5916{0}\u70B9\u653B\u51FB\u529B"
     skillType: 2
     magicType: 0
@@ -882,7 +882,7 @@ MonoBehaviour:
   - id: 29
     templateID: 222
     name: "\u88C2\u4F24"
-    effectPath: assets/effects/baoji.fam
+    effectPath: 1
     discription: "\u5F53\u653B\u51FB\u5E76\u5BF9\u654C\u65B9\u9020\u6210\u7269\u7406\u4F24\u5BB3\u65F6\u65BD\u653E\uFF0C\u4F7F\u5BF9\u65B9\u65E0\u6CD5\u56DE\u6625\u548C\u88AB\u6CBB\u7597"
     skillType: 2
     magicType: 0
@@ -895,7 +895,7 @@ MonoBehaviour:
   - id: 30
     templateID: 200
     name: "\u6A2A\u626B"
-    effectPath: assets/effects/hengsao.fam
+    effectPath: 1
     discription: "\u653B\u51FB\u6B63\u9762\u5361\u724C\u5E76\u9020\u6210\u4F24\u5BB3\u65F6\u540C\u65F6\u653B\u51FB\u5DE6\u53F32\u5F20\u5361\u724C"
     skillType: 0
     magicType: 0
@@ -908,7 +908,7 @@ MonoBehaviour:
   - id: 31
     templateID: 208
     name: "\u5438\u8840"
-    effectPath: assets/effects/xixue.fam
+    effectPath: 1
     discription: "\u5F53\u5BF9\u654C\u65B9\u9020\u6210\u7269\u7406\u4F24\u5BB3\u65F6\uFF0C\u56DE\u590D\u4F24\u5BB3\u503C{0}%\u7684\u751F\u547D\u503C"
     skillType: 2
     magicType: 0
@@ -921,7 +921,7 @@ MonoBehaviour:
   - id: 32
     templateID: 215
     name: "\u81EA\u7206"
-    effectPath: assets/effects/zibao.fam
+    effectPath: 1
     discription: "\u88AB\u6D88\u706D\u65F6\uFF0C\u5BF9\u6B63\u9762\u53CA\u5176\u6BD7\u90BB\u7684\u654C\u65B9\u5361\u724C\u9020\u6210{0}\u70B9\u4F24\u5BB3"
     skillType: 2
     magicType: 0
@@ -934,7 +934,7 @@ MonoBehaviour:
   - id: 33
     templateID: 223
     name: "\u5723\u5149"
-    effectPath: assets/effects/baoji.fam
+    effectPath: 1
     discription: "\u5F53\u653B\u51FB\u76EE\u6807\u662F\u9B4F\u56FD\u65F6\uFF0C\u653B\u51FB\u529B\u52A0\u6210{0}%"
     skillType: 2
     magicType: 0
@@ -947,7 +947,7 @@ MonoBehaviour:
   - id: 34
     templateID: 223
     name: "\u6C61\u67D3"
-    effectPath: assets/effects/baoji.fam
+    effectPath: 1
     discription: "\u5F53\u653B\u51FB\u76EE\u6807\u662F\u5434\u56FD\u65F6\uFF0C\u653B\u51FB\u529B\u52A0\u6210{0}%"
     skillType: 2
     magicType: 0
@@ -960,7 +960,7 @@ MonoBehaviour:
   - id: 35
     templateID: 223
     name: "\u8981\u5BB3"
-    effectPath: assets/effects/baoji.fam
+    effectPath: 1
     discription: "\u5F53\u653B\u51FB\u76EE\u6807\u662F\u7FA4\u8C6A\u65F6\uFF0C\u653B\u51FB\u529B\u52A0\u6210{0}%"
     skillType: 2
     magicType: 0
@@ -973,7 +973,7 @@ MonoBehaviour:
   - id: 36
     templateID: 223
     name: "\u6697\u6740"
-    effectPath: assets/effects/baoji.fam
+    effectPath: 1
     discription: "\u5F53\u653B\u51FB\u76EE\u6807\u662F\u8700\u56FD\u65F6\uFF0C\u653B\u51FB\u529B\u52A0\u6210{0}%"
     skillType: 2
     magicType: 0
@@ -986,7 +986,7 @@ MonoBehaviour:
   - id: 37
     templateID: 216
     name: "\u8700\u56FD\u4E4B\u529B"
-    effectPath: assets/effects/wangguozhili.fam
+    effectPath: 1
     discription: "\u589E\u52A0\u573A\u4E0A\u9664\u81EA\u8EAB\u5916\u6211\u65B9\u5176\u4ED6\u8700\u56FD\u5361\u724C{0}\u70B9\u653B\u51FB\u529B"
     skillType: 2
     magicType: 0
@@ -999,7 +999,7 @@ MonoBehaviour:
   - id: 38
     templateID: 216
     name: "\u9B4F\u56FD\u4E4B\u529B"
-    effectPath: assets/effects/wangguozhili.fam
+    effectPath: 1
     discription: "\u589E\u52A0\u573A\u4E0A\u9664\u81EA\u8EAB\u5916\u6211\u65B9\u5176\u4ED6\u9B4F\u56FD\u5361\u724C{0}\u70B9\u653B\u51FB\u529B"
     skillType: 2
     magicType: 0
@@ -1012,7 +1012,7 @@ MonoBehaviour:
   - id: 39
     templateID: 216
     name: "\u5434\u56FD\u4E4B\u529B"
-    effectPath: assets/effects/wangguozhili.fam
+    effectPath: 1
     discription: "\u589E\u52A0\u573A\u4E0A\u9664\u81EA\u8EAB\u5916\u6211\u65B9\u5176\u4ED6\u5434\u56FD\u5361\u724C{0}\u70B9\u653B\u51FB\u529B"
     skillType: 2
     magicType: 0
@@ -1025,7 +1025,7 @@ MonoBehaviour:
   - id: 40
     templateID: 216
     name: "\u7FA4\u8C6A\u4E4B\u529B"
-    effectPath: assets/effects/wangguozhili.fam
+    effectPath: 1
     discription: "\u589E\u52A0\u573A\u4E0A\u9664\u81EA\u8EAB\u5916\u6211\u65B9\u5176\u4ED6\u7FA4\u8C6A\u5361\u724C{0}\u70B9\u653B\u51FB\u529B"
     skillType: 2
     magicType: 0
@@ -1038,7 +1038,7 @@ MonoBehaviour:
   - id: 41
     templateID: 203
     name: "\u6CD5\u529B\u53CD\u5C04"
-    effectPath: assets/effects/fanse.fam
+    effectPath: 1
     discription: "\u5F53\u53D7\u5230\u51B0\uFF0C\u706B\uFF0C\u96F7\uFF0C\u8840\u653B\u51FB\u65F6\uFF0C\u653B\u51FB\u65E0\u6548\uFF0C\u5E76\u5BF9\u653B\u51FB\u65B9\u9020\u6210{0}\u70B9\u4F24\u5BB3"
     skillType: 2
     magicType: 0
@@ -1051,7 +1051,7 @@ MonoBehaviour:
   - id: 42
     templateID: 206
     name: "\u9B54\u7532"
-    effectPath: assets/effects/mojia.fam
+    effectPath: 1
     discription: "\u5F53\u53D7\u5230\u51B0\uFF0C\u706B\uFF0C\u96F7\uFF0C\u8840\u653B\u51FB\u65F6\uFF0C\u6BCF\u6B21\u6700\u591A\u627F\u53D7{0}\u70B9\u6280\u80FD\u4F24\u5BB3"
     skillType: 2
     magicType: 0
@@ -1064,7 +1064,7 @@ MonoBehaviour:
   - id: 43
     templateID: 205
     name: "\u51B0\u7532"
-    effectPath: assets/effects/bingjia.fam
+    effectPath: 1
     discription: "\u6BCF\u6B21\u7269\u7406\u653B\u51FB\u65F6\u6700\u591A\u627F\u53D7{0}\u70B9\u4F24\u5BB3"
     skillType: 2
     magicType: 0
@@ -1077,7 +1077,7 @@ MonoBehaviour:
   - id: 44
     templateID: 210
     name: "\u53CD\u51FB"
-    effectPath: assets/effects/fanji.fam
+    effectPath: 1
     discription: "\u5F53\u53D7\u5230\u7269\u7406\u4F24\u5BB3\u65F6\uFF0C\u7ACB\u5373\u53CD\u51FB\u5E76\u7ED9\u4E88{0}\u70B9\u4F24\u5BB3 "
     skillType: 2
     magicType: 0
@@ -1090,7 +1090,7 @@ MonoBehaviour:
   - id: 45
     templateID: 219
     name: "\u76FE\u523A"
-    effectPath: assets/effects/fanji.fam
+    effectPath: 1
     discription: "\u5F53\u53D7\u5230\u7269\u7406\u4F24\u5BB3\u65F6\uFF0C\u7ACB\u5373\u53CD\u51FB\u653B\u51FB\u8005\u53CA\u76F8\u90BB\u5361\u724C\u5E76\u7ED9\u4E88{0}\u70B9\u4F24\u5BB3 "
     skillType: 2
     magicType: 0
@@ -1103,7 +1103,7 @@ MonoBehaviour:
   - id: 46
     templateID: 220
     name: "\u71C3\u70E7"
-    effectPath: assets/effects/ranshao.fam
+    effectPath: 1
     discription: "\u53D7\u5230\u7269\u7406\u653B\u51FB\u65F6\uFF0C\u4F7F\u5BF9\u65B9\u71C3\u70E7\uFF0C\u5728\u5176\u6BCF\u6B21\u884C\u52A8\u7ED3\u675F\u540E\u4E22\u5931{0}\u70B9\u751F\u547D\u503C "
     skillType: 2
     magicType: 0
@@ -1116,7 +1116,7 @@ MonoBehaviour:
   - id: 47
     templateID: 204
     name: "\u95EA\u907F"
-    effectPath: assets/effects/shanbi.fam
+    effectPath: 1
     discription: "\u88AB\u7269\u7406\u653B\u51FB\u65F6\u6709{0}%\u51E0\u7387\u4E0D\u53D7\u4F24\u5BB3"
     skillType: 2
     magicType: 0
@@ -1129,7 +1129,7 @@ MonoBehaviour:
   - id: 48
     templateID: 202
     name: "\u683C\u6321"
-    effectPath: assets/effects/gedang.fam
+    effectPath: 1
     discription: "\u53D7\u5230\u666E\u901A\u653B\u51FB\u65F6\uFF0C\u51CF\u5C11{0}\u70B9\u4F24\u5BB3"
     skillType: 2
     magicType: 0
@@ -1142,7 +1142,7 @@ MonoBehaviour:
   - id: 49
     templateID: 217
     name: "\u8700\u56FD\u5B88\u62A4"
-    effectPath: assets/effects/wangguoshouhu.fam
+    effectPath: 1
     discription: "\u589E\u52A0\u573A\u4E0A\u81EA\u8EAB\u5916\u6211\u65B9\u5176\u4ED6\u8700\u56FD\u5361\u724C{0}\u70B9\u751F\u547D\u503C"
     skillType: 2
     magicType: 0
@@ -1155,7 +1155,7 @@ MonoBehaviour:
   - id: 50
     templateID: 217
     name: "\u9B4F\u56FD\u5B88\u62A4"
-    effectPath: assets/effects/wangguoshouhu.fam
+    effectPath: 1
     discription: "\u589E\u52A0\u573A\u4E0A\u81EA\u8EAB\u5916\u6211\u65B9\u5176\u4ED6\u9B4F\u56FD\u5361\u724C{0}\u70B9\u751F\u547D\u503C"
     skillType: 2
     magicType: 0
@@ -1168,7 +1168,7 @@ MonoBehaviour:
   - id: 51
     templateID: 217
     name: "\u5434\u56FD\u5B88\u62A4"
-    effectPath: assets/effects/wangguoshouhu.fam
+    effectPath: 1
     discription: "\u589E\u52A0\u573A\u4E0A\u81EA\u8EAB\u5916\u6211\u65B9\u5176\u4ED6\u5434\u56FD\u5361\u724C{0}\u70B9\u751F\u547D\u503C"
     skillType: 2
     magicType: 0
@@ -1181,7 +1181,7 @@ MonoBehaviour:
   - id: 52
     templateID: 217
     name: "\u7FA4\u8C6A\u5B88\u62A4"
-    effectPath: assets/effects/wangguoshouhu.fam
+    effectPath: 1
     discription: "\u589E\u52A0\u573A\u4E0A\u81EA\u8EAB\u5916\u6211\u65B9\u5176\u4ED6\u7FA4\u8C6A\u5361\u724C{0}\u70B9\u751F\u547D\u503C"
     skillType: 2
     magicType: 0
@@ -1194,7 +1194,7 @@ MonoBehaviour:
   - id: 53
     templateID: 105
     name: "\u56DE\u6625"
-    effectPath: assets/effects/zhiliao.fam
+    effectPath: 1
     discription: "\u6BCF\u56DE\u5408\u6062\u590D\u81EA\u8EAB{0}\u70B9\u751F\u547D\u503C"
     skillType: 1
     magicType: 0
@@ -1207,7 +1207,7 @@ MonoBehaviour:
   - id: 54
     templateID: 105
     name: "\u6CBB\u7597"
-    effectPath: assets/effects/zhiliao.fam
+    effectPath: 1
     discription: "\u6062\u590D\u6211\u65B91\u5F20\u635F\u5931\u751F\u547D\u503C\u6700\u591A\u7684\u5361\u724C{0}\u70B9\u751F\u547D"
     skillType: 1
     magicType: 0
@@ -1220,7 +1220,7 @@ MonoBehaviour:
   - id: 55
     templateID: 105
     name: "\u7518\u9716"
-    effectPath: assets/effects/zhiliao.fam
+    effectPath: 1
     discription: "\u6062\u590D\u6211\u65B9\u6240\u6709\u5361\u724C{0}\u70B9\u751F\u547D\u503C"
     skillType: 1
     magicType: 0
@@ -1233,7 +1233,7 @@ MonoBehaviour:
   - id: 56
     templateID: 105
     name: "\u7948\u7977"
-    effectPath: assets/effects/zhiliao.fam
+    effectPath: 1
     discription: "\u6062\u590D\u6211\u65B9\u82F1\u96C4{0}\u70B9\u751F\u547D\u503C"
     skillType: 1
     magicType: 0
@@ -1246,7 +1246,7 @@ MonoBehaviour:
   - id: 57
     templateID: 218
     name: "\u8F6C\u751F"
-    effectPath: assets/effects/zhuansheng.fam
+    effectPath: 1
     discription: "\u6B7B\u4EA1\u65F6\u6709{0}%\u7684\u6982\u7387\u8FDB\u5165\u624B\u724C\uFF0C\u5982\u679C\u624B\u724C\u5DF2\u6EE1\u5219\u8FDB\u5165\u724C\u5806"
     skillType: 2
     magicType: 0
@@ -1259,7 +1259,7 @@ MonoBehaviour:
   - id: 58
     templateID: 207
     name: "\u514D\u75AB"
-    effectPath: assets/effects/mianyi.fam
+    effectPath: 1
     discription: "\u4E0D\u53D7\u4EFB\u4F55\u6280\u80FD\u9020\u6210\u7684\u4F24\u5BB3\u548C\u5F71\u54CD"
     skillType: 2
     magicType: 0
@@ -1272,7 +1272,7 @@ MonoBehaviour:
   - id: 59
     templateID: 224
     name: "\u4E0D\u52A8"
-    effectPath: assets/effects/budong.fam
+    effectPath: 1
     discription: "\u4E0D\u53D7\u6467\u6BC1\uFF0C\u9001\u8FD8\uFF0C\u4F20\u9001\u6280\u80FD\u5F71\u54CD"
     skillType: 2
     magicType: 0
@@ -1285,7 +1285,7 @@ MonoBehaviour:
   - id: 60
     templateID: 108
     name: "\u6467\u6BC1"
-    effectPath: assets/effects/chuihui.fam
+    effectPath: 1
     discription: "\u7ACB\u5373\u6740\u6B7B\u654C\u65B9\u4E00\u5F20\u5361\u7247"
     skillType: 1
     magicType: 1
@@ -1298,7 +1298,7 @@ MonoBehaviour:
   - id: 61
     templateID: 109
     name: "\u9001\u8FD8"
-    effectPath: assets/effects/chuansong.fam
+    effectPath: 1
     discription: "\u5C06\u6B63\u9762\u654C\u65B9\u5361\u724C\u9001\u56DE\u724C\u5806"
     skillType: 1
     magicType: 1
@@ -1311,7 +1311,7 @@ MonoBehaviour:
   - id: 62
     templateID: 108
     name: "\u4F20\u9001"
-    effectPath: assets/effects/chuansong.fam
+    effectPath: 1
     discription: "\u5C06\u5BF9\u65B9\u624B\u724C\u4E2D\u7B49\u5F85\u65F6\u95F4\u6700\u957F\u76841\u5F20\u5361\u724C\u4E22\u81F3\u5893\u5730"
     skillType: 1
     magicType: 1
@@ -1324,7 +1324,7 @@ MonoBehaviour:
   - id: 63
     templateID: 110
     name: "\u590D\u6D3B"
-    effectPath: assets/effects/chuansong.fam
+    effectPath: 1
     discription: "\u5C06\u6211\u65B91\u5F20\u65E0\u590D\u6D3B\u6280\u80FD\u7684\u5361\u724C\u4ECE\u5893\u5730\u53EC\u5524\u4E0A\u573A"
     skillType: 1
     magicType: 0
@@ -1337,7 +1337,7 @@ MonoBehaviour:
   - id: 64
     templateID: 225
     name: "\u964D\u4E34"
-    effectPath: assets/effects/chuansong.fam
+    effectPath: 1
     discription: "\u5361\u724C\u4E0A\u573A\u65F6\uFF0C\u65BD\u653E\u4E00\u6B21{0}({1})"
     skillType: 0
     magicType: 0
@@ -1350,7 +1350,7 @@ MonoBehaviour:
   - id: 65
     templateID: 226
     name: "\u6B7B\u5951"
-    effectPath: assets/effects/chuansong.fam
+    effectPath: 1
     discription: "\u5361\u724C\u88AB\u6D88\u706D\u65F6\uFF0C\u65BD\u653E\u4E00\u6B21{0}({1})"
     skillType: 0
     magicType: 0
@@ -1363,7 +1363,7 @@ MonoBehaviour:
   - id: 66
     templateID: 111
     name: "\u56DE\u9B42"
-    effectPath: assets/effects/chuansong.fam
+    effectPath: 1
     discription: "\u5893\u5730\u4E2D1\u5F20\u5361\u724C\u56DE\u5230\u724C\u5806"
     skillType: 1
     magicType: 0
@@ -1376,7 +1376,7 @@ MonoBehaviour:
   - id: 67
     templateID: 111
     name: "\u56DE\u9B42"
-    effectPath: assets/effects/chuansong.fam
+    effectPath: 1
     discription: "\u5893\u5730\u4E2D2\u5F20\u5361\u724C\u56DE\u5230\u724C\u5806"
     skillType: 1
     magicType: 0
