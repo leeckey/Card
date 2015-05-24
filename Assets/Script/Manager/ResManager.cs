@@ -42,7 +42,8 @@ public class ResManager
 
 	public static GameObject LoadSkillEffect(int skillID)
 	{
-		return LoadRes<GameObject>("Prefabs/Effect/Effect_" + skillID);
+		string effectPath = DataManager.GetInstance().skillData[skillID].effectPath;
+		return LoadRes<GameObject>("Prefabs/Effect/Effect_" + effectPath);
 	}
 	
 }

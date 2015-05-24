@@ -6,9 +6,14 @@ using System.Collections;
 /// </summary>
 public class BattleTest : MonoBehaviour
 {
+	public bool enabled = true;
+
 	void Awake()
 	{
 		DataManager.GetInstance().Init();
+
+		if (!enabled)
+			return;
 
 		TestFight();
 

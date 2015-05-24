@@ -96,15 +96,38 @@ public class CardFighterUI : MonoBehaviour
 
 	}
 
-	public IEnumerator ShowSkill(int skillID)
+	public void ShowSkill(int skillID)
 	{
 		GameObject effect = ResManager.LoadSkillEffect(skillID);
-		Animator animator = effect.GetComponent<Animator>();
+		if (effect == null)
+			return;
+
+		GameObject go = NGUITools.AddChild(gameObject, effect);
+
+		go.GetComponent<SpriteRenderer>().sortingOrder = 10;
+		StartCoroutine(DestroyEffect(go));
+		//Animator animator = go.GetComponent<Animator>();
 		// animator.animation.clip.
 		// AnimatorController controll = effect.GetComponent<AnimatorController>();
 
+		//yield return null;
 
+
+		//AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(0);
+
+		//yield return new WaitForSeconds(info.length);
+	}
+
+	IEnumerator DestroyEffect(GameObject go)
+	{
 		yield return null;
+
+		Animator animator = go.GetComponent<Animator>();
+		AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(0);
+		
+		yield return new WaitForSeconds(info.length);
+
+		DestroyObject(go);
 	}
 
 	public void StandUp()

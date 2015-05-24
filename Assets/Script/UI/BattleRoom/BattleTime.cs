@@ -9,4 +9,5 @@ public class BattleTime
 	public static float DAMAGE_SHOW_TIME = 0.5f;
 	public static float ATTACK_CHANGE_TIME = 0.5f;
 	public static float ACTION_WAIT_TIME = 0.3f;
+	public static float SKILL_TIME = 0.5f;
 }

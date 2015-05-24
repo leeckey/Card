@@ -109,7 +109,6 @@ public class BattleRoomUI : MonoBehaviour
 		cardUI.StandUp();
 
 		yield return new WaitForSeconds(BattleTime.CARD_MOVE_TIME);
-		
 
 		foreach (int id in skillStartAction.targets)
 		{
@@ -117,6 +116,8 @@ public class BattleRoomUI : MonoBehaviour
 			if (target != null)
 				target.ShowSkill(skillStartAction.skillID);
 		}
+
+		yield return new WaitForSeconds(BattleTime.SKILL_TIME);
 
 		cardUI.SitDown();
 
