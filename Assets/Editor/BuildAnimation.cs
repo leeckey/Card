@@ -85,6 +85,7 @@ public class BuildAnimation : Editor
 		AnimationUtility.SetObjectReferenceCurve(clip, curveBinding, keyFrames);
 		AssetDatabase.CreateAsset(clip, AnimationPath +"/"+parentName +"/" +animationName+".anim");
 		AssetDatabase.SaveAssets();
+
 		return clip;
 	}
 
@@ -96,14 +97,15 @@ public class BuildAnimation : Editor
 		AnimatorController animatorController = AnimatorController.CreateAnimatorControllerAtPath(AnimationControllerPath + "/" + name + ".controller");
 		AnimatorControllerLayer layer = animatorController.GetLayer(0);
 		UnityEditorInternal.StateMachine sm = layer.stateMachine;
-		foreach(AnimationClip newClip in clips)
+		foreach (AnimationClip newClip in clips)
 		{
 			State state = sm.AddState(newClip.name);
-			state.SetAnimationClip(newClip,layer);
+			state.SetAnimationClip(newClip, layer);
 			Transition trans = sm.AddAnyStateTransition(state);
 			trans.RemoveCondition(0);
 		}
 		AssetDatabase.SaveAssets();
+
 		return animatorController;
 	}
 
@@ -112,7 +114,7 @@ public class BuildAnimation : Editor
 	/// </summary>
 	static void BuildPrefab(DirectoryInfo dictorys, AnimatorController animatorCountorller)
 	{
-		//生成Prefab 添加一张预览用的Sprite
+		// 生成Prefab 添加一张预览用的Sprite
 		FileInfo images = dictorys.GetFiles("*.png")[0];
 		GameObject go = new GameObject();
 		go.name = dictorys.Name;

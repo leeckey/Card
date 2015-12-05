@@ -72,7 +72,7 @@ public class DataManager: ScriptableObject
 	}
 
 	// 列表转换为字典数据
-	private void ChangeData<T>(ref List<T> list, ref Dictionary<int,T> dic) where T : IDataTable
+	private void ChangeData<T>(ref List<T> list, ref Dictionary<int, T> dic) where T : IDataTable
 	{
 		dic = new Dictionary<int, T>();
 		foreach (T temp in list)

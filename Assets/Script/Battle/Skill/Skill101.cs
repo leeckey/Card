@@ -34,7 +34,7 @@ public class Skill101 : BaseSkill
 		if (target.canDoSkill && BuffID > 0 && !target.IsDead && Random.Range(0, 100) < rate)
 		{
 			BaseBuff buff = BuffFactory.GetBuffByID(BuffID, skillLevel);
-			card.attacker.AddBuff(buff);
+			(target as CardFighter).AddBuff(buff);
 		}
 	}
 }

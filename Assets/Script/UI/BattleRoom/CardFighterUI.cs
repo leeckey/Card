@@ -86,9 +86,9 @@ public class CardFighterUI : MonoBehaviour
 
 	}
 
-	public void ShowCardCure(int cure)
+	public void ShowCure(int cure)
 	{
-
+		bigUI.ShowCure(cure);
 	}
 
 	public void MaxHpChange(int num)

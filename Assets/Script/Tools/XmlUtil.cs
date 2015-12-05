@@ -26,10 +26,11 @@ public class XmlUtil
 		{
 			FileTools.ExistPathDirectory(path);
 		}
+
 		FileStream  myWriter = new FileStream(path, FileMode.CreateNew, FileAccess.Write);
-		
 		XmlTextWriter writer = new XmlTextWriter(myWriter, Encoding.GetEncoding("utf-8"));
 		writer.Formatting = Formatting.Indented;
+
 		try
 		{
 			// 生成xml序列化对象，序列化并写本地

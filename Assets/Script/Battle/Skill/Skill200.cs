@@ -38,6 +38,12 @@ public class Skill200 : BaseSkill
 		
 		if (targetList.Count == 0)
 			return;
+
+		if (targetList.Count == 1 && targetList[0] is PlayerFighter)
+		{
+			SkillFactory.GetAttackSkill(card).DoSkill();
+			return;
+		}
 		
 		List<int> cardIDs = GetTargetID(targetList);
 		card.Actions.Add(SkillStartAction.GetAction(card.ID, skillID, cardIDs));

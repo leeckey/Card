@@ -6,17 +6,18 @@ using System.Collections;
 /// </summary>
 public class BattleTest : MonoBehaviour
 {
-	public bool enabled = true;
+	public bool enable = true;
 
 	void Awake()
 	{
 		DataManager.GetInstance().Init();
 
-		if (!enabled)
+		if (!enable)
 			return;
 
 		TestFight();
 
+		Time.timeScale = 2f;
 		//foreach (SkillData data in DataManager.GetInstance().skillData.Values)
 		//	print(data.id);
 	}
@@ -31,7 +32,7 @@ public class BattleTest : MonoBehaviour
 		player1.maxHp = player1.HP = 10000;
 		BattleRoom room = new BattleRoom();
 
-		for (int i = 1; i <= 10; i++)
+		for (int i = 1; i <= 2; i++)
 		{
 			CardData cardData = new CardData();
 			cardData.cardTemplateID = i;
@@ -39,7 +40,7 @@ public class BattleTest : MonoBehaviour
 			cardData.ID = i;
 			CardFighter card = CardFighter.NewCard(cardData);
 
-			if (i < 4)
+			if (i < 2)
 			{
 				card.owner = player0;
 				player0.allCard.Add(card);

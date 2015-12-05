@@ -60,6 +60,27 @@ public class BattleRoomUI : MonoBehaviour
 		yield return new WaitForSeconds(BattleTime.DAMAGE_SHOW_TIME);
 	}
 
+	public IEnumerator ShowCure(BaseAction action)
+	{
+		CureNotifyAction damageAction = action as CureNotifyAction;
+		if (action.targetID == playerground0.ID)
+		{
+			playerground0.ShowCure(damageAction.cure);
+		} 
+		else if (action.targetID == playerground1.ID)
+		{
+			playerground1.ShowCure(damageAction.cure);
+		}
+		else
+		{
+			CardFighterUI cardUI = GetCardUI(action.targetID);
+			if (cardUI != null)
+				cardUI.ShowCure(damageAction.cure);
+		}
+		
+		yield return new WaitForSeconds(BattleTime.DAMAGE_SHOW_TIME);
+	}
+
 	public IEnumerator AttackChange(BaseAction action)
 	{
 		AttackChangeAction attackChangeAction = action as AttackChangeAction;
@@ -68,16 +89,6 @@ public class BattleRoomUI : MonoBehaviour
 			cardUI.AttackChange(attackChangeAction.num);
 
 		yield return new WaitForSeconds(BattleTime.ATTACK_CHANGE_TIME);
-	}
-
-	public IEnumerator CardCure(BaseAction action)
-	{
-		CureNotifyAction cureAction = action as CureNotifyAction;
-		CardFighterUI cardUI = GetCardUI(action.targetID);
-		if (cardUI != null)
-			cardUI.ShowCardCure(cureAction.cure);
-		
-		yield return new WaitForSeconds(BattleTime.DAMAGE_SHOW_TIME);
 	}
 
 	public IEnumerator MaxHpChange(BaseAction action)
@@ -112,9 +123,20 @@ public class BattleRoomUI : MonoBehaviour
 
 		foreach (int id in skillStartAction.targets)
 		{
-			CardFighterUI target = GetCardUI(id);
-			if (target != null)
-				target.ShowSkill(skillStartAction.skillID);
+			if (id == playerground0.ID)
+			{
+				playerground0.ShowSkill(skillStartAction.skillID);
+			}
+			else if (id == playerground1.ID)
+			{
+				playerground1.ShowSkill(skillStartAction.skillID);
+			}
+			else
+			{
+				CardFighterUI target = GetCardUI(id);
+				if (target != null)
+					target.ShowSkill(skillStartAction.skillID);
+			}
 		}
 
 		yield return new WaitForSeconds(BattleTime.SKILL_TIME);

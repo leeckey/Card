@@ -63,6 +63,19 @@ public class CardBigUI : MonoBehaviour
 		HOTween.From(damageLabel.transform, 0.3f, new TweenParms().Prop("localPosition", new Vector3(pos.x, pos.y - 50, pos.z)));
 		//HOTween.From(damageLabel, 0.3f, new TweenParms().Prop("alpha", 1f));
 		HOTween.To(damageLabel, 0.3f, new TweenParms().Prop("alpha", 0f).Delay(2f));
+
+		curHp -= damage;
+	}
+
+	public void ShowCure(int cure)
+	{
+		damageLabel.text = "+" + cure;
+		damageLabel.alpha = 1f;
+		TweenText.Begin(hpLabel, 0.3f, curHp, curHp + cure);
+		Vector3 pos = damageLabel.transform.localPosition;
+		HOTween.From(damageLabel.transform, 0.3f, new TweenParms().Prop("localPosition", new Vector3(pos.x, pos.y - 50, pos.z)));
+		//HOTween.From(damageLabel, 0.3f, new TweenParms().Prop("alpha", 1f));
+		HOTween.To(damageLabel, 0.3f, new TweenParms().Prop("alpha", 0f).Delay(2f));
 	}
 
 	public void StandUp()

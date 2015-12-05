@@ -18,6 +18,10 @@ public class PlayerGround : MonoBehaviour
 	public UISprite hpBarBack;
 	public UILabel hpLabel;
 
+	public UILabel damageLabel;
+
+	public GameObject effectParent;
+
 	int hp;
 	int maxHp;
 
@@ -39,6 +43,11 @@ public class PlayerGround : MonoBehaviour
 	public CardFighterUI cardPrefab;
 
 	public PlayerDirection direction = PlayerDirection.Up;
+
+	void Awake()
+	{
+		damageLabel.text = string.Empty;
+	}
 
 	/// <summary>
 	/// 获得对应的卡牌
@@ -77,6 +86,31 @@ public class PlayerGround : MonoBehaviour
 
 		HOTween.To(hpBar, 0.2f, new TweenParms().Prop("fillAmount", (float)hp / maxHp));
 		HOTween.To(hpBarBack, 0.8f, new TweenParms().Prop("fillAmount", (float)hp / maxHp).Delay(0.2f));
+
+		damageLabel.text = "-" + damage;
+		damageLabel.alpha = 1f;
+		Vector3 pos = damageLabel.transform.localPosition;
+		HOTween.From(damageLabel.transform, 0.3f, new TweenParms().Prop("localPosition", new Vector3(pos.x, pos.y - 30, pos.z)));
+		HOTween.To(damageLabel, 0.3f, new TweenParms().Prop("alpha", 0f).Delay(2f));
+	}
+
+
+	public void ShowCure(int cure)
+	{
+		hp += cure;
+		if (hp > maxHp)
+			hp = maxHp;
+		
+		hpLabel.text = string.Format("HP:{0}", hp.ToString());
+		
+		HOTween.To(hpBar, 0.2f, new TweenParms().Prop("fillAmount", (float)hp / maxHp));
+		HOTween.To(hpBarBack, 0.8f, new TweenParms().Prop("fillAmount", (float)hp / maxHp).Delay(0.2f));
+		
+		damageLabel.text = "+" + cure;
+		damageLabel.alpha = 1f;
+		Vector3 pos = damageLabel.transform.localPosition;
+		HOTween.From(damageLabel.transform, 0.3f, new TweenParms().Prop("localPosition", new Vector3(pos.x, pos.y - 30, pos.z)));
+		HOTween.To(damageLabel, 0.3f, new TweenParms().Prop("alpha", 0f).Delay(2f));
 	}
 
 	public IEnumerator ShowCard(int cardID)
@@ -110,6 +144,30 @@ public class PlayerGround : MonoBehaviour
 
 		RemoveCard(action, card);
 		yield return StartCoroutine(cardDeadArea.AddCard(card));
+	}
+
+	public void ShowSkill(int skillID)
+	{
+		GameObject effect = ResManager.LoadSkillEffect(skillID);
+		if (effect == null)
+			return;
+		
+		GameObject go = NGUITools.AddChild(effectParent, effect);
+		
+		go.GetComponent<SpriteRenderer>().sortingOrder = 10;
+		StartCoroutine(DestroyEffect(go));
+	}
+
+	IEnumerator DestroyEffect(GameObject go)
+	{
+		yield return null;
+		
+		Animator animator = go.GetComponent<Animator>();
+		AnimatorStateInfo info = animator.GetCurrentAnimatorStateInfo(0);
+		
+		yield return new WaitForSeconds(info.length);
+		
+		DestroyObject(go);
 	}
 	
 	/// <summary>
